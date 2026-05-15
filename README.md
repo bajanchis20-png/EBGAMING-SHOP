@@ -1,6 +1,7 @@
 # EBGAMING SHOP
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+pagina sobre ventas acerca de Metin2, con sus vistas, sobre portafolio, referencias, metodos de pago y mejorar el servicio
+
 
 ## Creating a project
 
