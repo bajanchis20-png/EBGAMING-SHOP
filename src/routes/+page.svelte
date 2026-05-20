@@ -1,5 +1,5 @@
 
 <section>
-<img src="" alt="">
+<img src="/logo.jpg" alt="">
 
 </section>

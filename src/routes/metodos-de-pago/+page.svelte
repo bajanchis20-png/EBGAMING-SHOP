@@ -6,9 +6,9 @@
     </div>
 
     <div>
-        <img src="" alt="">
+        <img src="/imagendepagos.jpg" alt="">
         <div>
-            <img src="" alt="">
+            <img src="/escudito.png" alt="">
             <p>portecion nivel leyenda</p>
         </div>
     </div>
