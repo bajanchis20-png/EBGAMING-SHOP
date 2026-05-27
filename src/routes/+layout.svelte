@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "./layout.css";
 	import favicon from "$lib/assets/favicon.svg";
-import Icon from "@iconify/svelte";
+	import Icon from "@iconify/svelte";
 
 	let { children } = $props();
 </script>
@@ -16,10 +16,13 @@ import Icon from "@iconify/svelte";
 	</div>
 
 	<div>
-		<button>login</button>
+		<button>
+			login
+			<Icon icon="glyphs-poly:user" width={24} height={24} />
+		</button>
 		<button>
 			whatsaap
-			<Icon icon="logos:whatsapp-icon"/>
+			<Icon icon="logos:whatsapp-icon" width={24} height={24} />
 		</button>
 	</div>
 </nav>
@@ -30,4 +33,5 @@ import Icon from "@iconify/svelte";
 		<img src="" alt="" />
 		<p>EBGAMING SHOP</p>
 	</div>
+	<Icon icon="logos:whatsapp-icon" width={24} height={24} />
 </footer>

@@ -9,9 +9,29 @@
     </div>
 
     <div>
-        <Tarjetacatalogo precio={40.00} titulo="Monturas Especiales" img="/monturas.jpg" descripcion="Velocidad y bonus exclusivos para tu personaje."/>
-        <Tarjetacatalogo precio={15.00} titulo="Won" img="/won.jpg" descripcion="entrega inmediata en tu servidor preferido"/>
-        <Tarjetacatalogo precio={35.00} titulo="Set de energia" img="/setenergia.jpg" descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado."/>
-        <Tarjetacatalogo precio={75.00} titulo="Set del caos" img="setcaos.jpg" descripcion="El poder definitivo para niveles 215+ no pierdas la oportunidad de ser TOP en el servidor"/>
+        <Tarjetacatalogo
+            precio={40.0}
+            titulo="Monturas Especiales"
+            img="/monturas.jpg"
+            descripcion="Velocidad y bonus exclusivos para tu personaje."
+        />
+        <Tarjetacatalogo
+            precio={15.0}
+            titulo="Won"
+            img="/won.jpg"
+            descripcion="entrega inmediata en tu servidor preferido"
+        />
+        <Tarjetacatalogo
+            precio={35.0}
+            titulo="Set de energia"
+            img="/setenergia.jpg"
+            descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado."
+        />
+        <Tarjetacatalogo
+            precio={75.0}
+            titulo="Set del caos"
+            img="/setcaos.jpg"
+            descripcion="El poder definitivo para niveles 215+ no pierdas la oportunidad de ser TOP en el servidor"
+        />
     </div>
 </section>

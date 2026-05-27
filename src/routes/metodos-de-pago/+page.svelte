@@ -1,3 +1,7 @@
+<script>
+    import Icon from "@iconify/svelte";
+
+</script>
 <section>
     <div>
         <p>transsacciones seguras</p>
@@ -27,19 +31,19 @@
 
     <div>
         <div>
-            <img src="/paypal_PNG7.png" alt="" />
+           <Icon icon="logos:paypal" width={24} height={24} />
             <p>Paypal</p>
         </div>
         <div>
-            <img src="/wenster.png" alt="" />
-            <p>Wenster Union</p>
+            <Icon icon="simple-icons:westernunion" width={24} height={24} />
+            <p>Western Union</p>
         </div>
         <div>
             <img src="/ria.webp" alt="" />
             <p>Ria</p>
         </div>
         <div>
-            <img src="/binance.png" alt="">
+             <Icon icon="token-branded:binance" width={24} height={24} />
             <p>Binance</p>
         </div>
     </div>

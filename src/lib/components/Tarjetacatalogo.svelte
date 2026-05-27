@@ -4,14 +4,16 @@
 
 <div>
 
-    <img src="/monturas.jpg" alt="" />
+    <img src={img} alt="" />
 
     <div>
         <p>{titulo}</p>
         <p>{descripcion}</p> 
         <div>
             <p>{precio}$</p>
-            <button><img src={img} alt=""></button>
+            <button>
+                fdfy
+            </button>
         </div>
     </div>
 </div>
