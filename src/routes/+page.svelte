@@ -2,12 +2,12 @@
     import Nuevatarjeta from "$lib/components/Nuevatarjeta.svelte";
 </script>
 
-<section>
-    <img src="/logo.jpg" alt="" />
+<section class="flex items-center justify-center py-56 relative overflow-hidden text-center">
+    <img src="/logo.jpg" alt="" class="absolute -z-10 top-0 left-0 w-full opacity-30" />
 
-    <div>
-        <p>EQUIPATE COMO UN DIOS</p>
-        <p>
+    <div class=" p-12">
+        <p class="text-5xl text-white font-extrabold pb-5 tracking-widest">EQUIPATE COMO UN DIOS</p>
+        <p class="text-white justify-center font-bold">
             Los mejores ìtems de metin2 al alcance de tus
             manos,seguridad,rapidez y confianza
         </p>
