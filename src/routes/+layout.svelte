@@ -23,7 +23,6 @@
 			class="flex text-lg font-semibold text-white border-2 border-red-300 px-6 py-1.5 gap-1.5"
 		>
 			Login
-			<Icon icon="glyphs-poly:user" width={24} height={24} />
 		</button>
 		<button
 			class="flex text-lg font-semibold text-white border-2 border-red-300 px-6 py-1.5 bg-red-300 gap-1.5"
