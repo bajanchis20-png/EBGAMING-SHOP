@@ -37,5 +37,7 @@
             descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado"
         ></Nuevatarjeta>
     </div>
-
+    <div>
+        
+    </div>
 </section>
