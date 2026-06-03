@@ -46,7 +46,7 @@
             titulo="SET DEL CAOS PERFECTO DOP"
             img="/setcaos.jpg"
             precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor"
+            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
         ></Nuevatarjeta>
         <Nuevatarjeta
             titulo="SET DE ENERGIA PERFECTO DOP"
@@ -61,12 +61,47 @@
             descripcion="Entrega inmediata en tu servidor preferido"
         ></Nuevatarjeta>
             <Nuevatarjeta
-            titulo="WON AL MEJOR PRECIO DEL MERCADO"
-            img="/won.jpg"
-            precio="15.00"
-            descripcion="Entrega inmediata en tu servidor preferido"
+            titulo="MONTURAS GOLD"
+            img="/monturas2.jpeg"
+            precio="40.00"
+            descripcion="Velocidad y bonus exclusivos para tu personaje"
         ></Nuevatarjeta>
-
+           <Nuevatarjeta
+            titulo="GUANTES+9"
+            img="/guante.jpg"
+            precio="110.00"
+            descripcion="El poder que necesitas, para PVP Guante del vacio & caos, para PVM guante celestial"
+        ></Nuevatarjeta>
+  <Nuevatarjeta
+            titulo="PERSONAJE EQUIPADO LV215"
+            img="/personaje.jpg"
+            precio="130.00"
+            descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"
+        ></Nuevatarjeta>
+            <Nuevatarjeta
+            titulo=""
+            img="/setcaos.jpg"
+            precio="75.00"
+            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+        ></Nuevatarjeta>
+            <Nuevatarjeta
+            titulo="SET DEL CAOS PERFECTO DOP"
+            img="/setcaos.jpg"
+            precio="75.00"
+            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+        ></Nuevatarjeta>
+            <Nuevatarjeta
+            titulo="SET DEL CAOS PERFECTO DOP"
+            img="/setcaos.jpg"
+            precio="75.00"
+            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+        ></Nuevatarjeta>
+            <Nuevatarjeta
+            titulo="SET DEL CAOS PERFECTO DOP"
+            img="/setcaos.jpg"
+            precio="75.00"
+            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+        ></Nuevatarjeta>
     </div>
     <div></div>
 </section>
