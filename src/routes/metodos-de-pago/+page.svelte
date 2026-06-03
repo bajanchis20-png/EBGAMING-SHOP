@@ -5,7 +5,8 @@
 <section>
     <div>
         <p>transsacciones seguras</p>
-        <p>poder total en tus pagos</p>
+        <p class="text-5xl text-white font-extrabold pb-5 tracking-wides">PODER TOTAL EN TUS PAGOS</p>
+
         <p>
             Equipate con lo mejor sin esperas. nuestro ecosistema de pagos esta
             diseñado para la maxima velocidad, garatizando que tus activos
