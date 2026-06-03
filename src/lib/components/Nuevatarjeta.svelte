@@ -5,19 +5,19 @@
 </script>
 
 <div
-    class="flex gap-8 justify-center border-2 border-amber-400 bg-gray-950 p-6 flex-1"
+    class="flex gap-8 justify-center border-2 border-amber-400 bg-gray-950 p-6 flex-1 shadow-amber-400/50 shadow-lg"
 >
     <div
-        class="bg-gray-900/20 p-6 w-80 text-black font-extrabold flex flex-col flex-1"
+        class="bg-gray-900/20 p-6 w-80 text-black font-extrabold flex flex-col flex-1 space-y-5"
     >
         <p
-            class="border-2 rounded-2xl bg-amber-300 px-10 py-1.5 text-lg gap-1.5"
-        >
+         class="inline-block bg-gradient-to-r from-amber-300 to-amber-500 text-black font-bold px-5 py-2.5 rounded-full text-sm tracki0ng-wide shadow-md text-center">
+    
             OFERTA DESTACADA
         </p>
         <img src={img} alt={titulo} class="w-full h-auto" />
     </div>
-    <div class="flex-1 p-2">
+    <div class="flex-1 p-2 space-y-8">
         <p class="font-bold text-3xl mb-2">{titulo}</p>
         <p class="text-xl text-red-200 mb-4">{descripcion}</p>
         <div class="flex gap-3">
@@ -26,9 +26,13 @@
                 STOCK DISPONIBLE
             </p>
         </div>
-        <button class="bg-[#FD5452] transition p-3 font-bold text-sm flex gap-1">
-            <Icon icon="logos:whatsapp-icon" width={24} height={24} />
-            COMPRAR POR WHATSAPP
-        </button>
+       <button 
+    class="bg-[#FD5452] px-6 py-3 font-bold text-sm text-white flex items-center gap-2 
+           transition-all duration-300 ease-in-out 
+           hover:brightness-110 hover:scale-105 hover:shadow-lg hover:shadow-[#FD5452]/40"
+>
+    <Icon icon="ic:baseline-whatsapp" width={24} height={24} />
+    COMPRAR POR WHATSAPP
+</button>
     </div>
 </div>
