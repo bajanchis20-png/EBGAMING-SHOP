@@ -6,19 +6,18 @@
     class="flex items-center justify-center py-56 relative overflow-hidden text-center"
 >
     <img
-        src="/logo.jpg"
+        src="/newfondo2.png"
         alt=""
-        class="absolute -z-10 -top-2/7 left-0 w-full opacity-30"
+        class="absolute -z-10 -top-2/40 left-0 w-full opacity-25"
     />
 
     <div class=" p-12">
         <p class="text-5xl text-white font-extrabold pb-5 tracking-widest">
             EQUIPATE COMO UN DIOS
         </p>
-        <p class="text-white justify-center font-bold">
-            Los mejores ìtems de metin2 al alcance de tus
-            manos,seguridad,rapidez y confianza
-        </p>
+      <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
+    DOMINA EL REINO,LOS MEJORES ITEMS DE METIN2, SEGURIDAD TOTAL Y ENTREGA INSTANTÁNEA.
+</p>
     </div>
 </section>
 
@@ -26,7 +25,9 @@
 
     <div class="pb-8 flex items-center justify-between">
         <div class="pb-8">
-            <p class=" text-white pb">Equipamiento de elite</p>
+            <p class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
+    Equipamiento de elite
+</p>
             <p class="tracking-normal font-extrabold text-2xl">
                 VISTA DEL CATALOGO
             </p>
@@ -54,11 +55,18 @@
             descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado"
         ></Nuevatarjeta>
         <Nuevatarjeta
-            titulo="SET DE ENERGIA PERFECTO DOP"
-            img="/setenergia.jpg"
-            precio="35.00"
-            descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado"
+            titulo="WON AL MEJOR PRECIO DEL MERCADO"
+            img="/won.jpg"
+            precio="15.00"
+            descripcion="Entrega inmediata en tu servidor preferido"
         ></Nuevatarjeta>
+            <Nuevatarjeta
+            titulo="WON AL MEJOR PRECIO DEL MERCADO"
+            img="/won.jpg"
+            precio="15.00"
+            descripcion="Entrega inmediata en tu servidor preferido"
+        ></Nuevatarjeta>
+
     </div>
     <div></div>
 </section>

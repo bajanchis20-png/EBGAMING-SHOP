@@ -7,7 +7,7 @@
 
     <section class="flex items-center justify-center py-56  text-center">
         <div class="p-12">
-            <p class="text-red-500 border-red-500 border font-extrabold inline">TRANSSACCIONES SEGURAS</p>
+            <p class="text-red-500 border-red-500 border font-extrabold inline">TRANSACCIONES SEGURAS</p>
             <p class="text-5xl text-white font-extrabold pb-5 tracking-wides text-center">PODER <span class="text-red-500">TOTAL</span> EN TUS <span class="text-red-500">PAGOS</span></p>
             
             <p class="text-white justify-center font-bold">
