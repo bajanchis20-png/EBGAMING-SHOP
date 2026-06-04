@@ -8,7 +8,10 @@
 
     <section class="flex items-center justify-center py-56  text-center">
         <div class="p-12">
-            <p class="text-red-500 border-red-500 border font-extrabold inline">TRANSACCIONES SEGURAS</p>
+          <div class="inline-flex items-center gap-2 px-6 py-2 border border-red-500 bg-red-950/30 text-red-500 font-extrabold tracking-widest uppercase shadow-[0_0_10px_rgba(239,68,68,0.5)] hover:shadow-[0_0_20px_rgba(239,68,68,0.8)] transition-all cursor-default">
+
+  <span>Transacciones Seguras</span>
+</div>
             <p class="text-5xl text-white font-extrabold pb-5 tracking-wides text-center">PODER <span class="text-red-500">TOTAL</span> EN TUS <span class="text-red-500">PAGOS</span></p>
             
                <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
