@@ -54,6 +54,18 @@
             precio="35.00"
             descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado"
         ></Nuevatarjeta>
+           <Nuevatarjeta
+            titulo="SET'S PERFECTOS PVP"
+            img="/pvpset.jpeg"
+            precio="75.00"
+            descripcion="Set perfecto EUFORIA desde lv85 a 160, set perfecto ELEMENTAL desde lv235+.No piedras la oportunidad y se el"
+        ></Nuevatarjeta>
+        <Nuevatarjeta
+            titulo="PERSONAJE EQUIPADO LV215"
+            img="/personaje.jpg"
+            precio="130.00"
+            descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"
+        ></Nuevatarjeta>
         <Nuevatarjeta
             titulo="WON AL MEJOR PRECIO DEL MERCADO"
             img="/won.jpg"
@@ -72,11 +84,11 @@
             precio="110.00"
             descripcion="El poder que necesitas, para PVP Guante del vacio & caos, para PVM guante celestial"
         ></Nuevatarjeta>
-  <Nuevatarjeta
-            titulo="PERSONAJE EQUIPADO LV215"
-            img="/personaje.jpg"
-            precio="130.00"
-            descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"
+               <Nuevatarjeta
+            titulo="CINTOS+9"
+            img="/cinto.jpg"
+            precio="60.00"
+            descripcion="Cinto de guerra para PVP, cinto de vida para PVM,y todos los que ocupes dentro del juego"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="ARMAS & ARMADURAS+10"
@@ -88,7 +100,7 @@
             titulo="ATUENDOS"
             img="/elatuendo.jpg"
             precio="75.00"
-            descripcion="Escoge el atuendo que desees envianos una foto y lo hacemos realidad"
+            descripcion="Haz que tu personaje sea único. Selecciona tu estilo y solicita tu diseño personalizado hoy mismo"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="NARUTO & AKATSUKI"
@@ -101,6 +113,30 @@
             img="/estolas2.png"
             precio="35.00"
             descripcion="Incrementa tu ataque con las mejores estolas,en PVM O PVP"
+        ></Nuevatarjeta>
+           <Nuevatarjeta
+            titulo="EFECTOS"
+            img="/efectos.png"
+            precio="8.00"
+            descripcion="Lleva el estilo contigo, convierte tu personaje esteticamente a tu gusto, efectos disponibles para armas&armaduras. elige el que desees y lo haremos realidad"
+        ></Nuevatarjeta>
+           <Nuevatarjeta
+            titulo="MASCOTAS"
+            img="/mascotas.png"
+            precio="75.00"
+            descripcion="Potencia tu poder, tenemos para ti mascotas PVM & PVP"
+        ></Nuevatarjeta>
+                  <Nuevatarjeta
+            titulo="SUBE DE NIVEL CON UN CLICK"
+            img="/livro.jpg"
+            precio="25.00"
+            descripcion="Con el Aprendizaje 215, sube de nivel a Lv215 con un click, con el Libro de potenciacición sube a Lv235 con un click"
+        ></Nuevatarjeta>
+                  <Nuevatarjeta
+            titulo="ALBION ONLINE"
+            img="/albion.jpeg"
+            precio="15.00"
+            descripcion="Silver & cuentas en Albion Online"
         ></Nuevatarjeta>
     </div>
     <div></div>
