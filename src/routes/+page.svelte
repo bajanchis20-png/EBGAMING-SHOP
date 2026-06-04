@@ -46,7 +46,7 @@
             titulo="SET DEL CAOS PERFECTO DOP"
             img="/setcaos.jpg"
             precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+            descripcion="El poder definitivo 60 media, para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
         ></Nuevatarjeta>
         <Nuevatarjeta
             titulo="SET DE ENERGIA PERFECTO DOP"
@@ -79,28 +79,28 @@
             descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"
         ></Nuevatarjeta>
             <Nuevatarjeta
-            titulo=""
-            img="/setcaos.jpg"
-            precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+            titulo="ARMAS & ARMADURAS+10"
+            img="/masdiez.jpeg"
+            precio="110.00"
+            descripcion="PERFECTO DOP, Domina el juego en su totalidad con el poder maximo"
         ></Nuevatarjeta>
             <Nuevatarjeta
-            titulo="SET DEL CAOS PERFECTO DOP"
-            img="/setcaos.jpg"
+            titulo="ATUENDOS"
+            img="/elatuendo.jpg"
             precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+            descripcion="Escoge el atuendo que desees envianos una foto y lo hacemos realidad"
         ></Nuevatarjeta>
             <Nuevatarjeta
-            titulo="SET DEL CAOS PERFECTO DOP"
-            img="/setcaos.jpg"
-            precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+            titulo="NARUTO & AKATSUKI"
+            img="/naruto.jpg"
+            precio="110.00"
+            descripcion="Todos amamos naruto, y mucho mas en nuestro juego favorito. Domina el PVM con el atuendo NARUTO, y el PVP con el AKATSUKI"
         ></Nuevatarjeta>
             <Nuevatarjeta
-            titulo="SET DEL CAOS PERFECTO DOP"
-            img="/setcaos.jpg"
-            precio="75.00"
-            descripcion="El poder definitivo para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
+            titulo="ESTOLAS"
+            img="/estolas2.png"
+            precio="35.00"
+            descripcion="Incrementa tu ataque con las mejores estolas,en PVM O PVP"
         ></Nuevatarjeta>
     </div>
     <div></div>
