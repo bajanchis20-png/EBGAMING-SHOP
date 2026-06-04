@@ -4,15 +4,15 @@
 
 </script>
 <div class="relative overflow-hidden">
-    <img src="/imagendepagos.jpg" alt=""class="absolute -z-10 top-0 left-0 w-full opacity-30 shadow" />
+    <img src="/newfondopago.jpeg" alt=""class="absolute -z-10 top-0 left-0 w-full opacity-30 shadow" />
 
     <section class="flex items-center justify-center py-56  text-center">
         <div class="p-12">
-          <div class="inline-flex items-center gap-2 px-6 py-2 border border-red-500 bg-red-950/30 text-red-500 font-extrabold tracking-widest uppercase shadow-[0_0_10px_rgba(239,68,68,0.5)] hover:shadow-[0_0_20px_rgba(239,68,68,0.8)] transition-all cursor-default">
+          <div class="inline-flex items-center gap-2 px-6 py-2 border border-red-700 bg-red-950/30 text-red-700 font-extrabold tracking-widest uppercase shadow-[0_0_10px_rgba(239,68,68,0.5)] hover:shadow-[0_0_20px_rgba(239,68,68,0.8)] transition-all cursor-default">
 
   <span>Transacciones Seguras</span>
 </div>
-            <p class="text-5xl text-white font-extrabold pb-5 tracking-wides text-center">PODER <span class="text-red-500">TOTAL</span> EN TUS <span class="text-red-500">PAGOS</span></p>
+            <p class="text-5xl text-white font-extrabold pb-5 tracking-wides text-center">PODER <span class="text-red-700">TOTAL</span> EN TUS <span class="text-red-700">PAGOS</span></p>
             
                <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
     EQUIPATE CON LO MEJOR SIN ESPERAS, TUS ITEMS EN TIEMPO RECORD
@@ -25,9 +25,10 @@
     <section>
         <div>
         
-            <p class="text-amber-300 font-bold pb-1 -tracking-widest text-center">COBERTURA GLOBAL</p>
-            
-            <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-500">PAIS</span></p>
+      <p class="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wide">
+    COBERTURA GLOBAL
+</p>
+            <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-700">PAIS</span></p>
         </div>
     
         <div class="pb-5 flex justify-items-center align-text px-20 bg-neutral-950/50 rounded-3xl gap max-w-7xl m-auto">
