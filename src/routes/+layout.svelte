@@ -38,10 +38,13 @@
 </nav>
 
 {@render children()}
-<footer>
-	<div>
-		<img src="" alt="" />
-		<p>EBGAMING SHOP</p>
+<footer class="footer">
+	<div class="flex-1 text-center p-25">
+		<img class="rounded-full m-auto" src="/logofondox.png" width="74" />
+		<p
+			class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider"
+		>
+			EBGAMING SHOP
+		</p>
 	</div>
-	<Icon icon="logos:whatsapp-icon" width={24} height={24} />
 </footer>
