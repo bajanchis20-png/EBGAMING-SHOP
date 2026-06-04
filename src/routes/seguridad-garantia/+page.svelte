@@ -1,6 +1,6 @@
 <section class="flex items-center justify-center py-56 relative overflow-hidden text-center">
 <div>
-<img src="newimagen.jpeg" alt="" class="absolute -z-10 -top-2/40 left-0 w-full opacity-25">
+<img src="newseguridad2.png" alt="" class="absolute -z-10 -top-2/9 left-0 w-full opacity-25">
     <p class="text-5xl text-white font-extrabold pb-5 tracking-widest">SEGURIDAD Y GARANTIA</p>
             <p class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-white via-white to-white drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
     Forjando confianza en cada transaccion.Tu equipo legendario protegido por los metodos de entrega mas seguros del reino

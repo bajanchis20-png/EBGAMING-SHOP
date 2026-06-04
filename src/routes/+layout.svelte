@@ -15,7 +15,6 @@
 		<a href="/">
 			<img class="rounded-full" src="/logofondox.png" alt="" width={70} />
 		</a>
-		<a href="/catalogo">catalogo</a>
 		<a href="/seguridad-garantia">seguridad</a>
 		<a href="/metodos-de-pago">metodos de pago</a>
 	</div>
