@@ -70,7 +70,7 @@
             titulo="WON AL MEJOR PRECIO DEL MERCADO"
             img="/won.jpg"
             precio="15.00"
-            descripcion="Entrega inmediata en tu servidor preferido"
+            descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="MONTURAS GOLD"

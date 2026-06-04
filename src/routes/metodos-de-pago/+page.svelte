@@ -4,7 +4,14 @@
 
 </script>
 <div class="relative overflow-hidden">
-    <img src="/newfondopago.jpeg" alt=""class="absolute -z-10 top-0 left-0 w-full opacity-30 shadow" />
+    <video 
+  src="video2.mp4" 
+  autoplay 
+  loop 
+  muted 
+  playsinline 
+  class="absolute -z-10 top-0 left-0 w-full h-full object-cover opacity-30 shadow">
+</video>
 
     <section class="flex items-center justify-center py-56  text-center">
         <div class="p-12">
@@ -31,7 +38,7 @@
             <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-700">PAIS</span></p>
         </div>
     
-        <div class="pb-5 flex justify-items-center align-text px-20 bg-neutral-950/50 rounded-3xl gap max-w-7xl m-auto">
+        <div class="pb-5 flex justify-items-center align-text px-20 bg-neutral-950/80 rounded-3xl gap max-w-7xl m-auto">
             <div class="flex-1 text-center">
                <Icon icon="logos:paypal" width={24} height={24} class="m-auto" />
                 <p class="text-white">Paypal</p>

@@ -13,7 +13,7 @@
         <p
             class="inline-block bg-gradient-to-r from-amber-300 to-amber-500 text-black font-bold px-5 py-2.5 rounded-full text-sm tracki0ng-wide shadow-md text-center"
         >
-            OFERTA DESTACADA
+          ¡APROVÉCHALO HOY!
         </p>
         <img src={img} alt={titulo} class="w-full h-auto" />
     </div>
