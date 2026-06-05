@@ -9,26 +9,26 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <nav
-	class="flex justify-between items center px-12 py-4 bg-red-950 shadow-2xl shadow-rose-950"
+	class="flex justify-between items-center px-12 py-4 bg-red-950 shadow-2xl shadow-rose-950"
 >
-	<div class="text-lg font-semibold flex gap-5 text-white">
+	<div class="flex gap-5 text-white font-semibold uppercase items-center">
 		<a href="/">
-			<img class="rounded-full" src="/logofondox.png" alt="" width={70} />
+			<img class="rounded-full w-24" src="/logofondox.png" alt=""/>
 		</a>
 		<a href="/seguridad-garantia">seguridad</a>
 		<a href="/metodos-de-pago">metodos de pago</a>
 	</div>
 
-	<div class="flex gap-5">
+	<div class="flex gap-5 ">
 		<button
 			class="flex items-center text-lg font-semibold text-red-100 border-2 border-red-100 px-6 py-1.5 gap-1.5
-           transition-all duration-300 ease-in-out
+           transition-all duration-300 ease-in-out uppercase
            hover:bg-red-100 hover:text-black hover:border-red-100"
 		>
 			Login
 		</button>
 		<button
-			class="flex items-center gap-2 px-6 py-2 text-lg font-semibold text-white bg-green-600 border border-green-600 transition-all duration-300 hover:bg-green-700 hover:border-green-500 hover:shadow-lg hover:shadow-green-900/20"
+			class="flex items-center gap-2 px-6 py-2 text-lg font-semibold uppercase text-white bg-green-600 border border-green-600 transition-all duration-300 hover:bg-green-700 hover:border-green-500 hover:shadow-lg hover:shadow-green-900/20"
 		>
 			WhatsApp
 			<Icon icon="ic:baseline-whatsapp" width={24} height={24} />

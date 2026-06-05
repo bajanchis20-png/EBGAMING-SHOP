@@ -35,10 +35,10 @@
     <section>
         <div>
         
-      <p class="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wide">
+      <p class="w-full text-center font-bold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-widest">
     COBERTURA GLOBAL
 </p>
-            <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-700 font-black italic">PAIS</span></p>
+            <p class="text-white font-extrabold text-5xl pb-7 tracking-tight text-center ">PAGOS POR <span class="text-red-700 font-black italic tracking-widest">PAIS</span></p>
         </div>
     
         <div class="pb-5 flex justify-items-center align-text px-20 bg-neutral-950/80 rounded-3xl gap max-w-7xl m-auto">
@@ -63,10 +63,3 @@
 </div>
     </section>
 </div>
-<section class="p-12">
-    <div class="flex flex-row justify-center items-center gap-4">
-        <img src="/colombia2.png" alt="Colombia" class="w-80 h-80 object-cover border-4 border-yellow-400/30 rounded-lg">
-        <img src="/españa.png" alt="Chile" class="w-80 h-80 object-cover border-4 border-gray-400 rounded-lg">
-        <img src="/mex.png" alt="Peru" class="w-80 h-80 object-cover border-4 border-gray-400 rounded-lg">
-    </div>
-</section>
