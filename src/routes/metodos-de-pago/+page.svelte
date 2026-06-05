@@ -38,7 +38,7 @@
       <p class="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wide">
     COBERTURA GLOBAL
 </p>
-            <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-700">PAIS</span></p>
+            <p class="text-white font-extrabold text-5xl pb-7 -tracking-widest text-center ">PAGOS POR <span class="text-red-700 font-black italic">PAIS</span></p>
         </div>
     
         <div class="pb-5 flex justify-items-center align-text px-20 bg-neutral-950/80 rounded-3xl gap max-w-7xl m-auto">
