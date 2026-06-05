@@ -12,9 +12,10 @@
     />
 
     <div class=" p-12">
-        <p class="text-5xl text-white font-extrabold pb-5 tracking-widest">
-            EQUIPATE COMO UN DIOS
-        </p>
+        <p class="text-5xl font-extrabold text-white text-center tracking-widest uppercase py-6 border-y border-white/10">
+  EQUIPATE COMO UN
+   <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">DIOS</span>
+</p>
       <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
     DOMINA EL REINO,LOS MEJORES ITEMS DE METIN2, SEGURIDAD TOTAL Y ENTREGA INSTANTÁNEA.
 </p>
