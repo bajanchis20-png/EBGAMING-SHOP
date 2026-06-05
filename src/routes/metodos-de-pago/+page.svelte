@@ -19,7 +19,10 @@
 
   <span>Transacciones Seguras</span>
 </div>
-            <p class="text-5xl text-white font-extrabold pb-5 tracking-wides text-center">PODER <span class="text-red-700">TOTAL</span> EN TUS <span class="text-red-700">PAGOS</span></p>
+            <p class="text-5xl font-extrabold text-white text-center tracking-widest uppercase py-6 border-y border-white/10">
+  PODER <span class="text-red-700 px-2 bg-red-950/20">TOTAL</span> 
+  EN TUS <span class="text-red-700 font-black italic">PAGOS</span>
+</p>
             
                <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
     EQUIPATE CON LO MEJOR SIN ESPERAS, TUS ITEMS EN TIEMPO RECORD
@@ -60,3 +63,10 @@
 </div>
     </section>
 </div>
+<section class="p-12">
+    <div class="flex flex-row justify-center items-center gap-4">
+        <img src="/colombia2.png" alt="Colombia" class="w-80 h-80 object-cover border-4 border-yellow-400/30 rounded-lg">
+        <img src="/españa.png" alt="Chile" class="w-80 h-80 object-cover border-4 border-gray-400 rounded-lg">
+        <img src="/mex.png" alt="Peru" class="w-80 h-80 object-cover border-4 border-gray-400 rounded-lg">
+    </div>
+</section>
