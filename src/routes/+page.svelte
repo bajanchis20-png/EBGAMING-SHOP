@@ -133,12 +133,7 @@
             precio="25.00"
             descripcion="Con el Aprendizaje 215, sube de nivel a Lv215 con un click, con el Libro de potenciacición sube a Lv235 con un click"
         ></Nuevatarjeta>
-                  <Nuevatarjeta
-            titulo="ALBION ONLINE"
-            img="/albion.jpeg"
-            precio="15.00"
-            descripcion="Silver & cuentas en Albion Online"
-        ></Nuevatarjeta>
+                
     </div>
     <div></div>
 </section>
