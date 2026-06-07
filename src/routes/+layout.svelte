@@ -17,6 +17,8 @@
 		</a>
 		<a href="/seguridad-garantia">seguridad</a>
 		<a href="/metodos-de-pago">metodos de pago</a>
+		<a href="/albion-online">Albion Online</a>
+		<a href="/vista-previa">Ofertas</a>
 	</div>
 
 	<div class="flex gap-5 ">
