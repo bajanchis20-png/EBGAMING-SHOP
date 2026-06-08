@@ -10,7 +10,7 @@
         loop 
         muted 
         playsinline 
-        class="absolute inset-0 w-full h-full object-cover opacity-20">
+        class="absolute inset-0 w-full h-full object-cover opacity-65">
     </video>
     <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/60 via-neutral-950/80 to-neutral-950"></div>
 
@@ -31,8 +31,8 @@
                 </div>
             </h1>
             
-            <p class="text-neutral-400 text-lg font-medium tracking-wide max-w-xl mx-auto">
-                Equípate con lo mejor sin esperas. Obtén tus items en tiempo récord con métodos verificados.
+            <p class="text-neutral-300 font-bold tracking-[0.3em] uppercase text-sm">
+                Equípate con lo mejor sin esperas. Obtén tus items en tiempo récord.
             </p>
         </section>
 

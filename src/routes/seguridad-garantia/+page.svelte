@@ -17,7 +17,7 @@
             <h3 class="text-white font-bold tracking-[0.2em] uppercase text-2xl">Proceso Garantizado</h3>
             
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
-                {#each [{n: '9+', t: 'Años'}, {n: '14+', t: 'Grupos'}, {n: '5k+', t: 'Guerreros'}] as stat}
+                {#each [{n: '9+', t: 'Años'}, {n: '14+', t: 'Grupos'}, {n: '5k+', t: 'Guerreros satisfechos'}] as stat}
                     <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
                         <div class="text-yellow-500 font-black text-2xl">{stat.n}</div>
                         <div class="text-neutral-500 text-xs font-bold uppercase">{stat.t}</div>
