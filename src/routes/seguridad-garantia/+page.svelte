@@ -1,39 +1,44 @@
-<section class="flex items-center justify-center py-56 relative overflow-hidden text-center">
-<div>
-<img src="newseguridad2.png" alt="" class="absolute -z-10 -top-2/9 left-0 w-full opacity-25">
-               <p class="text-5xl font-extrabold text-white text-center tracking-widest uppercase py-6 border-y border-white/10">
-  SEGURIDAD
-  Y <span class="font-black italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">GARANTÍA</span>
-</p>
-                  <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
-    FORJANDO CONFIANZA EN CADA TRANSACCION. TU EQUIPO LEGENDARIO PROTEGIDO POR LOS METODOS DE ENTREGA MAS SEGUROS DEL REINO
-</p>
-</div>
+<section class="relative bg-neutral-950 py-24 overflow-hidden">
+    <img src="newseguridad2.png" alt="" class="absolute -top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl opacity-10 pointer-events-none">
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tighter uppercase border-b border-white/10 pb-8">
+            Seguridad y <span class="italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 to-yellow-300 drop-shadow-lg">Garantía</span>
+        </h2>
+        <p class="text-neutral-400 font-medium tracking-wide uppercase text-sm md:text-base max-w-2xl mx-auto">
+            Forjando confianza en cada transacción. Tu equipo legendario protegido por los métodos de entrega más seguros del reino.
+        </p>
+    </div>
 </section>
-<section>
-    <div class="p-12">
-        <div class="bg-gray-900/20 p-6 max-w-4xl m-auto flex flex-col space-y-5">
-            
-            <p class="text-white font-bold tracking-widest uppercase text-center text-xl">
-                PROCESO GARANTIZADO
-            </p>
-            
-            <p class="text-white font-bold tracking-widest uppercase text-center text-sm">
-                +9 años comerciando, +14 grupos en facebook, +5000 guerreros satisfechos, obten la maxima seguridad en tus compras
-            </p>
 
-            <div class="flex flex-row gap-4 justify-center items-start">
-                <img src="/comocomprar.jpg" alt="Proceso 1" class="w-1/2 object-contain rounded-lg">
-                <img src="/comocomprar2.jpg" alt="Proceso 2" class="w-1/2 object-contain rounded-lg">
+<section class="max-w-5xl mx-auto px-6 -mt-10 mb-20">
+    <div class="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-3xl p-8 md:p-12 shadow-2xl">
+        <div class="text-center space-y-6">
+            <h3 class="text-white font-bold tracking-[0.2em] uppercase text-2xl">Proceso Garantizado</h3>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
+                {#each [{n: '9+', t: 'Años'}, {n: '14+', t: 'Grupos'}, {n: '5k+', t: 'Guerreros'}] as stat}
+                    <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
+                        <div class="text-yellow-500 font-black text-2xl">{stat.n}</div>
+                        <div class="text-neutral-500 text-xs font-bold uppercase">{stat.t}</div>
+                    </div>
+                {/each}
             </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                <img src="/comocomprar.jpg" alt="Proceso 1" class="w-full rounded-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform">
+                <img src="/comocomprar2.jpg" alt="Proceso 2" class="w-full rounded-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform">
+            </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="flex items-center justify-center gap-2">
-        <img src="/referencias10.png" alt="Referencias" class="w-80">
-        <img src="/rename2.png" alt="Grupo de Facebook" class="w-80">
+<section class="py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-neutral-500 font-bold uppercase tracking-[0.3em] text-xs mb-8">Comunidad Verificada</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="/referencias10.png" alt="Referencias" class="h-16 w-auto object-contain">
+            <img src="/rename2.png" alt="Grupo de Facebook" class="h-16 w-auto object-contain">
+        </div>
     </div>
 </section>
