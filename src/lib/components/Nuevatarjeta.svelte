@@ -16,7 +16,7 @@
         >
           ¡APROVÉCHALO HOY!
         </p>
-        <img src={img} alt={titulo} class="w-full h-auto" />
+        <img src={img} alt={titulo} class="w-full h-auto " />
     </div>
     <div class="flex-1 p-2 space-y-8">
         <p class="font-bold text-3xl mb-2">{titulo}</p>
