@@ -22,9 +22,6 @@
         <p class="font-bold text-3xl mb-2">{titulo}</p>
         <p class="text-xl text-red-200 mb-4">{descripcion}</p>
         <div class="flex gap-3">
-            <p class="text-4xl font-bold text-amber-500 min-w-max">
-                $ {precio}
-            </p>
             <div
                 class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-green-500/10 border border-green-500/20 text-green-600 font-semibold text-[10px] tracking-widest uppercase"
             >

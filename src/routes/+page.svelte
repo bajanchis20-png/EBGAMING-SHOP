@@ -34,7 +34,7 @@
     <div class="pb-8 flex items-center justify-between">
         <div class="pb-8">
             <p class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
-    Equipamiento de elite
+    Equipamiento de elite - Metin2 Guabina
 </p>
             <p class="tracking-normal font-extrabold text-2xl">
                 VISTA DEL CATALOGO
@@ -79,6 +79,12 @@
             img="/won.jpg"
             precio="15.00"
             descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"
+        ></Nuevatarjeta>         
+             <Nuevatarjeta
+            titulo="SET EUFORIA"
+            img="/euforia2.jpeg"
+            precio="25.00"
+            descripcion="4 Set's perfectos pvp, con armas & armaduras, piedras +6. No esperes mas, y se el mejor"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="MONTURAS GOLD"
@@ -140,7 +146,7 @@
             precio="25.00"
             descripcion="Con el Aprendizaje 215, sube de nivel a Lv215 con un click, con el Libro de potenciacición sube a Lv235 con un click"
         ></Nuevatarjeta>
-                
+           
     </div>
     <div></div>
 </section>
