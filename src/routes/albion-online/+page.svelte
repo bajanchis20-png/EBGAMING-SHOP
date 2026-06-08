@@ -5,11 +5,14 @@
 <section
     class="flex items-center justify-center py-56 relative overflow-hidden text-center"
 >
-    <img
-        src="/albion2.jpg"
-        alt=""
-        class="absolute -z-10 -top-2/40 left-0 w-full opacity-25"
-    />
+  <video 
+  src="video5.mp4" 
+  autoplay 
+  loop 
+  muted 
+  playsinline 
+  class="absolute -z-10 top-0 left-0 w-full h-full object-cover opacity-30 shadow">
+</video>
 
     <div class=" p-12">
         <p class="text-5xl font-extrabold text-white text-center tracking-widest uppercase py-6 border-y border-white/10">
