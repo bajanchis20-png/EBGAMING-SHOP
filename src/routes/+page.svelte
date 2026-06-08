@@ -8,21 +8,28 @@
     <img
         src="/newfondo2.png"
         alt=""
-        class="absolute -z-10 -top-2/40 left-0 w-full opacity-25"
+        class="absolute -z-10 -top-0/40 left-0 w-full opacity-25"
     />
 
-    <div class=" p-12">
-        <p class="text-5xl font-extrabold text-white text-center tracking-widest uppercase py-6 border-y border-white/10">
-  EQUIPATE COMO UN
-   <span class="font-black italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">DIOS</span>
-</p>
-      <p class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white font-bold tracking-widest uppercase text-center shadow-lg">
-    DOMINA EL REINO,LOS MEJORES ITEMS DE METIN2, SEGURIDAD TOTAL Y ENTREGA INSTANTÁNEA.
-</p>
+ <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Título con jerarquía mejorada -->
+    <div class="border-y border-white/10 py-8 mb-6">
+        <h1 class="text-5xl font-extrabold text-white text-center tracking-[0.2em] uppercase leading-tight">
+            Equípate como un 
+            <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
+                Dios
+            </span>
+        </h1>
     </div>
+
+    <!-- Subtítulo con mejor espaciado y legibilidad -->
+    <p class="text-white font-bold tracking-[0.25em] uppercase text-center shadow-lg leading-relaxed">
+        Domina el reino, los mejores items de Metin2, seguridad total y entrega instantánea.
+    </p>
+</div>
 </section>
 
-<section class="text-white p-8">
+<section class="text-white p-8 -mt-20">
 
     <div class="pb-8 flex items-center justify-between">
         <div class="pb-8">
