@@ -33,7 +33,7 @@
 
 <section>
     <div class="flex items-center justify-center gap-2">
-        <img src="/referencias.png" alt="Referencias" class="w-80">
-        <img src="/grupo2.png" alt="Grupo de Facebook" class="w-80">
+        <img src="/referencias10.png" alt="Referencias" class="w-80">
+        <img src="/rename2.png" alt="Grupo de Facebook" class="w-80">
     </div>
 </section>
