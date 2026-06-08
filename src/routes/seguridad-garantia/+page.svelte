@@ -1,11 +1,21 @@
 <section class="relative bg-neutral-950 py-24 overflow-hidden">
-    <img src="newseguridad2.png" alt="" class="absolute -top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl opacity-10 pointer-events-none">
+    <img 
+        src="newseguridad2.png" 
+        alt="Fondo Seguridad" 
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl opacity-10 pointer-events-none"
+    >
     
-    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
-        <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tighter uppercase border-b border-white/10 pb-8">
- Seguridad y<span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] uppercase tracking-wider">Garantía</span>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
+        <h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter uppercase leading-none">
+            Seguridad y 
+            <span class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] tracking-wider">
+                Garantía
+            </span>
         </h2>
-        <p class="text-neutral-400 font-medium tracking-wide uppercase text-sm md:text-base max-w-2xl mx-auto">
+        
+        <div class="w-32 h-[2px] bg-white/10 mx-auto"></div>
+
+        <p class="text-neutral-400 font-medium tracking-widest uppercase text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             Forjando confianza en cada transacción. Tu equipo legendario protegido por los métodos de entrega más seguros del reino.
         </p>
     </div>

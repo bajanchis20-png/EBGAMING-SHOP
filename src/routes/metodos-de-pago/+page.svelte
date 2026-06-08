@@ -61,16 +61,16 @@
 
     </main>
 </div>
-<section class="py-20 bg-black/60">
+<section class="py-20 bg-[#0a0a0a]">
     <div class="max-w-6xl mx-auto px-6">
-        <!-- Título de la sección -->
         <div class="flex items-center gap-4 mb-12">
-            <div class="h-px flex-1 bg-gradient-to-r from-transparent to-[#00a8ff]"></div>
-            <h3 class="text-[#00a8ff] font-mono text-xl tracking-[0.2em] uppercase">Selecciona tu País</h3>
-            <div class="h-px flex-1 bg-gradient-to-l from-transparent to-[#00a8ff]"></div>
+            <div class="h-px flex-1 bg-gradient-to-r from-transparent to-red-600"></div>
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-300 to-amber-600 font-bold text-xl tracking-[0.2em] uppercase drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">
+                Selecciona tu País
+            </h3>
+            <div class="h-px flex-1 bg-gradient-to-l from-transparent to-red-600"></div>
         </div>
 
-        <!-- Grid de Países -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {#each [
                 { nombre: "COLOMBIA", metodos: ["Nequi", "Daviplata", "Bancolombia"] },
@@ -85,12 +85,14 @@
                 { nombre: "BRASIL", metodos: ["Pix"] },
                 { nombre: "CHILE", metodos: ["Banco Estado"] }
             ] as pais}
-                <div class="group p-5 bg-[#1a1a1a] border border-[#333] hover:border-[#00a8ff] transition-all duration-300 rounded-lg">
-                    <h4 class="text-white font-bold tracking-widest mb-3 group-hover:text-[#00a8ff]">{pais.nombre}</h4>
+                <div class="group p-5 bg-[#120a0a] border border-red-900/50 hover:border-yellow-500 transition-all duration-300 rounded-sm">
+                    <h4 class="text-white font-bold tracking-widest mb-3 group-hover:text-yellow-400 transition-colors">
+                        {pais.nombre}
+                    </h4>
                     <div class="flex flex-col gap-2">
                         {#each pais.metodos as metodo}
                             <div class="flex items-center gap-2 text-xs text-gray-400 group-hover:text-gray-200">
-                                <span class="w-1.5 h-1.5 bg-[#00a8ff] rounded-full"></span>
+                                <span class="w-1.5 h-1.5 bg-red-600 rounded-full group-hover:bg-yellow-400"></span>
                                 {metodo}
                             </div>
                         {/each}
