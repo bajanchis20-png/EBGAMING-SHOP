@@ -6,9 +6,9 @@
     class="flex items-center justify-center py-56 relative overflow-hidden text-center"
 >
     <img
-        src="/newfondo2.png"
+        src="/newfondo8.png"
         alt=""
-        class="absolute -z-10 -top-4/40 left-0 w-full opacity-25"
+        class="absolute -z-10 -top-0/40 left-0 w-full opacity-25"
     />
 
  <div class="max-w-4xl mx-auto px-6 py-12">
@@ -16,9 +16,9 @@
     <div class="border-y border-white/10 py-8 mb-6">
         <h1 class="text-5xl font-extrabold text-white text-center tracking-[0.2em] uppercase leading-tight">
             Equípate como un 
-            <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
-                Dios
-            </span>
+            <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] uppercase tracking-wider">
+    Dios
+</span>
         </h1>
     </div>
 

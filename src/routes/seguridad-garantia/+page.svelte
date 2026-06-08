@@ -3,7 +3,7 @@
     
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
         <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tighter uppercase border-b border-white/10 pb-8">
-            Seguridad y <span class="italic text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 to-yellow-300 drop-shadow-lg">Garantía</span>
+ Seguridad y<span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] uppercase tracking-wider">Garantía</span>
         </h2>
         <p class="text-neutral-400 font-medium tracking-wide uppercase text-sm md:text-base max-w-2xl mx-auto">
             Forjando confianza en cada transacción. Tu equipo legendario protegido por los métodos de entrega más seguros del reino.
