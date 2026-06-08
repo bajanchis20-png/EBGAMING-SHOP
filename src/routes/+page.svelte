@@ -81,7 +81,7 @@
             descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"
         ></Nuevatarjeta>             
          <Nuevatarjeta
-            titulo="SET EFORIA"
+            titulo="SET EUFORIA"
             img="/euforia2.jpeg"
             precio="25.00"
             descripcion="4 Set's perfectos pvp, con armas & armaduras, piedras +6. No esperes mas, y se el mejor"

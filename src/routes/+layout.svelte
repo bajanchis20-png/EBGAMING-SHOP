@@ -9,7 +9,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <nav
-	class="flex justify-between items-center px-12 py-4 bg-red-950 shadow-2xl shadow-rose-950"
+	class="flex justify-between items-center px-12 py-4 bg-black border-b-2 border-orange-600 shadow-[0_0_20px_rgba(255,85,0,0.3)]"
 >
 	<div class="flex gap-5 text-white font-semibold uppercase items-center">
 		<a href="/">
