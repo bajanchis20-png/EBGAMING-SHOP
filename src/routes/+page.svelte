@@ -35,7 +35,7 @@
         </div>
     
         <button
-            class="flex items-center text-lg font-semibold text-white border-2 border-red-500 px-6 py-1.5 bg-red-500 gap-1.5 transition-all duration-300 ease-in-out hover:bg-red-600 hover:border-red-600 hover:shadow-lg hover:shadow-red-500/30"
+            class="flex items-center text-lg font-semibold text-white border-2 border-red-500 px-6 py-1.5 bg-[#e91f1b] gap-1.5 transition-all duration-300 ease-in-out hover:bg-red-600 hover:border-red-600 hover:shadow-lg hover:shadow-red-500/30"
         >
             Seccion principal
         </button>

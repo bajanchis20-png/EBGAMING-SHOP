@@ -35,9 +35,9 @@
             </div>
         </div>
         <button
-            class="bg-[#FD5452] px-6 py-3 font-bold text-sm text-white flex items-center gap-2
+            class="px-6 py-3 font-bold text-sm text-white flex items-center gap-2
            transition-all duration-300 ease-in-out
-           hover:brightness-110 hover:scale-105 hover:shadow-lg hover:shadow-[#FD5452]/40"
+            bg-green-600 border border-green-600 transition-all duration-300 hover:bg-green-700 hover:border-green-500 hover:shadow-lg hover:shadow-green-900/20"
         >
             <Icon icon="ic:baseline-whatsapp" width={24} height={24} />
             COMPRAR POR WHATSAPP
