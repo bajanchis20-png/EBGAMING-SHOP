@@ -8,7 +8,7 @@
     <img
         src="/newfondo2.png"
         alt=""
-        class="absolute -z-10 -top-0/40 left-0 w-full opacity-25"
+        class="absolute -z-10 -top-4/40 left-0 w-full opacity-25"
     />
 
  <div class="max-w-4xl mx-auto px-6 py-12">
@@ -29,9 +29,9 @@
 </div>
 </section>
 
-<section class="text-white p-8 -mt-20">
+<section class="text-white p-8">
 
-    <div class="pb-8 flex items-center justify-between">
+    <div class=" b-8 flex items-center justify-between scroll-mt-0.2">
         <div class="pb-8">
             <p class="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-yellow-600 via-yellow-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(234,179,8,0.6)] uppercase tracking-wider">
     Equipamiento de elite - Metin2 Guabina
@@ -79,9 +79,9 @@
             img="/won.jpg"
             precio="15.00"
             descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"
-        ></Nuevatarjeta>         
-             <Nuevatarjeta
-            titulo="SET EUFORIA"
+        ></Nuevatarjeta>             
+         <Nuevatarjeta
+            titulo="SET EFORIA"
             img="/euforia2.jpeg"
             precio="25.00"
             descripcion="4 Set's perfectos pvp, con armas & armaduras, piedras +6. No esperes mas, y se el mejor"
