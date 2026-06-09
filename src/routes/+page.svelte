@@ -53,7 +53,6 @@
         <Nuevatarjeta
             titulo="SET DEL CAOS PERFECTO DOP"
             img="/setcaos.jpg"
-            precio="75.00"
             descripcion="El poder definitivo 60 media, para 215+.No pierdas la oportunidad de ser el top del servidor en PVM"
         ></Nuevatarjeta>
         <Nuevatarjeta
@@ -108,7 +107,7 @@
             titulo="ARMAS & ARMADURAS+10"
             img="/masdiez.jpeg"
             precio="110.00"
-            descripcion="PERFECTO DOP, Domina el juego en su totalidad con el poder maximo"
+            descripcion="Domina el juego en su totalidad con el poder maximo"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="ATUENDOS"

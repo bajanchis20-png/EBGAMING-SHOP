@@ -1,44 +1,43 @@
 <script>
     let { titulo, img, precio, descripcion } = $props();
-
     import Icon from "@iconify/svelte";
-
 </script>
 
-<div
-    class="flex flex-col md:flex-row gap-8 items-center border border-gray-800 bg-gradient-to-b from-gray-900 to-black p-2 shadow-2xl hover:border-red-900/50 transition-colors duration-500 group"
->
-    <!-- Contenedor de Imagen con efecto de profundidad -->
-    <div class="relative bg-black/40 p-8 w-full md:w-80 flex flex-col items-center">
-       <div class="absolute top-4 left-4 z-10 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 text-neutral-900 text-[10px] font-black px-3 py-1 tracking-widest uppercase shadow-[0_0_15px_rgba(251,191,36,0.6)]">
-  COMPRA AHORA
- </div>
-        <img src={img} alt={titulo} class="w-full h-auto transform transition-transform duration-500 group-hover:scale-105" />
+<div class="relative flex flex-col md:flex-row gap-6 items-center bg-[#0a0a0a] border border-white/5 p-1 shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-red-600/50 group">
+    
+    <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-yellow-600/50"></div>
+    <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-yellow-600/50"></div>
+
+    <div class="relative w-full md:w-80 flex-shrink-0 bg-gradient-to-br from-neutral-900 to-black p-1">
+        
+        <img src={img} alt={titulo} class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" />
     </div>
 
-    <!-- Contenido -->
-    <div class="flex-1 p-6 space-y-6">
+    <div class="flex-1 p-8 space-y-4">
         <div>
-            <p class="font-extrabold text-3xl text-white mb-2 tracking-tight">{titulo}</p>
-            <p class="text-gray-400 text-lg leading-relaxed">{descripcion}</p>
+            <h2 class="text-4xl font-black italic text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-600 uppercase tracking-widest mb-2">
+                {titulo}
+            </h2>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-md font-medium">{descripcion}</p>
         </div>
 
         <div class="flex items-center gap-4">
-            <!-- Badge de Stock mas minimalista -->
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/30 border border-red-500/30 text-red-500 text-[10px] font-bold tracking-widest uppercase">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
-                Stock Disponible
+            <div class="flex items-center gap-2 px-3 py-1 bg-red-950/20 border border-red-600/30 text-red-500 text-[10px] font-bold uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_red]"></span>
+                En stock
             </div>
         </div>
 
-        <!-- Botón de compra mejorado -->
-        <button
-            class="w-full md:w-auto px-8 py-4 font-black text-sm text-white flex items-center justify-center gap-2 
-            bg-green-600 hover:bg-green-700 shadow-[0_0_20px_rgba(220,38,38,0.3)] 
-            transition-all duration-300 hover:shadow-green-900/20 active:scale-95"
-        >
-            <Icon icon="ic:baseline-whatsapp" width={20} height={20} />
-            COMPRAR POR WHATSAPP
+        <button class="relative w-full md:w-auto px-10 py-4 bg-gradient-to-r from-red-700 to-red-900 text-white font-black uppercase text-sm tracking-widest flex items-center justify-center gap-3 hover:from-red-600 hover:to-red-800 transition-all shadow-[0_0_20px_rgba(185,28,28,0.4)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
+            <Icon icon="ic:baseline-whatsapp" width={22} height={22} />
+            Comprar Ahora
         </button>
     </div>
 </div>
+
+<style>
+    /* Opcional: Para darle forma de etiqueta al precio */
+    .clip-path-polygon {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    }
+</style>

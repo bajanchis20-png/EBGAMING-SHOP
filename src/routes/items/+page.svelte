@@ -6,7 +6,7 @@
     let idx1 = 0;
     
     // Sección 2: Pets
-    let img2 = ["/pet1.png", "/pet2.png", "/pet3.png", "/pet4.png"];
+    let img2 = ["/atuendo1.png", "/atuendo2.png", "/atuendo3.png", "/atuendo4.png"];
     let idx2 = 0;
     
     // Sección 3: Armas
@@ -27,7 +27,7 @@
             </div>
             <button on:click={() => idx1 = (idx1 + 1) % img1.length} class="px-8 py-3 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-[0.2em] hover:border-yellow-500 transition-all">Ver más ({idx1 + 1}/4)</button>
         </div>
-        <div class="max-w-lg text-right"><h1 class="text-5xl font-extrabold text-white uppercase tracking-[0.2em]">Monturas <span class="block text-yellow-500 italic">Gold</span></h1></div>
+        <div class="max-w-lg text-right"><h1 class="text-5xl font-extrabold text-white uppercase tracking-[0.2em]">Monturas <span class="block text-yellow-500 italic"></span></h1></div>
     </div>
 </section>
 
@@ -40,7 +40,7 @@
             </div>
             <button on:click={() => idx2 = (idx2 + 1) % img2.length} class="px-8 py-3 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-[0.2em] hover:border-blue-500 transition-all">Ver más ({idx2 + 1}/4)</button>
         </div>
-        <div class="max-w-lg text-left"><h1 class="text-5xl font-extrabold text-white uppercase tracking-[0.2em]">Pets <span class="block text-blue-500 italic">Legend</span></h1></div>
+        <div class="max-w-lg text-left"><h1 class="text-5xl font-extrabold text-white uppercase tracking-[0.2em]">ATUENDOS <span class="block text-blue-500 italic"></span></h1></div>
     </div>
 </section>
 
