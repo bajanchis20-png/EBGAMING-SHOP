@@ -15,7 +15,7 @@
 		<a href="/">
 			<img class="rounded-full w-24" src="/logofondox.png" alt=""/>
 		</a>
-<a href="/items">items y +</a>
+<a href="/items">Items</a>
 		<a href="/seguridad-garantia">seguridad</a>
 		<a href="/metodos-de-pago">metodos de pago</a>
 		<a href="/albion-online">Albion Online</a>
