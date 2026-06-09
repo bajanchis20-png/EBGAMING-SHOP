@@ -151,35 +151,37 @@
     <div></div>
 </section>
 
-<section class="py-20 px-6 bg-[#0a0a0c] border-t-2 border-yellow-600/30">
+<section class="py-24 px-6 bg-[#050505] border-t border-yellow-500/20">
     <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-black text-center mb-16 text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 to-yellow-700 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] uppercase tracking-widest">
-            Preguntas Frecuentes
+        <h2 class="text-3xl md:text-4xl font-black text-center mb-16 uppercase tracking-tighter text-white drop-shadow-[0_0_10px_rgba(234,179,8,0.3)]">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-600">
+                Preguntas 
+            </span>
+            <span class="text-white">Frecuentes</span>
         </h2>
 
-        <div class="space-y-6">
+        <div class="space-y-8">
             {#each [
                 {
                     q: "¿Los items vienen dopados?",
-                    a: "Sí, todos nuestras ofertas incluyen items dopados perfectos, y con piedras si lo ameritan, listos para tu batalla."
+                    a: "Absolutamente. Cada pieza es optimizada al máximo nivel, incluyendo piedras de alta calidad y bonus perfectos para asegurar tu dominio en el campo de batalla."
                 },
                 {
-                    q: "¿Cómo puedo hacer won?",
-                    a: "Al comprar alguno de nuestros set PvM, te obsequiamos una guía según tu nivel para que hagas mucho won."
+                    q: "¿Cómo puedo generar won?",
+                    a: "Al adquirir uno de nuestros sets PvM, recibirás acceso exclusivo a nuestra guía estratégica personalizada según tu nivel, diseñada para maximizar tu capacidad de farmeo."
                 },
                 {
                     q: "¿Qué métodos de pago aceptan?",
-                    a: "Puedes ir a la sección de métodos de pago; contamos con métodos de transferencia en todo el mundo."
+                    a: "Disponemos de una infraestructura de pago global segura. Consulta nuestra sección dedicada para ver el catálogo completo de transferencias y monederos digitales disponibles en tu región."
                 }
             ] as item}
-                <div class="group relative bg-[#121215] border border-yellow-700/30 rounded-lg p-6 hover:border-yellow-500 transition-all duration-300">
-                    <div class="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-yellow-600"></div>
-                    <div class="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-yellow-600"></div>
+                <div class="group relative bg-gradient-to-br from-[#0f0f12] to-[#1a1a1f] border border-yellow-600/20 rounded-xl p-8 hover:border-yellow-500/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                    <div class="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-yellow-500/50"></div>
                     
-                    <h3 class="text-lg font-bold text-red-500 uppercase tracking-wider mb-3 flex items-center gap-2">
-                        <span class="text-yellow-600">»</span> {item.q}
+                    <h3 class="text-xl font-bold text-white uppercase tracking-widest mb-4 flex items-center gap-3">
+                        <span class="text-red-500 text-2xl font-black">/</span> {item.q}
                     </h3>
-                    <p class="text-neutral-300 leading-relaxed font-medium pl-6 border-l-2 border-yellow-900/50">
+                    <p class="text-neutral-400 leading-relaxed font-light pl-6 border-l-2 border-red-600/30">
                         {item.a}
                     </p>
                 </div>
