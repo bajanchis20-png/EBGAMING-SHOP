@@ -81,10 +81,10 @@
             descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"
         ></Nuevatarjeta>             
          <Nuevatarjeta
-            titulo="SET EUFORIA"
-            img="/euforia2.jpeg"
+            titulo="PERSONAJE EQUIPADO LV 235"
+            img="/235set.jpeg"
             precio="25.00"
-            descripcion="4 Set's perfectos pvp, con armas & armaduras, piedras +6. No esperes mas, y se el mejor"
+            descripcion="4 Set's perfectos pvp, con armas & armaduras +9 o +10, cinto de guerra, libro potenciacion, guantes del caos"
         ></Nuevatarjeta>
             <Nuevatarjeta
             titulo="MONTURAS GOLD"

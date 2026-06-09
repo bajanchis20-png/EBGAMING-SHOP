@@ -61,17 +61,17 @@
 
     </main>
 </div>
-<section class="py-20 bg-[#0a0a0a]">
+<section class="py-20 bg-[#050505]">
     <div class="max-w-6xl mx-auto px-6">
-        <div class="flex items-center gap-4 mb-12">
-            <div class="h-px flex-1 bg-gradient-to-r from-transparent to-red-600"></div>
-            <h3 class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-300 to-amber-600 font-bold text-xl tracking-[0.2em] uppercase drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">
-                Selecciona tu País
+        <div class="flex items-center gap-6 mb-16">
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-red-900 to-red-600"></div>
+            <h3 class="text-white font-bold text-2xl tracking-[0.3em] uppercase">
+                Selecciona tu <span class="text-yellow-500">País</span>
             </h3>
-            <div class="h-px flex-1 bg-gradient-to-l from-transparent to-red-600"></div>
+            <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent via-red-900 to-red-600"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {#each [
                 { nombre: "COLOMBIA", metodos: ["Nequi", "Daviplata", "Bancolombia"] },
                 { nombre: "PERU", metodos: ["BCP", "Yape"] },
@@ -85,14 +85,17 @@
                 { nombre: "BRASIL", metodos: ["Pix"] },
                 { nombre: "CHILE", metodos: ["Banco Estado"] }
             ] as pais}
-                <div class="group p-5 bg-[#120a0a] border border-red-900/50 hover:border-yellow-500 transition-all duration-300 rounded-sm">
-                    <h4 class="text-white font-bold tracking-widest mb-3 group-hover:text-yellow-400 transition-colors">
+                <div class="group relative p-6 bg-[#0d0d0d] border border-white/5 hover:border-yellow-500/50 rounded-xl transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_0_30px_-10px_rgba(234,179,8,0.2)]">
+                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
+                    
+                    <h4 class="relative text-gray-200 font-semibold tracking-wider mb-4 group-hover:text-yellow-400 transition-colors">
                         {pais.nombre}
                     </h4>
-                    <div class="flex flex-col gap-2">
+                    
+                    <div class="relative flex flex-col gap-2.5">
                         {#each pais.metodos as metodo}
-                            <div class="flex items-center gap-2 text-xs text-gray-400 group-hover:text-gray-200">
-                                <span class="w-1.5 h-1.5 bg-red-600 rounded-full group-hover:bg-yellow-400"></span>
+                            <div class="flex items-center gap-3 text-[13px] text-gray-500 group-hover:text-gray-300 transition-colors">
+                                <span class="w-1.5 h-1.5 rounded-full bg-red-600/50 group-hover:bg-yellow-400 transition-colors"></span>
                                 {metodo}
                             </div>
                         {/each}
