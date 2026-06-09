@@ -1,54 +1,53 @@
-<section class="relative bg-neutral-950 py-24 overflow-hidden">
-    <img 
-        src="newseguridad2.png" 
-        alt="Fondo Seguridad" 
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl opacity-10 pointer-events-none"
-    >
+<section class="relative bg-neutral-950 py-24 overflow-hidden border-b border-white/5">
+    <img src="newseguridad2.png" alt="Fondo Seguridad" class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl opacity-5 pointer-events-none">
     
-    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        
         <h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter uppercase leading-none">
-            Seguridad y 
-            <span class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] tracking-wider">
+            Seguridad y <br>
+            <span class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                 Garantía
             </span>
         </h2>
-        
-        <div class="w-32 h-[2px] bg-white/10 mx-auto"></div>
-
-        <p class="text-neutral-400 font-medium tracking-widest uppercase text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            Forjando confianza en cada transacción. Tu equipo legendario protegido por los métodos de entrega más seguros del reino.
+        <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent mx-auto mt-12"></div>
+        <p class="text-neutral-400 font-medium tracking-wide text-sm md:text-base max-w-lg mx-auto mt-8 leading-relaxed">
+            Forjando confianza en cada operación. Tu equipo legendario está protegido bajo los estándares más estrictos del reino.
         </p>
     </div>
 </section>
 
-<section class="max-w-5xl mx-auto px-6 -mt-10 mb-20">
-    <div class="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-3xl p-8 md:p-12 shadow-2xl">
-        <div class="text-center space-y-6">
-            <h3 class="text-white font-bold tracking-[0.2em] uppercase text-2xl">Proceso Garantizado</h3>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
-                {#each [{n: '9+', t: 'Años'}, {n: '14+', t: 'Grupos'}, {n: '5k+', t: 'Guerreros satisfechos'}] as stat}
-                    <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
-                        <div class="text-yellow-500 font-black text-2xl">{stat.n}</div>
-                        <div class="text-neutral-500 text-xs font-bold uppercase">{stat.t}</div>
-                    </div>
-                {/each}
-            </div>
+<section class="max-w-5xl mx-auto px-6 -mt-16 mb-20 relative z-20">
+    <div class="bg-neutral-900/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-12 shadow-[0_0_50px_-12px_rgba(0,0,0,0.5)]">
+        <h3 class="text-white font-bold tracking-[0.25em] uppercase text-xl mb-12 text-center after:block after:w-12 after:h-[2px] after:bg-yellow-500 after:mx-auto after:mt-4">
+            Récord de Confianza
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {#each [{n: '9+', t: 'Años de Trayectoria'}, {n: '14+', t: 'Grupos Establecidos'}, {n: '5k+', t: 'Guerreros Respaldados'}] as stat}
+                <div class="bg-black/40 border border-white/5 rounded-2xl p-6 text-center hover:border-yellow-500/30 transition-colors">
+                    <div class="text-yellow-500 font-black text-3xl mb-1">{stat.n}</div>
+                    <div class="text-neutral-500 text-[10px] font-bold uppercase tracking-widest">{stat.t}</div>
+                </div>
+            {/each}
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-                <img src="/comocomprar.jpg" alt="Proceso 1" class="w-full rounded-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform">
-                <img src="/comocomprar2.jpg" alt="Proceso 2" class="w-full rounded-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+            <div class="group cursor-pointer overflow-hidden rounded-2xl border border-white/10">
+                <img src="/comocomprar.jpg" alt="Proceso 1" class="w-full transform group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-2xl border border-white/10">
+                <img src="/comocomprar2.jpg" alt="Proceso 2" class="w-full transform group-hover:scale-105 transition-transform duration-700">
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-12">
+<section class="py-12 border-t border-white/5">
     <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="text-neutral-500 font-bold uppercase tracking-[0.3em] text-xs mb-8">Comunidad Verificada</p>
-        <div class="flex flex-wrap justify-center items-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            <img src="/referencias10.png" alt="Referencias" class="h-16 w-auto object-contain">
-            <img src="/rename2.png" alt="Grupo de Facebook" class="h-16 w-auto object-contain">
+        <p class="text-neutral-600 font-bold uppercase tracking-[0.3em] text-[10px] mb-10">Comunidad y Referencias Verificadas</p>
+        <div class="flex flex-wrap justify-center items-center gap-16 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+            <img src="/referencias10.png" alt="Referencias" class="h-12 w-auto object-contain">
+            <img src="/rename2.png" alt="Grupo de Facebook" class="h-12 w-auto object-contain">
         </div>
     </div>
 </section>

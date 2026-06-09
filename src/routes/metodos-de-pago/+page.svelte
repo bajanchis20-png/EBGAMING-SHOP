@@ -19,11 +19,7 @@
         
         <!-- Hero Section -->
         <section class="text-center space-y-8 mb-24">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-red-900 bg-red-950/50 text-red-500 text-sm font-bold tracking-[0.2em] uppercase backdrop-blur-sm rounded-full">
-                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                Transacciones Seguras
-            </div>
-            
+           
             <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tighter uppercase space-y-2">
                 <div>Poder <span class="text-red-600">Total</span></div>
                 <div class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-600 drop-shadow-lg">

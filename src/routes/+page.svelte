@@ -150,3 +150,40 @@
     </div>
     <div></div>
 </section>
+
+<section class="py-20 px-6 bg-[#0a0a0c] border-t-2 border-yellow-600/30">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-black text-center mb-16 text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 to-yellow-700 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] uppercase tracking-widest">
+            Preguntas Frecuentes
+        </h2>
+
+        <div class="space-y-6">
+            {#each [
+                {
+                    q: "¿Los items vienen dopados?",
+                    a: "Sí, todos nuestras ofertas incluyen items dopados perfectos, y con piedras si lo ameritan, listos para tu batalla."
+                },
+                {
+                    q: "¿Cómo puedo hacer won?",
+                    a: "Al comprar alguno de nuestros set PvM, te obsequiamos una guía según tu nivel para que hagas mucho won."
+                },
+                {
+                    q: "¿Qué métodos de pago aceptan?",
+                    a: "Puedes ir a la sección de métodos de pago; contamos con métodos de transferencia en todo el mundo."
+                }
+            ] as item}
+                <div class="group relative bg-[#121215] border border-yellow-700/30 rounded-lg p-6 hover:border-yellow-500 transition-all duration-300">
+                    <div class="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-yellow-600"></div>
+                    <div class="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-yellow-600"></div>
+                    
+                    <h3 class="text-lg font-bold text-red-500 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <span class="text-yellow-600">»</span> {item.q}
+                    </h3>
+                    <p class="text-neutral-300 leading-relaxed font-medium pl-6 border-l-2 border-yellow-900/50">
+                        {item.a}
+                    </p>
+                </div>
+            {/each}
+        </div>
+    </div>
+</section>

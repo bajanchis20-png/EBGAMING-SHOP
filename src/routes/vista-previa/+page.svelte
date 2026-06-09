@@ -1,68 +1,59 @@
-<section class="relative min-h-[50vh] flex flex-col items-center justify-center py-20 overflow-hidden">
-    <!-- Fondo inmersivo -->
-    <img src="/metin2.png" alt="Fondo Metin2" class="absolute inset-0 w-full h-full object-cover opacity-15" />
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-black/80 to-black"></div>
+<section class="relative min-h-[60vh] flex flex-col items-center justify-center py-24 overflow-hidden bg-[#050505]">
+    <img src="/metin2.png" alt="Fondo Metin2" class="absolute inset-0 w-full h-full object-cover opacity-20 mask-image-bottom" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
 
-    <div class="relative z-10 max-w-4xl px-6 text-center group">
-        <!-- Efecto de "Data Loading" -->
-        <div class="mb-4 inline-block px-3 py-1 bg-[#00a8ff]/10 border border-[#00a8ff]/50 rounded-full">
-            <span class="text-[#00a8ff] text-xs font-mono tracking-widest animate-pulse">● Transacciones seguras</span>
-        </div>
-
-        <!-- Título con estilo de neón azul y oro -->
-        <h1 class="text-6xl md:text-7xl font-black text-white uppercase tracking-[0.1em] drop-shadow-[0_0_15px_rgba(0,168,255,0.6)]">
-            METIN2<span class="text-[#00a8ff]">.ES</span>
-        </h1>
+    <div class="relative z-10 max-w-3xl px-6 text-center space-y-8">
+  <h1 class="text-7xl md:text-8xl font-black text-white tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+    <span class="bg-clip-text text-transparent bg-gradient-to-b from-[#fdfdfd] via-[#a3a3a3] to-[#525252] border-b-2 border-neutral-700 pb-2">
+        METIN2
+    </span>
+    <span class="text-[#e11d1d] drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">.ES</span>
+</h1>
         
-        <div class="mt-6 border-b-2 border-yellow-500/50 w-24 mx-auto mb-8"></div>
-
-        <h2 class="text-3xl font-bold italic text-transparent bg-clip-text bg-gradient-to-tr from-yellow-500 to-yellow-200 mb-6 drop-shadow-lg">
-            ¡WON DISPONIBLE PARA TU ASCENSO!
-        </h2>
-
-        <!-- Descripción interactiva -->
-        <p class="text-gray-300 text-lg font-medium max-w-2xl mx-auto leading-relaxed bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/5">
-            Deja de farmear por horas. Obtén tus <span class="text-yellow-400 font-bold">Wons</span> al instante y domina el ranking. 
-            <span class="block mt-2 text-[#00a8ff] font-bold">Tu equipo legendario te espera.</span>
-        </p>
-
-        <!-- Botón de acción tipo "Juego" -->
-        <div class="mt-10">
-            <button class="relative px-8 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:from-red-600 hover:to-red-800 text-white font-black uppercase tracking-widest transition-all duration-300 border-b-4 border-red-950 hover:scale-105 active:scale-95 shadow-xl">
-                Equípate como un Dios
-            </button>
+        <div class="inline-block px-6 py-2 bg-gradient-to-r from-yellow-600/20 to-transparent border-l-4 border-yellow-500">
+            <h2 class="text-2xl font-bold italic text-yellow-500 uppercase tracking-widest drop-shadow-md">
+                ¡WON DISPONIBLE PARA TU ASCENSO!
+            </h2>
         </div>
+
+        <p class="text-gray-400 text-lg font-medium leading-relaxed max-w-xl mx-auto">
+            Optimiza tu progreso. Obtén <span class="text-white font-bold italic">Wons</span> con entrega inmediata y asegura tu equipo legendario</p>
+
+        <button class="group relative px-10 py-4 bg-red-700 hover:bg-red-600 transition-all duration-300 shadow-[0_0_20px_-5px_rgba(220,38,38,0.5)] overflow-hidden">
+            <span class="relative z-10 text-white font-black uppercase tracking-[0.2em]">Equípate como un Dios</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+        </button>
     </div>
 </section>
-<section class="py-20 bg-black/50">
+
+<section class="py-20 bg-[#0a0a0a] border-y border-white/5">
     <div class="max-w-5xl mx-auto px-6">
-        <!-- Título de la sección -->
-        <div class="flex items-center gap-4 mb-10">
-            <div class="h-px flex-1 bg-gradient-to-r from-transparent to-[#00a8ff]"></div>
-            <h3 class="text-[#00a8ff] font-mono text-xl tracking-[0.2em] uppercase">Selecciona tu Servidor</h3>
-            <div class="h-px flex-1 bg-gradient-to-l from-transparent to-[#00a8ff]"></div>
+        <div class="flex items-center gap-6 mb-12">
+            <h3 class="text-white/80 font-bold text-sm tracking-[0.3em] uppercase">Seleccióna tu sever</h3>
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-yellow-600/50 to-transparent"></div>
         </div>
 
-        <!-- Grid de Servidores -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
             {#each ["IBERIA", "TEUTONIA", "TIGERHOST", "AZRAEL", "RUBY", "EUROPA"] as servidor}
-                <button 
-                    class="group relative p-4 bg-[#1a1a1a] border border-[#333] hover:border-[#00a8ff] transition-all duration-300 hover:bg-[#00a8ff]/10 text-center"
-                >
-                    <span class="block text-white font-bold tracking-widest group-hover:text-[#00a8ff] transition-colors">
+                <button class="relative p-4 bg-[#121212] border border-[#222] hover:border-yellow-600 transition-all duration-300 text-center hover:-translate-y-1">
+                    <span class="block text-white font-bold tracking-wider text-sm group-hover:text-yellow-500 transition-colors">
                         {servidor}
                     </span>
-                    <!-- Efecto de borde activo -->
-                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#00a8ff] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    <div class="flex justify-center mt-2 gap-1">
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]"></div>
+                    </div>
                 </button>
             {/each}
         </div>
 
-        <!-- Nota de disponibilidad -->
-        <div class="mt-8 text-center">
-            <p class="text-xs text-gray-500 font-mono italic">
-                * Stock verificado en tiempo real para todos los nodos activos.
-            </p>
+        <div class="mt-12 flex justify-center items-center gap-4 text-neutral-600">
+            <span class="text-xs uppercase tracking-[0.2em]">Estado de Stock:</span>
+            <div class="flex gap-1.5">
+                <div class="h-1 w-8 bg-green-600"></div>
+                <div class="h-1 w-8 bg-green-600"></div>
+                <div class="h-1 w-8 bg-green-600"></div>
+            </div>
+            <span class="text-xs font-mono">OPTIMAL</span>
         </div>
     </div>
 </section>
