@@ -27,8 +27,7 @@
 			class="flex items-center text-lg font-semibold text-red-100 border-2 border-red-100 px-6 py-1.5 gap-1.5
            transition-all duration-300 ease-in-out uppercase
            hover:bg-red-100 hover:text-black hover:border-red-100"
-		>
-			Login
+		><a href="/login">Login</a>
 		</button>
 		<button
 			class="flex items-center gap-2 px-6 py-2 text-lg font-semibold uppercase text-white bg-green-600 border border-green-600 transition-all duration-300 hover:bg-green-700 hover:border-green-500 hover:shadow-lg hover:shadow-green-900/20"
@@ -50,3 +49,8 @@
 		</p>
 	</div>
 </footer>
+<section class="py-12 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-neutral-600 font-bold uppercase tracking-[0.3em] text-[10px] mb-10">Comunidad y Referencias Verificadas</p>
+    </div>
+</section>

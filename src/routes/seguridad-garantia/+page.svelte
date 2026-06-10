@@ -42,12 +42,3 @@
     </div>
 </section>
 
-<section class="py-12 border-t border-white/5">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="text-neutral-600 font-bold uppercase tracking-[0.3em] text-[10px] mb-10">Comunidad y Referencias Verificadas</p>
-        <div class="flex flex-wrap justify-center items-center gap-16 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-            <img src="/referencias10.png" alt="Referencias" class="h-12 w-auto object-contain">
-            <img src="/rename2.png" alt="Grupo de Facebook" class="h-12 w-auto object-contain">
-        </div>
-    </div>
-</section>

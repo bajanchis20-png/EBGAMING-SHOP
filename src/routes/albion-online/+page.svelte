@@ -20,7 +20,7 @@
                 </span>
             </h1>
             
-            <p class="text-neutral-400 text-base leading-relaxed max-w-md border-l border-neutral-800 pl-6">
+            <p class="text-neutral-400 text-base font-bold leading-relaxed max-w-md border-l border-neutral-800 pl-6 uppercase">
                 Abastecimiento directo, mercado de alta gama y protección total contra baneos. Tu acceso premium al reino empieza aquí.
             </p>
         </div>
@@ -52,8 +52,8 @@
                 <span class="w-2 h-10 bg-red-600 rounded-full"></span>
                 Protocolo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500">Seguridad</span>
             </h3>
-            <p class="text-neutral-300 leading-relaxed text-base border-l-2 border-red-600/80 pl-6">
-                Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <strong>capa de transferencia aislada</strong> para camuflar el origen de los recursos. Para garatizar tu seguridad, implementamos un sistema de transferencia unica, te proporcionamos acceso total a una cuenta con la que podras hacer una unica transferencia a traves del gremio. Este procedimiento asegura total procedimiento, y recuerda qué tu seguridad es la nuestra.
+            <p class="text-neutral-300 leading-relaxed font-bold border-l-2 border-red-600/80 pl-6 uppercase">
+                Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-red-600">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garatizar tu seguridad, implementamos un sistema de transferencia unica, te proporcionamos acceso total a una <span class="text-red-600">cuenta con la que podras hacer una unica transferencia</span> a traves del gremio. Este procedimiento asegura total procedimiento, y recuerda qué tu seguridad es la nuestra.
             </p>
             
             <div class="grid grid-cols-2 gap-4">
