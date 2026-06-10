@@ -10,11 +10,11 @@
     let idx2 = 0;
     
     // Sección 3: Armas
-    let img3 = ["/arma1.png", "/arma2.png", "/arma3.png", "/arma4.png"];
+    let img3 = ["/", "/", "/", "/"];
     let idx3 = 0;
     
     // Sección 4: Armaduras
-    let img4 = ["/armor1.png", "/armor2.png", "/armor3.png", "/armor4.png"];
+    let img4 = ["/", "/", "/", "/"];
     let idx4 = 0;
 </script>
 
@@ -69,3 +69,4 @@
         <div class="max-w-lg text-left"><h1 class="text-5xl font-extrabold text-white uppercase tracking-[0.2em]">Armaduras <span class="block text-purple-500 italic">Epic</span></h1></div>
     </div>
 </section>
+

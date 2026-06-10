@@ -16,7 +16,7 @@
             </h2>
         </div>
 
-        <p class="text-gray-400 text-lg font-medium leading-relaxed max-w-xl mx-auto">
+        <p class="text-neutral-300 text-lg font-bold uppercase max-w-xl mx-auto">
             Optimiza tu progreso. Obtén <span class="text-white font-bold italic">Wons</span> con entrega inmediata y asegura tu equipo legendario</p>
 
         <button class="group relative px-10 py-4 bg-red-700 hover:bg-red-600 transition-all duration-300 shadow-[0_0_20px_-5px_rgba(220,38,38,0.5)] overflow-hidden">

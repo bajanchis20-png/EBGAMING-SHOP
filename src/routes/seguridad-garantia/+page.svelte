@@ -10,7 +10,7 @@
             </span>
         </h2>
         <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent mx-auto mt-12"></div>
-        <p class="text-neutral-400 font-medium tracking-wide text-sm md:text-base max-w-lg mx-auto mt-8 leading-relaxed">
+        <p class="text-neutral-400 font-bold tracking-wide text-sm md:text-base max-w-lg mx-auto mt-8 uppercase text-sm">
             Forjando confianza en cada operación. Tu equipo legendario está protegido bajo los estándares más estrictos del reino.
         </p>
     </div>

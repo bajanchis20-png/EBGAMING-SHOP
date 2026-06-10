@@ -2,31 +2,43 @@
     import Nuevatarjeta from "$lib/components/Nuevatarjeta.svelte";
 </script>
 
-<section
-    class="flex items-center justify-center py-56 relative overflow-hidden text-center"
->
-    <img
-        src="/newfondo8.png"
-        alt=""
-        class="absolute -z-10 -top-0/40 left-0 w-full opacity-25"
-    />
-
- <div class="max-w-4xl mx-auto px-6 py-12">
-    <!-- Título con jerarquía mejorada -->
-    <div class="border-y border-white/10 py-8 mb-6">
-        <h1 class="text-5xl font-extrabold text-white text-center tracking-[0.2em] uppercase leading-tight">
-            Equípate como un 
-            <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-t from-orange-600 via-amber-400 to-yellow-200 drop-shadow-[0_0_8px_rgba(251,191,36,0.8)] uppercase tracking-wider">
+<section class="w-full bg-black py-20 px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+        
+        <div class="flex-1 space-y-8">
+            <div class="space-y-2">
+              
+                <h1 class="text-6xl font-extrabold text-white tracking-tight uppercase leading-[1.1]">
+                    Equípate como un 
+ <span class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
     Dios
 </span>
-        </h1>
-    </div>
+                </h1>
+            </div>
+            <p class="text-neutral-300 font-bold tracking-[0.3em] uppercase text-sm">
+                Domina cada rincón del reino con los mejores items de Metin2. Garantizamos seguridad total, transacciones rápidas
+            </p>
+           
+        </div>
 
-    <!-- Subtítulo con mejor espaciado y legibilidad -->
-    <p class="text-white font-bold tracking-[0.25em] uppercase text-center shadow-lg leading-relaxed">
-        Domina el reino, los mejores items de Metin2, seguridad total y entrega instantánea.
-    </p>
-</div>
+        <div class="flex-1 w-full flex justify-center">
+            <div class="relative p-1 rounded-2xl bg-gradient-to-br from-amber-500/50 via-red-900/30 to-black shadow-2xl">
+                <div class="relative rounded-xl overflow-hidden bg-black aspect-video w-full max-w-lg shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] border border-white/10">
+                    <video
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        class="w-full h-full object-cover opacity-90"
+                    >
+                        <source src="/fondovideo4.mp4" type="video/mp4" />
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="text-white p-8">

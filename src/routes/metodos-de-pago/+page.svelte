@@ -22,7 +22,7 @@
            
             <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tighter uppercase space-y-2">
                 <div>Poder <span class="text-red-600">Total</span></div>
-                <div class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-600 drop-shadow-lg">
+                <div class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                     en tus pagos
                 </div>
             </h1>
