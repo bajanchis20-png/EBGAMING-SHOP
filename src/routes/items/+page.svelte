@@ -1,67 +1,58 @@
 <script>
-  // 1. Definimos los arrays separados para cada categoría
+  // Datos del catálogo
   const monturas = [
-    { bg: "bg-[url('/montura3.png')]" },
-    { bg: "bg-[url('/montura2.png')]" },
-    { bg: "bg-[url('/montura1.png')]" },
-    { bg: "bg-[url('/montura4.png')]" }
+    { bg: "bg-[url('/cangrejo.webp')]" },
+    { bg: "bg-[url('/dragon2.webp')]" },
+    { bg: "bg-[url('/araña.webp')]" },
+    { bg: "bg-[url('/tiburon.png')]" }
   ];
-
-  const atuendos = [
-    { bg: "bg-[url('akatsuki.png')]" },
-    { bg: "bg-[url('/naruto.png')]" },
-    { bg: "bg-[url('/ultima.png')]" },
-    { bg: "bg-[url('/laparca2.png')]" }
-  ];
-
-  const guantes = [
-    { bg: "bg-[url('/')]" },
-    { bg: "bg-[url('/')]" },
-    { bg: "bg-[url('/')]" },
-    { bg: "bg-[url('/')]" }
-  ];
-
   const armas = [
-    { bg: "bg-[url('/arma1.png')]" }, // Cambia estos nombres a tus archivos reales
-    { bg: "bg-[url('/arma2.png')]" },
-    { bg: "bg-[url('/arma3.png')]" },
-    { bg: "bg-[url('/arma4.png')]" }
+    { bg: "bg-[url('akatsuki3.png')]" },
+    { bg: "bg-[url('/newnaru.png')]" },
+    { bg: "bg-[url('/atuendin.png')]" },
+    { bg: "bg-[url('/paarca2.png')]" }
+  ];
+  const armaduras = [
+    { bg: "bg-[url('/armadura1.png')]" },
+    { bg: "bg-[url('/armadura2.png')]" },
+    { bg: "bg-[url('/armadura3.png')]" },
+    { bg: "bg-[url('/armadura4.png')]" }
   ];
 
-  // 2. Asignamos cada array a su sección correspondiente
   const secciones = [
     { titulo: "Monturas", data: monturas },
-    { titulo: "Atuendos", data: atuendos },
-    { titulo: "Guantes", data: guantes },
-    { titulo: "Armas", data: armas }
+    { titulo: "Atuendos", data: armas },
+    { titulo: "Armaduras", data: armaduras },
+    { titulo: "Armas", data: armaduras }
   ];
 </script>
 
-<div class="bg-black text-white py-20 px-6 space-y-24">
+<div class="bg-[#030303] text-white py-20 px-6 space-y-24">
   {#each secciones as seccion}
     <section class="max-w-7xl mx-auto">
-      <div class="mb-10 border-b border-white/10 pb-6">
-        <h2 class="text-5xl font-black uppercase italic tracking-tight text-white/90">
+      <div class="mb-10 flex items-center gap-6">
+        <h2 class="text-6xl font-black uppercase italic tracking-tighter text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
           {seccion.titulo}
         </h2>
+        <div class="h-px flex-grow bg-gradient-to-r from-amber-500/60 to-transparent"></div>
       </div>
 
-      <div class="flex w-full h-[50vh] gap-3 overflow-hidden rounded-2xl">
+      <div class="flex w-full h-[55vh] gap-3">
         {#each seccion.data as cat}
-          <div class="relative flex-1 group cursor-pointer overflow-hidden rounded-xl border border-white/5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:flex-[2.5]">
+          <div class="relative flex-1 group cursor-pointer overflow-hidden rounded-xl border border-white/5 transition-all duration-[600ms] ease-[cubic-bezier(0.2,1,0.2,1)] hover:flex-[3.5] hover:border-amber-500/30">
             
-            <div class="absolute inset-0 {cat.bg} bg-center bg-no-repeat bg-cover 
-                        transition-all duration-700 ease-out 
-                        grayscale-[50%] brightness-[0.7] 
-                        group-hover:grayscale-0 group-hover:brightness-[1.1] 
-                        group-hover:scale-110">
+            <div class="absolute inset-4 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-[1200ms] 
+                        brightness-[0.9] grayscale-[20%] group-hover:grayscale-0 group-hover:brightness-[1.15] 
+                        scale-100 group-hover:scale-105">
             </div>
             
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent transition-opacity duration-700 group-hover:opacity-40"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.7)_100%)]"></div>
             
-            <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-500/40 transition-all duration-500"></div>
+            <div class="absolute inset-0 border-[3px] border-transparent group-hover:border-amber-500/20 rounded-xl transition-colors duration-500"></div>
             
-            <div class="absolute inset-0 shadow-[inset_0_0_50px_rgba(251,191,36,0)] group-hover:shadow-[inset_0_0_50px_rgba(251,191,36,0.15)] transition-shadow duration-700"></div>
+            <div class="absolute -inset-full h-full w-[200%] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 rotate-[30deg] translate-x-[-50%] group-hover:translate-x-[50%] transition-all duration-1000"></div>
+
+            <div class="absolute inset-0 bg-red-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-multiply"></div>
           </div>
         {/each}
       </div>
