@@ -4,19 +4,17 @@
 
 <section class="relative w-full bg-black py-24 px-8 overflow-hidden">
     
-        <div class="absolute inset-y-0 right-0 w-full lg:w-1/2 opacity-100 transition-opacity duration-500">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover blur-[4px]">
+    <div class="absolute inset-y-0 right-0 w-full lg:w-1/2 opacity-100 transition-opacity duration-500">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover object-center">
             <source src="/fondovideo4.mp4" type="video/mp4" />
         </video>
         
-                <div class="absolute inset-0 bg-gradient-to-l from-black/10 via-black/40 to-black pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-l from-black/10 via-black/40 to-black pointer-events-none"></div>
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         
-                <div class="flex-1 space-y-8 lg:pr-10">
-            
-
+        <div class="flex-1 space-y-8 lg:pr-10">
             <h1 class="text-6xl md:text-7xl font-extrabold text-white tracking-tight uppercase leading-[1.1]">
                 Equípate como un 
                 <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
@@ -29,8 +27,8 @@
             </p>
         </div>
 
-                <div class="flex-1 w-full max-w-lg h-[400px] lg:h-auto">
-                    </div>
+        <div class="flex-1 w-full max-w-lg h-[400px] lg:h-auto">
+        </div>
 
     </div>
 </section>
