@@ -23,31 +23,32 @@
 
   // NUEVO ARRAY para evitar repetición
   const skins = [
-    { bg: "bg-[url('/skins1.png')]" },
+    { bg: "bg-[url('/espadita.png')]" },
     { bg: "bg-[url('/skins2.png')]" },
     { bg: "bg-[url('/skins3.png')]" },
     { bg: "bg-[url('/skins4.png')]" }
   ];
 
   const secciones = [
-    { titulo: "Monturas", data: monturas },
-    { titulo: "Atuendos", data: armas },
-    { titulo: "ARMAS Y ARMADURAS +10", data: armaduras },
-    { titulo: "SKINS", data: skins } // Aquí ahora apunta al nuevo array
+    { titulo: "Monturas", data: monturas, fondo: "/itemfondo2.png" },
+    { titulo: "Atuendos", data: armas, fondo: "/itemfondo.png" },
+    { titulo: "ARMAS Y ARMADURAS +10", data: armaduras, fondo: "/itemfondo3.png" },
+    { titulo: "SKINS", data: skins, fondo: "/itemfondo4.jpg" } // Aquí ahora apunta al nuevo array
   ];
 </script>
 
-<div class="bg-[#030303] text-white py-20 px-6 space-y-24">
+<div class="bg-[#030303] text-white py-20 ">
   {#each secciones as seccion}
-    <section class="max-w-7xl mx-auto">
-      <div class="mb-10 flex items-center gap-6">
+    <section class="relative  px-6 py-12" >
+      <img src={seccion.fondo} alt="" class=" absolute top-0 left-0  w-full h-full object-cover opacity-20">
+      <div class="mb-10 flex items-center gap-6 max-w-7xl mx-auto">
         <h2 class="text-6xl font-black uppercase italic tracking-tighter text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
           {seccion.titulo}
         </h2>
         <div class="h-px flex-grow bg-gradient-to-r from-amber-500/60 to-transparent"></div>
       </div>
 
-      <div class="flex w-full h-[55vh] gap-3">
+      <div class="flex w-full h-[55vh] gap-3 max-w-7xl mx-auto">
         {#each seccion.data as cat}
           <div class="relative flex-1 group cursor-pointer overflow-hidden rounded-xl border border-white/5 transition-all duration-[600ms] ease-[cubic-bezier(0.2,1,0.2,1)] hover:flex-[3.5] hover:border-amber-500/30">
             

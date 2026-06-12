@@ -20,6 +20,7 @@
 		<a href="/metodos-de-pago">metodos de pago</a>
 		<a href="/albion-online">Albion Online</a>
 		<a href="/vista-previa">Metin2.es</a>
+		<a href="/comunidad">Comunidad</a>
 	</div>
 
 	<div class="flex gap-5 ">
@@ -32,7 +33,7 @@
 		<button
 			class="flex items-center gap-2 px-6 py-2 text-lg font-semibold uppercase text-white bg-green-600 border border-green-600 transition-all duration-300 hover:bg-green-700 hover:border-green-500 hover:shadow-lg hover:shadow-green-900/20"
 		>
-			WhatsApp
+			<a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda">WhatsApp</a>
 			<Icon icon="ic:baseline-whatsapp" width={24} height={24} />
 		</button>
 	</div>
