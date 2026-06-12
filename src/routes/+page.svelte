@@ -2,37 +2,38 @@
     import Nuevatarjeta from "$lib/components/Nuevatarjeta.svelte";
 </script>
 
-<section class="w-full bg-black py-20 px-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
-        
-        <div class="flex-1 space-y-8">
-            <div class="space-y-2">
-              
-                <h1 class="text-6xl font-extrabold text-white tracking-tight uppercase leading-[1.1]">
-                    Equípate como un 
- <span class="block mt-4 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
-    Dios
-</span>
-                </h1>
-            </div>
-            <p class="text-neutral-300 font-bold tracking-[0.3em] uppercase text-sm">
-                Domina cada rincón del reino con los mejores items de Metin2. Garantizamos seguridad total, transacciones rápidas
-            </p>
-           
-        </div>
-
-       <div class="relative p-[2px] rounded-2xl bg-gradient-to-br from-amber-400 via-red-600 to-black shadow-[0_0_20px_rgba(217,119,6,0.3)]">
-    <div class="relative rounded-[14px] overflow-hidden bg-black aspect-video w-full max-w-lg shadow-[inset_0_0_40px_rgba(0,0,0,0.8)] border border-white/10">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-90">
+<section class="relative w-full bg-black py-24 px-8 overflow-hidden">
+    
+        <div class="absolute inset-y-0 right-0 w-full lg:w-1/2 opacity-100 transition-opacity duration-500">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover blur-[4px]">
             <source src="/fondovideo4.mp4" type="video/mp4" />
         </video>
-        <div class="absolute inset-0 bg-gradient-to-tr from-black/80 via-transparent to-transparent"></div>
+        
+                <div class="absolute inset-0 bg-gradient-to-l from-black/10 via-black/40 to-black pointer-events-none"></div>
     </div>
-</div>
+
+    <div class="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        
+                <div class="flex-1 space-y-8 lg:pr-10">
+            
+
+            <h1 class="text-6xl md:text-7xl font-extrabold text-white tracking-tight uppercase leading-[1.1]">
+                Equípate como un 
+                <span class="block mt-2 font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+                    Dios
+                </span>
+            </h1>
+            
+            <p class="text-neutral-400 font-medium tracking-[0.15em] uppercase text-sm md:text-base leading-relaxed max-w-lg">
+                Domina cada rincón del reino con los mejores items de Metin2. Seguridad total y transacciones rápidas en cada entrega.
+            </p>
+        </div>
+
+                <div class="flex-1 w-full max-w-lg h-[400px] lg:h-auto">
+                    </div>
 
     </div>
 </section>
-
 <section class="text-white p-8">
 
     <div class=" b-8 flex items-center justify-between scroll-mt-0.2">
@@ -45,11 +46,7 @@
             </p>
         </div>
     
-        <button
-            class="flex items-center text-lg font-semibold text-white border-2 border-red-500 px-6 py-1.5 bg-[#e91f1b] gap-1.5 transition-all duration-300 ease-in-out hover:bg-red-600 hover:border-red-600 hover:shadow-lg hover:shadow-red-500/30"
-        >
-            Seccion principal
-        </button>
+  
 
     </div>
 
