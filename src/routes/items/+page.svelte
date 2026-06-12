@@ -23,10 +23,10 @@
 
   // NUEVO ARRAY para evitar repetición
   const skins = [
-    { bg: "bg-[url('/skin1.png')]" },
-    { bg: "bg-[url('/skin2.png')]" },
-    { bg: "bg-[url('/skin3.png')]" },
-    { bg: "bg-[url('/skin4.png')]" }
+    { bg: "bg-[url('/skins1.png')]" },
+    { bg: "bg-[url('/skins2.png')]" },
+    { bg: "bg-[url('/skins3.png')]" },
+    { bg: "bg-[url('/skins4.png')]" }
   ];
 
   const secciones = [

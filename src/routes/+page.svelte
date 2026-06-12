@@ -21,22 +21,14 @@
            
         </div>
 
-        <div class="flex-1 w-full flex justify-center">
-            <div class="relative p-1 rounded-2xl bg-gradient-to-br from-amber-500/50 via-red-900/30 to-black shadow-2xl">
-                <div class="relative rounded-xl overflow-hidden bg-black aspect-video w-full max-w-lg shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] border border-white/10">
-                    <video
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                        class="w-full h-full object-cover opacity-90"
-                    >
-                        <source src="/fondovideo4.mp4" type="video/mp4" />
-                    </video>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                </div>
-            </div>
-        </div>
+       <div class="relative p-[2px] rounded-2xl bg-gradient-to-br from-amber-400 via-red-600 to-black shadow-[0_0_20px_rgba(217,119,6,0.3)]">
+    <div class="relative rounded-[14px] overflow-hidden bg-black aspect-video w-full max-w-lg shadow-[inset_0_0_40px_rgba(0,0,0,0.8)] border border-white/10">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-90">
+            <source src="/fondovideo4.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-tr from-black/80 via-transparent to-transparent"></div>
+    </div>
+</div>
 
     </div>
 </section>
