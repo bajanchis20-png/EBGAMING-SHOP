@@ -6,24 +6,34 @@
     { bg: "bg-[url('/araña.webp')]" },
     { bg: "bg-[url('/tiburon.png')]" }
   ];
+  
   const armas = [
-    { bg: "bg-[url('akatsuki3.png')]" },
+    { bg: "bg-[url('/akatsuki3.png')]" },
     { bg: "bg-[url('/newnaru.png')]" },
     { bg: "bg-[url('/atuendin.png')]" },
     { bg: "bg-[url('/paarca2.png')]" }
   ];
+  
   const armaduras = [
-    { bg: "bg-[url('/armadura1.png')]" },
-    { bg: "bg-[url('/armadura2.png')]" },
-    { bg: "bg-[url('/armadura3.png')]" },
-    { bg: "bg-[url('/armadura4.png')]" }
+    { bg: "bg-[url('/+101.png')]" },
+    { bg: "bg-[url('/+102.png')]" },
+    { bg: "bg-[url('/+103.png')]" },
+    { bg: "bg-[url('/+104.png')]" }
+  ];
+
+  // NUEVO ARRAY para evitar repetición
+  const skins = [
+    { bg: "bg-[url('/skin1.png')]" },
+    { bg: "bg-[url('/skin2.png')]" },
+    { bg: "bg-[url('/skin3.png')]" },
+    { bg: "bg-[url('/skin4.png')]" }
   ];
 
   const secciones = [
     { titulo: "Monturas", data: monturas },
     { titulo: "Atuendos", data: armas },
-    { titulo: "Armaduras", data: armaduras },
-    { titulo: "Armas", data: armaduras }
+    { titulo: "ARMAS Y ARMADURAS +10", data: armaduras },
+    { titulo: "SKINS", data: skins } // Aquí ahora apunta al nuevo array
   ];
 </script>
 
