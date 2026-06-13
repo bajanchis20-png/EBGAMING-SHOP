@@ -42,3 +42,20 @@
     </div>
 </section>
 
+<div class="flex justify-center w-full mt-16 mb-16">
+    <a 
+        href="https://www.facebook.com/share/g/1CuzL1wnvd/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="flex justify-center items-center w-full max-w-xs relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase tracking-[0.2em] py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30"
+    >
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+        
+        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+            Referencias
+        </span>
+    </a>
+</div>

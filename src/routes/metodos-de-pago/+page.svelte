@@ -58,26 +58,30 @@
 
 <section class="py-24 bg-[#05070d] border-t border-blue-900/50 relative">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {#each paises as pais}
-        <div class="group relative p-5 bg-[#000104]  transition-all duration-300 hover:border-yellow-600/30 hover:bg-[#121828]">
-          <div class="absolute inset-0 bg-gradient-to-tr from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+        <div class="group relative p-6 bg-gradient-to-br from-[#0a0f1d] to-[#121828] border border-blue-900/50 rounded-xl transition-all duration-500 hover:border-yellow-600/50 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
           
-          <div class="relative flex items-center gap-3 mb-4">
-            <Icon icon={pais.flag} width={28} height={28} class="shadow-[0_0_10px_rgba(255,255,255,0.05)]" />
-            <h4 class="text-white font-black uppercase tracking-wider text-[13px]">{pais.nombre}</h4>
+          <div class="absolute inset-0 bg-gradient-to-tr from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+          
+          <div class="relative flex items-center gap-3 mb-6">
+            <div class="p-2 bg-black/40 rounded-lg border border-blue-900/30">
+                <Icon icon={pais.flag} width={28} height={28} class="drop-shadow-lg" />
+            </div>
+            <h4 class="text-white font-black uppercase tracking-widest text-sm">{pais.nombre}</h4>
           </div>
           
-          <div class="relative space-y-1.5">
+          <div class="relative space-y-3">
             {#each pais.metodos as metodo}
-              <div class="flex items-center gap-2.5 text-[11px] text-blue-200/50 group-hover:text-blue-200 transition-colors">
-                <Icon icon="ic:round-check-circle" width={12} class="text-yellow-600/60 group-hover:text-yellow-500 transition-colors" />
-                <span class="tracking-wide">{metodo}</span>
+              <div class="flex items-center gap-3 text-xs text-blue-200/60 group-hover:text-blue-100 transition-colors">
+                <Icon icon="ic:round-check-circle" width={14} class="text-yellow-600 group-hover:text-yellow-400 transition-colors" />
+                <span class="tracking-wide font-medium">{metodo}</span>
               </div>
             {/each}
           </div>
 
-          <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-yellow-700 to-yellow-500 transition-all duration-500 group-hover:w-full"></div>
+          <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-amber-600 to-yellow-400 transition-all duration-700 group-hover:w-full rounded-b-xl"></div>
         </div>
       {/each}
     </div>

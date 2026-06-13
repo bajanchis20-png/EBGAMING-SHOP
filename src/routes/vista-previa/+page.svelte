@@ -20,41 +20,53 @@
             Optimiza tu progreso. Obtén <span class="text-white font-bold italic">Wons</span> con entrega inmediata y asegura tu equipo legendario.
         </p>
 
-        <button class="group relative px-10 py-4 bg-yellow-600 hover:bg-yellow-500 transition-all duration-300 shadow-[0_0_20px_-5px_rgba(202,138,4,0.5)] overflow-hidden">
-            <span class="relative z-10 text-[#05070d] font-black uppercase tracking-[0.2em]">Equípate como un Dios</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
-        </button>
-    </div>
+      <button class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase tracking-[0.2em] py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+    
+    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+    
+    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+        Equípate como un Dios
+    </span>
+</button>
 </section>
 
-<section class="py-20 bg-[#0a0f1d] border-y border-blue-900/40">
+<section class="py-20 bg-[#05070d] border-y border-blue-900/40 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-600/20 to-transparent"></div>
+
     <div class="max-w-5xl mx-auto px-6">
         <div class="flex items-center gap-6 mb-12">
             <h3 class="text-blue-200/60 font-bold text-sm tracking-[0.3em] uppercase">Selecciona tu servidor</h3>
             <div class="h-[1px] flex-1 bg-gradient-to-r from-yellow-600/50 to-transparent"></div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {#each ["IBERIA", "TEUTONIA", "TIGERHOST", "AZRAEL", "RUBY", "EUROPA"] as servidor}
-                <button class="relative p-4 bg-[#05070d] border border-blue-900/50 hover:border-yellow-600 transition-all duration-300 text-center hover:-translate-y-1">
-                    <span class="block text-white font-bold tracking-wider text-sm group-hover:text-yellow-500 transition-colors">
+                <button class="group relative p-4 bg-gradient-to-b from-[#0a0f1d] to-[#05070d] border border-blue-900/50 hover:border-yellow-600/50 transition-all duration-300 text-center rounded-lg shadow-lg hover:shadow-yellow-900/10">
+                    <div class="absolute inset-0 bg-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                    
+                    <span class="relative z-10 block text-white font-black tracking-widest text-xs uppercase group-hover:text-yellow-400 transition-colors">
                         {servidor}
                     </span>
-                    <div class="flex justify-center mt-2 gap-1">
-                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_5px_rgba(16,185,129,0.5)]"></div>
+                    
+                    <div class="relative z-10 flex justify-center mt-3 gap-1">
+                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></div>
                     </div>
                 </button>
             {/each}
         </div>
 
-        <div class="mt-12 flex justify-center items-center gap-4 text-blue-900">
-            <span class="text-xs uppercase tracking-[0.2em]">Estado de Stock:</span>
+        <div class="mt-16 flex justify-center items-center gap-4">
+            <span class="text-[10px] text-blue-200/40 uppercase tracking-[0.2em]">Estado de Stock:</span>
             <div class="flex gap-1.5">
-                <div class="h-1 w-8 bg-emerald-600"></div>
-                <div class="h-1 w-8 bg-emerald-600"></div>
-                <div class="h-1 w-8 bg-emerald-600"></div>
+                {#each [1, 2, 3] as _}
+                    <div class="h-1 w-8 bg-emerald-600/30 rounded-full overflow-hidden">
+                        <div class="h-full w-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                    </div>
+                {/each}
             </div>
-            <span class="text-xs font-mono text-emerald-600">OPTIMAL</span>
+            <span class="text-[10px] font-black text-emerald-500 uppercase tracking-widest ml-2">Optimal</span>
         </div>
     </div>
 </section>

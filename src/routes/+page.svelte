@@ -46,14 +46,21 @@
                 Domina cada rincón del reino con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion online.
             </p>
 
-            <div class="flex gap-4 pt-4">
-                <a href="/catalogo" class="px-10 py-4 bg-white text-black font-black uppercase text-xs tracking-widest hover:bg-yellow-500 transition-all duration-300">
-                    Ver Catálogo
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="px-10 py-4 border border-white/10 text-white font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all duration-300">
-                    Soporte 24/7
-                </a>
-            </div>
+           <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full">
+    
+    <a href="/catalogo" class="flex-1 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300">Ver Catálogo</span>
+    </a>
+
+    <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="flex-1 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300">Soporte 24/7</span>
+    </a>
+
+</div>
         </div>
     </div>
 </section>
@@ -79,7 +86,7 @@
             <div class="absolute top-0 left-10 right-10 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <input bind:value={nombre} placeholder="Tu Nombre Guerrero" required 
+                <input bind:value={nombre} placeholder="Tu Nombre" required 
                        class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" />
                 
                 <input bind:value={contacto} placeholder="WhatsApp (con codigo de area)" required 
@@ -103,16 +110,17 @@
     </div>
 </section>
 
-<section class="py-24 bg-[#030303] relative border-b border-white/5">
-    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-900 to-transparent"></div>
+<section class="py-24 bg-[#05070d] relative border-b border-blue-900/40">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-900/50 to-transparent"></div>
 
     <div class="max-w-6xl mx-auto px-8">
         <div class="flex flex-col items-center mb-20 text-center">
-            <h2 class="text-white text-sm font-bold uppercase tracking-[0.4em] text-blue-500 mb-4">GRUPOS MÁS ACTIVOS</h2>
-            <h3 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">Únete a la Comunidad</h3>
+            <h2 class="text-blue-600/80 text-xs font-black uppercase tracking-[0.4em] mb-4">Grupos más activos</h2>
+            <h3 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight drop-shadow-sm">Únete a la Comunidad</h3>
+         
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             {#each 
                 [
                     { title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" },
@@ -121,16 +129,18 @@
                 ] as item
             }
                 <a href={item.link} target="_blank" rel="noreferrer" 
-                   class="group flex flex-col items-center py-12 px-6 transition-all duration-500 hover:bg-white/[0.02]">
+                   class="group relative flex flex-col items-center py-12 px-6 bg-gradient-to-br from-[#0a0f1d] to-[#05070d] border border-blue-900/30 hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-2 rounded-xl shadow-lg hover:shadow-yellow-900/10">
                     
-                    <div class="mb-6 text-white/20 group-hover:text-blue-500 transition-all duration-500 group-hover:-translate-y-2">
-                        <Icon icon="devicon:facebook" class="w-10 h-10" />
+                    <div class="absolute inset-0 bg-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+
+                    <div class="relative z-10 mb-6 text-blue-900 group-hover:text-yellow-600 transition-all duration-500">
+                        <Icon icon="devicon:facebook" class="w-12 h-12" />
                     </div>
 
-                    <h4 class="text-white font-bold text-lg uppercase tracking-wider mb-1">
+                    <h4 class="relative z-10 text-white font-black text-lg uppercase tracking-widest mb-2 group-hover:text-yellow-400 transition-colors">
                         {item.title}
                     </h4>
-                    <p class="text-white/30 text-xs uppercase tracking-[0.2em] group-hover:text-white/60 transition-colors">
+                    <p class="relative z-10 text-blue-200/40 text-[10px] uppercase tracking-[0.2em] group-hover:text-white/60 transition-colors">
                         {item.sub}
                     </p>
                 </a>
