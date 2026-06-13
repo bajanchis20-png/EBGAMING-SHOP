@@ -22,9 +22,11 @@
         <Nuevatarjeta titulo="SET DEL CAOS PERFECTO DOP" img="/setcaos.jpg" descripcion="El poder definitivo 60 media, para 215+.No pierdas la oportunidad de ser el top del servidor en PVM + GUÍA DE PVM"></Nuevatarjeta>
         <Nuevatarjeta titulo="SET DE ENERGIA PERFECTO DOP " img="/setenergia.jpg" precio="35.00" descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado + GUÍA DE PVM"></Nuevatarjeta>
         <Nuevatarjeta titulo="SET'S PERFECTOS PVP" img="/pvpset.jpeg" precio="75.00" descripcion="Set perfecto EUFORIA desde lv85 a 160, set perfecto ELEMENTAL desde lv235+.No piedras la oportunidad y se el"></Nuevatarjeta>
+         <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV85" img="/lv85.jpeg" precio="25.00" descripcion="Eleva tu diversión a otro nivel, 4 set perfectos lv85, 4 armas piedras +6, 4 armaduras y 70.000 WON"></Nuevatarjeta>
         <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV215" img="/personaje.jpg" precio="130.00" descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"></Nuevatarjeta>
+          <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 235" img="/235set.jpeg" precio="25.00" descripcion="4 Set's perfectos pvp, con armas & armaduras +9 o +10, cinto de guerra, libro potenciacion, guantes del caos"></Nuevatarjeta>
         <Nuevatarjeta titulo="WON AL MEJOR PRECIO DEL MERCADO" img="/won.jpg" precio="15.00" descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"></Nuevatarjeta>
-        <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 235" img="/235set.jpeg" precio="25.00" descripcion="4 Set's perfectos pvp, con armas & armaduras +9 o +10, cinto de guerra, libro potenciacion, guantes del caos"></Nuevatarjeta>
+    
         <Nuevatarjeta titulo="MONTURAS GOLD" img="/monturas2.jpeg" precio="40.00" descripcion="Velocidad y bonus exclusivos para tu personaje"></Nuevatarjeta>
         <Nuevatarjeta titulo="GUANTES+9" img="/guante.jpg" precio="110.00" descripcion="El poder que necesitas, para PVP Guante del vacio & caos, para PVM guante celestial"></Nuevatarjeta>
         <Nuevatarjeta titulo="CINTOS+9" img="/cinto.jpg" precio="60.00" descripcion="Cinto de guerra para PVP, cinto de vida para PVM,y todos los que ocupes dentro del juego"></Nuevatarjeta>
@@ -35,6 +37,7 @@
         <Nuevatarjeta titulo="EFECTOS" img="/efectos.png" precio="8.00" descripcion="Lleva el estilo contigo, convierte tu personaje esteticamente a tu gusto, efectos disponibles para armas&armaduras. elige el que desees y lo haremos realidad"></Nuevatarjeta>
         <Nuevatarjeta titulo="MASCOTAS" img="/mascotas.png" precio="75.00" descripcion="Potencia tu poder, tenemos para ti mascotas PVM & PVP"></Nuevatarjeta>
         <Nuevatarjeta titulo="SUBE DE NIVEL CON UN CLICK" img="/livro.jpg" precio="25.00" descripcion="Con el Aprendizaje 215, sube de nivel a Lv215 con un click, con el Libro de potenciacición sube a Lv235 con un click"></Nuevatarjeta>
+
     </div>
 </section>
 
