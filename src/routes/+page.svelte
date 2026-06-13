@@ -1,6 +1,28 @@
 <script>
     import Nuevatarjeta from "$lib/components/Nuevatarjeta.svelte";
     import Icon from "@iconify/svelte";
+    import { db } from "$lib/firebase"; 
+    import { collection, addDoc } from "firebase/firestore"; 
+
+    let nombre = "";
+    let pedido = "";
+    let contacto = "";
+
+    async function enviarPedido() {
+        if (!nombre || !pedido || !contacto) return;
+        try {
+            await addDoc(collection(db, "pedidos"), {
+                nombre: nombre,
+                pedido: pedido,
+                contacto: contacto,
+                fecha: new Date()
+            });
+            alert("¡Pedido recibido con éxito!");
+            nombre = ""; pedido = ""; contacto = "";
+        } catch (e) {
+            console.error("Error al enviar: ", e);
+        }
+    }
 </script>
 
 <section class="relative w-full bg-[#030303] py-32 px-8 overflow-hidden">
@@ -33,6 +55,51 @@
                 </a>
             </div>
         </div>
+    </div>
+</section>
+<section class="py-32 bg-[#030303] border-t border-white/5 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-30">
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-blue-900/40 rounded-full blur-[160px]"></div>
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-yellow-900/30 rounded-full blur-[160px]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-8">
+        <div class="flex flex-col items-center mb-24 text-center">
+            <h2 class="text-white text-xs md:text-sm font-black uppercase tracking-[0.5em] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-amber-200 mb-6 flex items-center gap-3">
+                
+            </h2>
+            <h3 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9] drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                <span class="block">Equípate con</span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-b from-yellow-100 to-amber-500 italic drop-shadow-[0_0_30px_rgba(245,158,11,0.5)]">Poder Absoluto</span>
+            </h3>
+        </div>
+
+        <form on:submit|preventDefault={enviarPedido} class="bg-[#050505] p-10 md:p-12 rounded-3xl border border-white/5 shadow-[0_20px_100px_rgba(0,0,0,0.5)] relative">
+            
+            <div class="absolute top-0 left-10 right-10 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <input bind:value={nombre} placeholder="Tu Nombre Guerrero" required 
+                       class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" />
+                
+                <input bind:value={contacto} placeholder="WhatsApp (con codigo de area)" required 
+                       class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" />
+            </div>
+
+            <textarea bind:value={pedido} placeholder="Describe los items que necesitas (Guabina, .es o Albion.)" required 
+                      class="w-full bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 h-40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner mb-8"></textarea>
+            
+            <button type="submit" class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                
+                <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                
+                <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                
+                <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+                    Realizar pedido
+                </span>
+            </button>
+        </form>
     </div>
 </section>
 

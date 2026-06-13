@@ -20,6 +20,7 @@
             <a href="/metodos-de-pago" class="hover:text-yellow-500 transition-colors">Pagos</a>
             <a href="/albion-online" class="hover:text-yellow-500 transition-colors">Albion</a>
             <a href="/vista-previa" class="hover:text-yellow-500 transition-colors">Metin2.es</a>
+            
         </div>
     </div>
 
