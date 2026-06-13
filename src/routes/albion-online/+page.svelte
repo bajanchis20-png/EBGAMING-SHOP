@@ -56,14 +56,7 @@
                 Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-yellow-500">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-yellow-500">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda qué tu seguridad es la nuestra.
             </p>
             
-            <div class="grid grid-cols-2 gap-4">
-                {#each [{ title: "Entrega Inmediata", icon: "⚡" }, { title: "Safe Trade Zone", icon: "🛡️" }, { title: "Cuentas Verificadas", icon: "✅" }, { title: "Soporte 24/7", icon: "💬" }] as item}
-                    <div class="p-5 bg-[#0a0f1d] border border-blue-900/50 rounded-2xl hover:border-yellow-600/40 transition-all shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]">
-                        <span class="text-2xl block mb-2">{item.icon}</span>
-                        <span class="text-blue-200/70 text-[11px] font-bold uppercase tracking-wider">{item.title}</span>
-                    </div>
-                {/each}
-            </div>
+           
         </div>
     </div>
 </section>

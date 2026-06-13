@@ -32,7 +32,7 @@
       </p>
     </section>
 
-    <section class="bg-[#0a0f1d]/70 backdrop-blur-md border border-blue-900/50 rounded-3xl p-8 md:p-12 shadow-2xl">
+    <section class="bg-[#05070d] backdrop-blur-md border border-white rounded-3xl p-8 md:p-12 shadow-2xl">
       <div class="text-center mb-10">
         <h3 class="text-yellow-600 font-bold tracking-[0.3em] uppercase text-sm mb-2">Cobertura Global</h3>
         <p class="text-white font-extrabold text-3xl md:text-4xl">Métodos de Pago</p>
@@ -60,7 +60,7 @@
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {#each paises as pais}
-        <div class="group relative p-5 bg-[#0a0f1d] border border-blue-900/50 rounded-lg transition-all duration-300 hover:border-yellow-600/30 hover:bg-[#121828]">
+        <div class="group relative p-5 bg-[#000104]  transition-all duration-300 hover:border-yellow-600/30 hover:bg-[#121828]">
           <div class="absolute inset-0 bg-gradient-to-tr from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
           
           <div class="relative flex items-center gap-3 mb-4">

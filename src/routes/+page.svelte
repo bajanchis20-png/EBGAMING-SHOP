@@ -1,5 +1,6 @@
 <script>
     import Nuevatarjeta from "$lib/components/Nuevatarjeta.svelte";
+    import Icon from "@iconify/svelte";
 </script>
 
 <section class="relative w-full bg-[#030303] py-32 px-8 overflow-hidden">
@@ -11,7 +12,6 @@
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-start justify-center min-h-[50vh]">
-        
         <div class="space-y-8 max-w-3xl">
             <h1 class="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9]">
                 Equípate como un 
@@ -31,8 +31,43 @@
                 <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="px-10 py-4 border border-white/10 text-white font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all duration-300">
                     Soporte 24/7
                 </a>
-               
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-[#030303] relative border-b border-white/5">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-900 to-transparent"></div>
+
+    <div class="max-w-6xl mx-auto px-8">
+        <div class="flex flex-col items-center mb-20 text-center">
+            <h2 class="text-white text-sm font-bold uppercase tracking-[0.4em] text-blue-500 mb-4">GRUPOS MÁS ACTIVOS</h2>
+            <h3 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">Únete a la Comunidad</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+            {#each 
+                [
+                    { title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" },
+                    { title: "Albion Online", sub: "22.000 Usuarios", link: "https://www.facebook.com/groups/ALBI0NONLINE" },
+                    { title: "EBGAMING SHOP", sub: "Pagina Oficial", link: "https://www.facebook.com/Metin2Guabinaventaseb" }
+                ] as item
+            }
+                <a href={item.link} target="_blank" rel="noreferrer" 
+                   class="group flex flex-col items-center py-12 px-6 transition-all duration-500 hover:bg-white/[0.02]">
+                    
+                    <div class="mb-6 text-white/20 group-hover:text-blue-500 transition-all duration-500 group-hover:-translate-y-2">
+                        <Icon icon="devicon:facebook" class="w-10 h-10" />
+                    </div>
+
+                    <h4 class="text-white font-bold text-lg uppercase tracking-wider mb-1">
+                        {item.title}
+                    </h4>
+                    <p class="text-white/30 text-xs uppercase tracking-[0.2em] group-hover:text-white/60 transition-colors">
+                        {item.sub}
+                    </p>
+                </a>
+            {/each}
         </div>
     </div>
 </section>
