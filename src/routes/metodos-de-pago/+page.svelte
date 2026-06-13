@@ -1,5 +1,19 @@
 <script>
+
     import Icon from "@iconify/svelte";
+    const paises = [
+    { nombre: "COLOMBIA", flag: "circle-flags:co", metodos: ["Nequi", "Daviplata", "Bancolombia"] },
+    { nombre: "PERU", flag: "circle-flags:pe", metodos: ["BCP", "Yape"] },
+    { nombre: "MEXICO", flag: "circle-flags:mx", metodos: ["OXXO", "BBVA"] },
+    { nombre: "ARGENTINA", flag: "circle-flags:ar", metodos: ["Mercado Pago", "Prex"] },
+    { nombre: "R. DOMINICANA", flag: "circle-flags:do", metodos: ["Banreservas", "Y+"] },
+    { nombre: "URUGUAY", flag: "circle-flags:uy", metodos: ["BBVA", "Prex"] },
+    { nombre: "EEUU", flag: "circle-flags:us", metodos: ["Zelle"] },
+    { nombre: "ECUADOR", flag: "circle-flags:ec", metodos: ["Pichincha"] },
+    { nombre: "ESPAÑA", flag: "circle-flags:es", metodos: ["Bizum", "BBVA"] },
+    { nombre: "BRASIL", flag: "circle-flags:br", metodos: ["Pix"] },
+    { nombre: "CHILE", flag: "circle-flags:cl", metodos: ["Banco Estado"] }
+  ];
 </script>
 
 <div class="relative min-h-screen overflow-hidden bg-neutral-950">
@@ -57,45 +71,32 @@
 
     </main>
 </div>
-<section class="py-20 bg-[#050505]">
+<section class="py-24 bg-[#050505] border-t border-white/5 relative">
     <div class="max-w-6xl mx-auto px-6">
-        <div class="flex items-center gap-6 mb-16">
-            <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-red-900 to-red-600"></div>
-            <h3 class="text-white font-bold text-2xl tracking-[0.3em] uppercase">
-                Selecciona tu <span class="text-yellow-500">País</span>
-            </h3>
-            <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent via-red-900 to-red-600"></div>
-        </div>
+        <div class="flex flex-col items-center mb-20 text-center">
+           
+         
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {#each [
-                { nombre: "COLOMBIA", metodos: ["Nequi", "Daviplata", "Bancolombia"] },
-                { nombre: "PERU", metodos: ["BCP", "Yape"] },
-                { nombre: "MEXICO", metodos: ["OXXO", "Transferencia BBVA"] },
-                { nombre: "ARGENTINA", metodos: ["Mercado Pago", "Prex"] },
-                { nombre: "R. DOMINICANA", metodos: ["Banreservas", "Y+ Bancos"] },
-                { nombre: "URUGUAY", metodos: ["BBVA", "Prex"] },
-                { nombre: "EEUU", metodos: ["Zelle"] },
-                { nombre: "ECUADOR", metodos: ["Pichincha"] },
-                { nombre: "ESPAÑA", metodos: ["Bizum", "BBVA"] },
-                { nombre: "BRASIL", metodos: ["Pix"] },
-                { nombre: "CHILE", metodos: ["Banco Estado"] }
-            ] as pais}
-                <div class="group relative p-6 bg-[#0d0d0d] border border-white/5 hover:border-yellow-500/50 rounded-xl transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_0_30px_-10px_rgba(234,179,8,0.2)]">
-                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {#each paises as pais}
+                <div class="group relative p-5 bg-[#0a0a0a] border border-white/5 rounded-lg transition-all duration-300 hover:border-yellow-600/30 hover:bg-[#0f0f0f]">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
                     
-                    <h4 class="relative text-gray-200 font-semibold tracking-wider mb-4 group-hover:text-yellow-400 transition-colors">
-                        {pais.nombre}
-                    </h4>
+                    <div class="relative flex items-center gap-3 mb-4">
+                        <Icon icon={pais.flag} width={28} height={28} class="shadow-[0_0_10px_rgba(255,255,255,0.1)]" />
+                        <h4 class="text-white font-black uppercase tracking-wider text-[13px]">{pais.nombre}</h4>
+                    </div>
                     
-                    <div class="relative flex flex-col gap-2.5">
+                    <div class="relative space-y-1.5">
                         {#each pais.metodos as metodo}
-                            <div class="flex items-center gap-3 text-[13px] text-gray-500 group-hover:text-gray-300 transition-colors">
-                                <span class="w-1.5 h-1.5 rounded-full bg-red-600/50 group-hover:bg-yellow-400 transition-colors"></span>
-                                {metodo}
+                            <div class="flex items-center gap-2.5 text-[11px] text-neutral-500 group-hover:text-neutral-300 transition-colors">
+                                <Icon icon="ic:round-check-circle" width={12} class="text-red-700 group-hover:text-yellow-500 transition-colors" />
+                                <span class="tracking-wide">{metodo}</span>
                             </div>
                         {/each}
                     </div>
+
+                    <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-red-600 to-yellow-500 transition-all duration-500 group-hover:w-full"></div>
                 </div>
             {/each}
         </div>

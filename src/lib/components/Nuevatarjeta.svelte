@@ -7,10 +7,10 @@
     class="relative flex flex-col md:flex-row gap-6 items-center bg-[#0a0a0a] border border-white/5 p-1 shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-red-600/50 group"
 >
     <div
-        class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-yellow-600/50"
+        class="absolute top-0 left-0 w-8 h-8 "
     ></div>
     <div
-        class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-yellow-600/50"
+        class="absolute bottom-0 right-0 w-8 h-8 "
     ></div>
 
     <div
@@ -47,7 +47,7 @@
                 En stock
             </div>
         </div>
-        <a href={"https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en obtener " + titulo}>
+        <a href={"https://api.whatsapp.com/send/?phone=584149430559&text=Hola, estoy interesado en obtener " + titulo} target="_blank" rel="noreferrer">
             <button
                 class="relative w-full md:w-auto px-10 py-4 bg-gradient-to-r from-red-700 to-red-900 text-white font-black uppercase text-sm tracking-widest flex items-center justify-center gap-3 hover:from-red-600 hover:to-red-800 transition-all shadow-[0_0_20px_rgba(185,28,28,0.4)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]"
             >

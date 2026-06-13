@@ -14,12 +14,13 @@
             <img class="rounded-full w-16 lg:w-20" src="/logofondox.png" alt="Logo"/>
         </a>
         <div class="hidden lg:flex gap-6">
+            <a href="/catalogo" class="hover:text-red-500 transition-colors">Catalogo</a>
             <a href="/items" class="hover:text-red-500 transition-colors">Items</a>
             <a href="/seguridad-garantia" class="hover:text-red-500 transition-colors">Seguridad</a>
             <a href="/metodos-de-pago" class="hover:text-red-500 transition-colors">Pagos</a>
             <a href="/albion-online" class="hover:text-red-500 transition-colors">Albion</a>
-            <a href="/vista-previa" class="hover:text-red-500 transition-colors">Metin2</a>
-            <a href="/comunidad" class="hover:text-red-500 transition-colors">Comunidad</a>
+            <a href="/vista-previa" class="hover:text-red-500 transition-colors">Metin2.es</a>
+           
         </div>
     </div>
 
