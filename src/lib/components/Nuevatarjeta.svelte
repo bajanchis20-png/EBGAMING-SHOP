@@ -4,17 +4,13 @@
 </script>
 
 <div
-    class="relative flex flex-col md:flex-row gap-6 items-center bg-[#0a0a0a] border border-white/5 p-1 shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-red-600/50 group"
+    class="relative flex flex-col md:flex-row gap-6 items-center bg-[#0a0f1d] border border-blue-900/30 p-1 shadow-[0_0_20px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-yellow-600/50 group"
 >
-    <div
-        class="absolute top-0 left-0 w-8 h-8 "
-    ></div>
-    <div
-        class="absolute bottom-0 right-0 w-8 h-8 "
-    ></div>
+    <div class="absolute top-0 left-0 w-8 h-8 border-t border-l border-blue-800"></div>
+    <div class="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-blue-800"></div>
 
     <div
-        class="relative w-full md:w-80 flex-shrink-0 bg-gradient-to-br from-neutral-900 to-black p-1"
+        class="relative w-full md:w-80 flex-shrink-0 bg-[#060a15] p-1"
     >
         <img
             src={img}
@@ -31,7 +27,7 @@
                 {titulo}
             </h2>
             <p
-                class="text-gray-400 text-sm leading-relaxed max-w-md font-medium"
+                class="text-blue-200/60 text-sm leading-relaxed max-w-md font-medium"
             >
                 {descripcion}
             </p>
@@ -39,28 +35,22 @@
 
         <div class="flex items-center gap-4">
             <div
-                class="flex items-center gap-2 px-3 py-1 bg-red-950/20 border border-red-600/30 text-red-500 text-[10px] font-bold uppercase tracking-widest"
+                class="flex items-center gap-2 px-3 py-1 bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-[10px] font-bold uppercase tracking-widest"
             >
                 <span
-                    class="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_red]"
+                    class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse shadow-[0_0_8px_#eab308]"
                 ></span>
                 En stock
             </div>
         </div>
+
         <a href={"https://api.whatsapp.com/send/?phone=584149430559&text=Hola, estoy interesado en obtener " + titulo} target="_blank" rel="noreferrer">
             <button
-                class="relative w-full md:w-auto px-10 py-4 bg-gradient-to-r from-red-700 to-red-900 text-white font-black uppercase text-sm tracking-widest flex items-center justify-center gap-3 hover:from-red-600 hover:to-red-800 transition-all shadow-[0_0_20px_rgba(185,28,28,0.4)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]"
+                class="relative w-full md:w-auto px-10 py-4 bg-white/90 text-[#0a0f1d] font-black uppercase text-sm tracking-widest flex items-center justify-center gap-3 hover:bg-white hover:scale-[1.01] transition-all duration-300 shadow-none hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] border border-white/80"
             >
                 <Icon icon="ic:baseline-whatsapp" width={22} height={22} />
                 Comprar Ahora
-            </button></a
-        >
+            </button>
+        </a>
     </div>
 </div>
-
-<style>
-    /* Opcional: Para darle forma de etiqueta al precio */
-    .clip-path-polygon {
-        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-    }
-</style>
