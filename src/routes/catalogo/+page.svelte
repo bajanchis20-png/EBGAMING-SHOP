@@ -28,7 +28,7 @@
         <Nuevatarjeta titulo="WON AL MEJOR PRECIO DEL MERCADO" img="/won.jpg" precio="15.00" descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"></Nuevatarjeta>
     
         <Nuevatarjeta titulo="MONTURAS GOLD" img="/monturas2.jpeg" precio="40.00" descripcion="Velocidad y bonus exclusivos para tu personaje"></Nuevatarjeta>
-        <Nuevatarjeta titulo="GUANTES+9" img="/guante.jpg" precio="110.00" descripcion="El poder que necesitas, para PVP Guante del vacio & caos, para PVM guante celestial"></Nuevatarjeta>
+        <Nuevatarjeta titulo="GUANTES+9" img="/guante.jpg" precio="110.00" descripcion="El poder que necesitas, te ofrecemos el guante que elijas."></Nuevatarjeta>
         <Nuevatarjeta titulo="CINTOS+9" img="/cinto.jpg" precio="60.00" descripcion="Cinto de guerra para PVP, cinto de vida para PVM,y todos los que ocupes dentro del juego"></Nuevatarjeta>
         <Nuevatarjeta titulo="ARMAS & ARMADURAS+10" img="/masdiez.jpeg" precio="110.00" descripcion="Domina el juego en su totalidad con el poder maximo"></Nuevatarjeta>
         <Nuevatarjeta titulo="ATUENDOS" img="/elatuendo.jpg" precio="75.00" descripcion="Haz que tu personaje sea único. Selecciona tu estilo y solicita tu diseño personalizado hoy mismo"></Nuevatarjeta>
