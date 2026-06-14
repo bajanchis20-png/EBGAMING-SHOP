@@ -7,10 +7,18 @@
   ];
 
   const armas = [
-    { bg: "bg-[url('/akatsuki3.png')]" },
+    { bg: "bg-[url('/pvm3.png')]" },
     { bg: "bg-[url('/eli.png')]" },
-    { bg: "bg-[url('/atuendin.png')]" },
-    { bg: "bg-[url('/paarca2.png')]" },
+    { bg: "bg-[url('/pvm2.png')]" },
+    { bg: "bg-[url('/pvm1.png')]" },
+  ];
+
+  // Nueva data para la nueva sección
+  const eventos = [
+    { bg: "bg-[url('/akatsuki2.png')]" },
+    { bg: "bg-[url('/atuendo22.png')]" },
+    { bg: "bg-[url('/atuendo33.png')]" },
+    { bg: "bg-[url('/atuendo11.png')]" },
   ];
 
   const armaduras = [
@@ -29,7 +37,9 @@
 
   const secciones = [
     { titulo: "Monturas", data: monturas, fondo: "/itemfondo2.png" },
-    { titulo: "Atuendos", data: armas, fondo: "/itemfondo.png" },
+    { titulo: "Atuendos PVM", data: armas, fondo: "/itemfondo.png" },
+    // Nueva sección insertada aquí:
+    { titulo: "Atuendos PVP", data: eventos, fondo: "/itemfondo_evento.png" },
     {
       titulo: "ARMAS Y ARMADURAS +10",
       data: armaduras,

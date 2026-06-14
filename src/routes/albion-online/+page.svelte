@@ -6,7 +6,6 @@
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(30,58,138,0.2)_0%,_transparent_50%)]"></div>
 
     <div class="max-w-7xl mx-auto w-full px-8 grid lg:grid-cols-2 gap-16 items-center z-10">
-        
         <div class="space-y-8">
             <div class="inline-flex items-center gap-3">
                 <span class="h-px w-10 bg-yellow-600"></span>
@@ -38,12 +37,19 @@
     </div>
 </section>
 
-<section class="max-w-8xl m-10 py-24 -px-2">
+<section class="max-w-7xl mx-auto py-24 px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-br from-blue-700 via-yellow-700 to-[#05070d] rounded-3xl opacity-20 blur-2xl group-hover:opacity-40 transition duration-700"></div>
-            <div class="relative bg-[#0a0f1d] p-1 rounded-3xl border border-blue-900/50">
-                <Nuevatarjeta titulo="ALBION ONLINE" img="/albion.jpeg" precio="15.00" descripcion="Silver & Cuentas en Albion Online" />
+        
+        <div class="flex justify-center items-center">
+            <div class="relative group w-fit">
+                <div class="absolute -inset-1 bg-gradient-to-br from-blue-700/20 to-yellow-700/20 rounded-3xl blur-xl group-hover:opacity-100 transition duration-700"></div>
+                <div class="relative bg-[#0a0f1d] p-1 rounded-3xl border border-blue-900/50">
+                    <Nuevatarjeta 
+                        titulo="ALBION ONLINE" 
+                        img="/albion.jpeg" 
+                        descripcion="Silver & Cuentas en Albion Online" 
+                    />
+                </div>
             </div>
         </div>
 
@@ -55,8 +61,6 @@
             <p class="text-blue-200/60 leading-relaxed font-bold border-l-2 border-yellow-600/50 pl-6 uppercase">
                 Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-yellow-500">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-yellow-500">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda qué tu seguridad es la nuestra.
             </p>
-            
-           
         </div>
     </div>
 </section>
