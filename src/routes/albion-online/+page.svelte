@@ -12,12 +12,22 @@
                 <span class="text-[10px] font-black tracking-[0.3em] text-yellow-500 uppercase">EBGAMING SHOP</span>
             </div>
             
-            <h1 class="text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.04em] leading-[0.9]">
-                Albion <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-yellow-600 drop-shadow-[0_4px_8px_rgba(37,99,235,0.3)]">
-                    Online
-                </span>
-            </h1>
+          <h1 class="text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.04em] leading-[0.9]">
+  Albion <br/>
+  <span class="inline-block animate-shimmer bg-[linear-gradient(90deg,theme(colors.blue.400),theme(colors.blue.600),theme(colors.yellow.600),theme(colors.blue.600),theme(colors.blue.400))] bg-[length:200%_100%] bg-clip-text text-transparent drop-shadow-[0_4px_8px_rgba(37,99,235,0.3)]">
+    Online
+  </span>
+</h1>
+
+<style>
+  @keyframes shimmer {
+    0% { background-position: 100% 50%; }
+    100% { background-position: -100% 50%; }
+  }
+  .animate-shimmer { 
+    animation: shimmer 4s linear infinite; 
+  }
+</style>
             
             <p class="text-blue-200/60 text-base font-bold leading-relaxed max-w-md border-l border-blue-900 pl-6 uppercase">
                 Abastecimiento directo, mercado de alta gama y protección total contra baneos. Tu acceso premium al reino empieza aquí.

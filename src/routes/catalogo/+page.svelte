@@ -5,16 +5,34 @@
 </script>
 
 <section class="text-white p-8 bg-[#0a0f1d]">
-  <div class="max-w-7xl mx-auto mb-16 pl-6 py-2">
+<div class="max-w-7xl mx-auto mb-16 pl-6 py-2">
     <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-2">
         Vista del Catálogo
     </h2>
-    <div class="flex items-center gap-4 text-blue-200/50 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold">
-        <span>Metin2 Guabina</span>
-        <span class="w-8 h-[1px] bg-blue-900"></span>
-        <span>Equipamiento de Elite</span>
+    
+    <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-4 text-blue-200/50 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold">
+            <span>Metin2 Guabina</span>
+            <span class="w-8 h-[1px] bg-blue-900"></span>
+            <span>Equipamiento de Elite</span>
+        </div>
+
+        <div class="animate-pulse-glow text-yellow-300 font-black uppercase tracking-[0.2em] italic drop-shadow-[0_0_10px_rgba(253,224,71,0.5)]">
+            ✦ Entrega Inmediata
+        </div>
     </div>
-  </div>
+</div>
+
+<style>
+  /* Animación de brillo sutil (solo para Entrega Inmediata) */
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.02); }
+  }
+  .animate-pulse-glow { 
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+</style>
 
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       

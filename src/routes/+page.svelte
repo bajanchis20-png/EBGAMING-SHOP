@@ -76,8 +76,8 @@
                 
             </h2>
             <h3 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9] drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                <span class="block">Equípate con</span>
-                <span class="block text-transparent bg-clip-text bg-gradient-to-b from-yellow-100 to-amber-500 italic drop-shadow-[0_0_30px_rgba(245,158,11,0.5)]">Poder Absoluto</span>
+                <span class="block">Haz tu pedido</span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-b from-yellow-100 to-amber-500 italic drop-shadow-[0_0_30px_rgba(245,158,11,0.5)]">Domina el juego</span>
             </h3>
         </div>
 
