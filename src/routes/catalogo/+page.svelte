@@ -22,9 +22,9 @@
       <Nuevatarjeta titulo="SET DE ENERGIA PERFECTO DOP " img="/setenergia.jpg" precio="35.00" descripcion="Domina el PVM y genera Won masivamente desde nivel 75 hasta 215 con este equipamiento optimizado + GUÍA DE PVM"></Nuevatarjeta>
         <Nuevatarjeta titulo="WON AL MEJOR PRECIO DEL MERCADO" img="/won.jpg" precio="15.00" descripcion="Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+"></Nuevatarjeta>
     
-      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV85" img="/lv85.jpeg" precio="25.00" descripcion="Eleva tu diversión a otro nivel, 4 set perfectos lv85, 4 armas piedras +6, 4 armaduras y 70.000 WON"></Nuevatarjeta>
-      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV215" img="/personaje.jpg" precio="130.00" descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor 10 equipos,perfectos armas, y armaduras"></Nuevatarjeta>
-      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 235" img="/235set.jpeg" precio="25.00" descripcion="4 Set's perfectos pvp, con armas & armaduras +9 o +10, cinto de guerra, libro potenciacion, guantes del caos"></Nuevatarjeta>
+      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 85" img="/lv85.jpeg" precio="25.00" descripcion="Eleva tu diversión a otro nivel, Sura, guerrero , ninja o chaman, tu decides. 4 set perfectos lv85, 4 armas piedras +6, 4 armaduras y 70.000 WON"></Nuevatarjeta>
+      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 215" img="/personaje.jpg" precio="130.00" descripcion="Haz una sola inversion y obten todo lo que necesitas para ser el mejor,Sura, guerrero , ninja o chaman, tu decides. 10 equipos,perfectos armas, y armaduras"></Nuevatarjeta>
+      <Nuevatarjeta titulo="PERSONAJE EQUIPADO LV 235" img="/235lv235.jpeg" precio="25.00" descripcion="Sura, guerrero , ninja o chaman, tu decides. 4 Set's perfectos pvp, con armas & armaduras +9 o +10, cinto de guerra, libro potenciacion, guantes del caos"></Nuevatarjeta>
  <Nuevatarjeta titulo="SET'S PERFECTOS PVP" img="/pvpset.jpeg" precio="75.00" descripcion="Set perfecto EUFORIA desde lv85 a 160, set perfecto ELEMENTAL desde lv235+.No piedras la oportunidad y se el"></Nuevatarjeta>
       <Nuevatarjeta titulo="GUANTES+9" img="/guante.jpg" precio="110.00" descripcion="El poder que necesitas, te ofrecemos el guante que elijas."></Nuevatarjeta>
       <Nuevatarjeta titulo="CINTOS+9" img="/cinto.jpg" precio="60.00" descripcion="Cinto de guerra para PVP, cinto de vida para PVM,y todos los que ocupes dentro del juego"></Nuevatarjeta>
@@ -70,3 +70,4 @@
         </div>
     </div>
 </section>
+on.
