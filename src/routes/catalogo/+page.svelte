@@ -9,6 +9,7 @@
     <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-2">
         Vista del Catálogo
     </h2>
+  
     
     <div class="flex flex-col gap-3">
         <div class="flex items-center gap-4 text-blue-200/50 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold">

@@ -7,7 +7,19 @@
             <span class="bg-clip-text text-transparent bg-gradient-to-b from-[#fdfdfd] via-[#a3a3a3] to-[#525252] border-b-2 border-blue-900 pb-2">
                 METIN2
             </span>
-            <span class="text-blue-500 drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">.ES</span>
+            <span class="inline-block animate-shimmer bg-[linear-gradient(90deg,#60a5fa,#2563eb,#ca8a04,#2563eb,#60a5fa)] bg-[length:200%_100%] bg-clip-text text-transparent drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">
+  .ES
+</span>
+
+<style>
+  @keyframes shimmer {
+    0% { background-position: 100% 50%; }
+    100% { background-position: -100% 50%; }
+  }
+  .animate-shimmer { 
+    animation: shimmer 4s linear infinite; 
+  }
+</style>
         </h1>
         
         <div class="inline-block px-6 py-2 bg-gradient-to-r from-yellow-600/10 to-transparent border-l-4 border-yellow-600">
@@ -20,16 +32,18 @@
             Optimiza tu progreso. Obtén <span class="text-white font-bold italic">Wons</span> con entrega inmediata y asegura tu equipo legendario.
         </p>
 
-      <button class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase tracking-[0.2em] py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
-    
-    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-    
-    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
-    
-    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
-        Equípate como un Dios
-    </span>
-</button>
+     <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm mx-auto">
+    <button type="button" class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase tracking-[0.2em] py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+        
+        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+            Equípate como un Dios
+        </span>
+    </button>
+</a>
 </section>
 
 <section class="py-20 bg-[#05070d] border-y border-blue-900/40 relative overflow-hidden">

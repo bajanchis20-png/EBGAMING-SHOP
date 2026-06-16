@@ -7,10 +7,7 @@
 
     <div class="max-w-7xl mx-auto w-full px-8 grid lg:grid-cols-2 gap-16 items-center z-10">
         <div class="space-y-8">
-            <div class="inline-flex items-center gap-3">
-                <span class="h-px w-10 bg-yellow-600"></span>
-                <span class="text-[10px] font-black tracking-[0.3em] text-yellow-500 uppercase">EBGAMING SHOP</span>
-            </div>
+         
             
           <h1 class="text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.04em] leading-[0.9]">
   Albion <br/>
