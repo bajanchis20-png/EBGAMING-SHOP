@@ -48,21 +48,50 @@
                 Domina cada rincón del reino con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion online.
             </p>
 
-           <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full">
+            <div class="flex flex-wrap gap-3 pt-4 w-full">
     
-    <a href="/catalogo" class="flex-1 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
-        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
-        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300">Ver Catálogo</span>
-    </a>
+                <a href="/catalogo" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Ver Catálogo</span>
+                </a>
 
-    <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="flex-1 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
-        <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
-        <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300">Soporte 24/7</span>
-    </a>
+                <a href="/items" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Items</span>
+                </a>
 
-</div>
+                <a href="/seguridad-garantia" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Referencias</span>
+                </a>
+
+                <a href="/metodos-de-pago" target="_blank" rel="noreferrer" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Pagos</span>
+                </a>
+
+                <a href="/albion-online" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Albion</span>
+                </a>
+
+                <a href="/vista-previa" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Metin2.es</span>
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Soporte 24/7</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
