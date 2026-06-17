@@ -61,7 +61,7 @@
         <div class="space-y-10">
             <h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center gap-3">
                 <span class="w-2 h-10 bg-yellow-600 rounded-full flex-shrink-0"></span>
-                Protocolo<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-500"> deSeguridad</span>
+                Protocolo<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-500"> de Seguridad</span>
             </h3>
             <p class="text-blue-200/60 leading-relaxed font-bold border-l-2 border-yellow-600/50 pl-6 uppercase">
                 Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-yellow-500">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-yellow-500">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda qué tu seguridad es la nuestra.
