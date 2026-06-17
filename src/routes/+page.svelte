@@ -6,22 +6,24 @@
 
     let nombre = "";
     let pedido = "";
-    let contacto = "";
+    // let contacto = "";
 
-    async function enviarPedido() {
-        if (!nombre || !pedido || !contacto) return;
-        try {
-            await addDoc(collection(db, "pedidos"), {
-                nombre: nombre,
-                pedido: pedido,
-                contacto: contacto,
-                fecha: new Date()
-            });
-            alert("¡Pedido recibido con éxito!");
-            nombre = ""; pedido = ""; contacto = "";
-        } catch (e) {
-            console.error("Error al enviar: ", e);
-        }
+    function enviarPedido() {
+        if (!nombre || !pedido) return;
+
+        window.open(`https://api.whatsapp.com/send/?phone=584149430559&text=Hola, soy ${nombre} ${pedido}`)
+        // try {
+        //     await addDoc(collection(db, "pedidos"), {
+        //         nombre: nombre,
+        //         pedido: pedido,
+        //         contacto: contacto,
+        //         fecha: new Date()
+        //     });
+        //     alert("¡Pedido recibido con éxito!");
+        //     nombre = ""; pedido = ""; contacto = "";
+        // } catch (e) {
+        //     console.error("Error al enviar: ", e);
+        // }
     }
 </script>
 
@@ -85,12 +87,12 @@
             
             <div class="absolute top-0 left-10 right-10 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="grid grid-cols-1 gap-6 mb-6">
                 <input bind:value={nombre} placeholder="Tu Nombre" required 
                        class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" />
                 
-                <input bind:value={contacto} placeholder="WhatsApp (con codigo de area)" required 
-                       class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" />
+                <!-- <input bind:value={contacto} placeholder="WhatsApp (con codigo de area)" required 
+                       class="bg-black/80 border border-blue-900/30 p-5 text-white rounded-xl placeholder:text-neutral-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all duration-300 shadow-inner" /> -->
             </div>
 
             <textarea bind:value={pedido} placeholder="Describe los items que necesitas (Guabina, .es o Albion.)" required 
