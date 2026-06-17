@@ -59,7 +59,7 @@
       </p>
       
       <div class="flex justify-center w-full">
-        <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm">
+        <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noopener noreferrer" class="w-full max-w-xs">
           <button type="button" class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
             <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
@@ -79,27 +79,28 @@
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0f1d]/80 to-[#0a0f1d]"></div>
 
         <div class="mb-12 flex items-center gap-8 max-w-7xl mx-auto relative z-10">
-          <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter text-white drop-shadow-[0_0_10px_rgba(202,138,4,0.3)]">
+          <h2 class="text-3xl md:text-6xl font-black uppercase italic tracking-tighter text-white drop-shadow-[0_0_10px_rgba(202,138,4,0.3)]">
             {seccion.titulo}
           </h2>
           <div class="h-px flex-grow bg-gradient-to-r from-blue-900 via-yellow-600 to-transparent"></div>
         </div>
 
-        <div class="flex flex-col md:flex-row w-full h-auto md:h-[50vh] gap-4 max-w-7xl mx-auto relative z-10">
+        <!-- CAMBIO: De flex a grid (2 columnas en móvil, 4 en escritorio) -->
+        <div class="grid grid-cols-2 md:flex md:h-[50vh] gap-4 max-w-7xl mx-auto relative z-10">
           {#each seccion.data as cat}
-            <div class="relative w-full h-64 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-lg border border-blue-900/40 transition-all duration-[700ms] ease-out md:hover:flex-[4] hover:border-yellow-600/50 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+            <div class="relative h-48 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-lg border border-blue-900/40 transition-all duration-[700ms] ease-out md:hover:flex-[4] hover:border-yellow-600/50 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
               
-              <div class="absolute inset-4 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-[1000ms] brightness-75 grayscale group-hover:grayscale-0 group-hover:brightness-110 scale-95 group-hover:scale-100"></div>
+              <div class="absolute inset-2 md:inset-4 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-[1000ms] brightness-75 grayscale group-hover:grayscale-0 group-hover:brightness-110 scale-95 group-hover:scale-100"></div>
 
-              <div class="absolute bottom-0 left-0 w-full p-6 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-black/90 to-transparent z-20">
-                <p class="text-white font-bold uppercase tracking-widest text-xs md:text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+              <!-- En móvil el texto es pequeño y siempre visible, en desktop es tu efecto original -->
+              <div class="absolute bottom-0 left-0 w-full p-2 md:p-6 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-black/90 to-transparent z-20">
+                <p class="text-white font-bold uppercase tracking-widest text-[10px] md:text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                   {cat.desc}
                 </p>
               </div>
 
               <div class="absolute inset-0 bg-gradient-to-t from-[#05070d]/90 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
               <div class="absolute inset-0 border-2 border-transparent group-hover:border-yellow-600/30 rounded-lg transition-colors duration-500"></div>
-              <div class="absolute -inset-full h-full w-[200%] bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 rotate-[30deg] translate-x-[-50%] group-hover:translate-x-[50%] transition-all duration-[1500ms]"></div>
             </div>
           {/each}
         </div>
