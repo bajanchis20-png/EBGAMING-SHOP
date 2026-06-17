@@ -30,7 +30,7 @@
 <section class="relative w-full bg-[#030303] py-32 px-8 overflow-hidden">
     <div class="absolute inset-0 z-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover">
-            <source src="/videonewfinal.mp4" type="video/mp4" />
+            <source src="/videonewfinal2.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-[#030303]/70 to-transparent"></div>
     </div>
