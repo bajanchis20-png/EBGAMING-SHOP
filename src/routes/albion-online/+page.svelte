@@ -5,26 +5,24 @@
 <section class="relative min-h-[75vh] flex items-center bg-[#05070d] overflow-hidden border-b border-blue-900/30 py-20">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(30,58,138,0.2)_0%,_transparent_50%)]"></div>
 
-    <div class="max-w-7xl mx-auto w-full px-8 grid lg:grid-cols-2 gap-16 items-center z-10">
+    <div class="max-w-7xl mx-auto w-full px-4 md:px-8 grid lg:grid-cols-2 gap-16 items-center z-10">
         <div class="space-y-8">
-         
-            
-          <h1 class="text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.04em] leading-[0.9]">
-  Albion <br/>
-  <span class="inline-block animate-shimmer bg-[linear-gradient(90deg,theme(colors.blue.400),theme(colors.blue.600),theme(colors.yellow.600),theme(colors.blue.600),theme(colors.blue.400))] bg-[length:200%_100%] bg-clip-text text-transparent drop-shadow-[0_4px_8px_rgba(37,99,235,0.3)]">
-    Online
-  </span>
-</h1>
+            <h1 class="text-5xl md:text-8xl font-black text-white uppercase tracking-[-0.04em] leading-[0.9]">
+                Albion <br/>
+                <span class="inline-block animate-shimmer bg-[linear-gradient(90deg,theme(colors.blue.400),theme(colors.blue.600),theme(colors.yellow.600),theme(colors.blue.600),theme(colors.blue.400))] bg-[length:200%_100%] bg-clip-text text-transparent drop-shadow-[0_4px_8px_rgba(37,99,235,0.3)]">
+                    Online
+                </span>
+            </h1>
 
-<style>
-  @keyframes shimmer {
-    0% { background-position: 100% 50%; }
-    100% { background-position: -100% 50%; }
-  }
-  .animate-shimmer { 
-    animation: shimmer 4s linear infinite; 
-  }
-</style>
+            <style>
+                @keyframes shimmer {
+                    0% { background-position: 100% 50%; }
+                    100% { background-position: -100% 50%; }
+                }
+                .animate-shimmer { 
+                    animation: shimmer 4s linear infinite; 
+                }
+            </style>
             
             <p class="text-blue-200/60 text-base font-bold leading-relaxed max-w-md border-l border-blue-900 pl-6 uppercase">
                 Abastecimiento directo, mercado de alta gama y protección total contra baneos. Tu acceso premium al reino empieza aquí.
@@ -44,7 +42,7 @@
     </div>
 </section>
 
-<section class="max-w-7xl mx-auto py-24 px-8">
+<section class="max-w-7xl mx-auto py-24 px-4 md:px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
         
         <div class="flex justify-center items-center">
@@ -61,8 +59,8 @@
         </div>
 
         <div class="space-y-10">
-            <h3 class="text-4xl font-black text-white uppercase tracking-tight flex items-center gap-3">
-                <span class="w-2 h-10 bg-yellow-600 rounded-full"></span>
+            <h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center gap-3">
+                <span class="w-2 h-10 bg-yellow-600 rounded-full flex-shrink-0"></span>
                 Protocolo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-500">Seguridad</span>
             </h3>
             <p class="text-blue-200/60 leading-relaxed font-bold border-l-2 border-yellow-600/50 pl-6 uppercase">
