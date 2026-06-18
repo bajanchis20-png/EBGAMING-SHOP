@@ -27,68 +27,64 @@
     }
 </script>
 
-<section class="relative w-full bg-[#030303] py-32 px-8 overflow-hidden">
+<section class="relative w-full bg-[#030303] py-20 px-6 overflow-hidden">
+    <!-- Video de fondo -->
     <div class="absolute inset-0 z-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover">
             <source src="/videonewfinal2.mp4" type="video/mp4" />
         </video>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-[#030303]/70 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-[#030303]/80 to-[#030303]/40"></div>
     </div>
 
+    <!-- Contenido -->
     <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-start justify-center min-h-[50vh]">
         <div class="space-y-8 max-w-3xl">
-            <h1 class="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9]">
+            <h1 class="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9]">
                 Equípate como un 
                 <span class="block mt-4 text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-amber-600 drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] italic">
                     Dios
                 </span>
             </h1>
             
-            <p class="text-neutral-400 font-medium tracking-[0.15em] uppercase text-sm md:text-base leading-relaxed border-l-2 border-yellow-600 pl-6">
+            <p class="text-neutral-400 font-medium tracking-[0.15em] uppercase text-xs md:text-base leading-relaxed  pl-4 md:pl-6">
                 Domina cada rincón del reino con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion online.
             </p>
 
-            <div class="flex flex-wrap gap-3 pt-4 w-full">
+            <!-- Grid de botones -->
+            <div class="grid grid-cols-2 md:flex md:flex-wrap gap-3 pt-4 w-full">
     
-                <a href="/catalogo" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/catalogo" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Ver Catálogo</span>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Catálogo</span>
                 </a>
 
-                <a href="/items" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/items" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Items</span>
                 </a>
 
-                <a href="/seguridad-garantia" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/seguridad-garantia" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Referencias</span>
                 </a>
 
-                <a href="/metodos-de-pago" target="_blank" rel="noreferrer" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/metodos-de-pago" target="_blank" rel="noreferrer" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Pagos</span>
                 </a>
 
-                <a href="/albion-online" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/albion-online" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Albion</span>
                 </a>
 
-                <a href="/vista-previa" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="/vista-previa" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Metin2.es</span>
                 </a>
 
-                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="flex-initial px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30">
+                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="col-span-2 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Soporte 24/7</span>
                 </a>
             </div>

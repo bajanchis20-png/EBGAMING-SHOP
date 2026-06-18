@@ -53,3 +53,58 @@
     @keyframes fade-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
 </style>
+<section class="py-24 bg-[#020408] px-6">
+    <div class="max-w-6xl mx-auto">
+        <!-- Encabezado -->
+       <div class="flex flex-col items-center mb-24 text-center animate-fade-in-up">
+    <h2 class="text-white text-5xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter">
+        Seguridad <span class="text-transparent bg-clip-text animate-shimmer bg-[linear-gradient(90deg,#60a5fa,#2563eb,#ca8a04,#2563eb,#60a5fa)] bg-[length:200%_100%]">LEGENDARIA</span><br/>
+        <span class="italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-600 drop-shadow-[0_0_20px_rgba(202,138,4,0.4)]">
+            en cada entrega
+        </span>
+    </h2>
+    <p class="text-neutral-500 uppercase tracking-[0.2em] text-xs font-bold mt-8">
+        Historias de éxito real de nuestra comunidad
+    </p>
+</div>
+
+        <!-- Grid de Referencias -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Tarjeta 1 -->
+            <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" class="group bg-white/5 border border-neutral-800 p-8 rounded-2xl hover:border-amber-500/50 transition-all cursor-pointer hover:-translate-y-2">
+                <div class="text-amber-400 mb-6 text-xl">★★★★★</div>
+                <p class="text-neutral-400 text-sm leading-relaxed mb-8 italic">"La entrega fue inmediata, sin complicaciones. Totalmente recomendado para cualquier jugador de Metin2."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center text-neutral-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="text-white text-xs font-bold uppercase tracking-wider">Cliente Verificado</span>
+                </div>
+            </a>
+
+            <!-- Tarjeta 2 -->
+            <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" class="group bg-white/5 border border-neutral-800 p-8 rounded-2xl hover:border-amber-500/50 transition-all cursor-pointer hover:-translate-y-2">
+                <div class="text-amber-400 mb-6 text-xl">★★★★★</div>
+                <p class="text-neutral-400 text-sm leading-relaxed mb-8 italic">"Llevo años comprando con ellos, siempre brindan la mayor seguridad. El mejor servicio de la comunidad."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center text-neutral-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="text-white text-xs font-bold uppercase tracking-wider">Jugador habitual</span>
+                </div>
+            </a>
+
+            <!-- Tarjeta 3 - Botón Estilizado -->
+            <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" class="w-full relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-sm tracking-widest py-6 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg shadow-black/30 flex flex-col items-center justify-center text-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12"></div>
+                
+                <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+                    Ver más referencias
+                </span>
+                <span class="relative z-10 text-[10px] text-neutral-400 group-hover:text-black/80 mt-2">En Facebook</span>
+            </a>
+        </div>
+    </div>
+</section>
