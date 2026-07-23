@@ -27,7 +27,7 @@
     }
 </script>
 
-<section class="relative w-full bg-[#030303] py-20 px-6 overflow-hidden">
+<section class="relative w-full bg-[#030303] py-20 px-6 overflow-hidden pb-32">
     <!-- Video de fondo -->
     <div class="absolute inset-0 z-0">
         <video autoplay loop muted playsinline class="w-full h-full object-cover">
@@ -46,49 +46,32 @@
                 </span>
             </h1>
             
-            <p class="text-neutral-400 font-medium tracking-[0.15em] uppercase text-xs md:text-base leading-relaxed  pl-4 md:pl-6">
+            <p class="text-neutral-400 font-medium tracking-[0.15em] uppercase text-xs md:text-base leading-relaxed pl-4 md:pl-6">
                 Domina cada rincón del reino con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion online.
             </p>
 
             <!-- Grid de botones -->
-            <div class="grid grid-cols-2 md:flex md:flex-wrap gap-3 pt-4 w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 w-full pl-4 md:pl-6 max-w-xl">
     
-                <a href="/catalogo" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
+                <a href="/catalogo" class="col-span-1 px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs md:text-sm tracking-widest py-4 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                     <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Catálogo</span>
                 </a>
 
-                <a href="/items" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
+                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="col-span-1 px-6 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-xs md:text-sm tracking-widest py-4 rounded-xl transition-all duration-500 hover:border-amber-400/80 shadow-lg">
                     <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Items</span>
+                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Consultar asesoría</span>
                 </a>
 
-                <a href="/seguridad-garantia" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Referencias</span>
-                </a>
-
-                <a href="/metodos-de-pago" target="_blank" rel="noreferrer" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Pagos</span>
-                </a>
-
-                <a href="/albion-online" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Albion</span>
-                </a>
-
-                <a href="/vista-previa" class="col-span-1 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Metin2.es</span>
-                </a>
-
-                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola, EBGAMING SHOP, tengo unas dudas sobre..." target="_blank" rel="noreferrer" class="col-span-2 px-4 text-center relative group overflow-hidden bg-white/5 border border-amber-800/30 text-white font-black uppercase text-[10px] md:text-xs tracking-widest py-3 rounded-lg transition-all duration-500 hover:border-amber-400/80 shadow-lg">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-600 via-yellow-300 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <span class="relative z-10 text-white group-hover:text-black transition-colors duration-300 whitespace-nowrap">Soporte 24/7</span>
-                </a>
             </div>
         </div>
+    </div>
+
+    <!-- Línea curva inferior -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none">
+        <svg class="relative block w-full h-12 md:h-20 text-[#030303]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,90 900,90 1200,0 L1200,120 L0,120 Z" fill="currentColor"></path>
+        </svg>
     </div>
 </section>
 <section class="py-32 bg-[#030303] border-t border-white/5 relative overflow-hidden">
