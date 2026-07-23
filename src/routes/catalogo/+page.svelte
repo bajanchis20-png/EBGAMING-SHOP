@@ -5,8 +5,26 @@
     let cart = $state([]);
     let isCartOpen = $state(false);
     let searchQuery = $state("");
+    let selectedPayment = $state("");
 
     const whatsappNumber = "584149430559"; 
+
+    const paymentMethods = [
+        { id: "colombia", name: "Colombia (Nequi)", icon: "circle-flags:co" },
+        { id: "eeuu", name: "EE.UU. (Zelle)", icon: "circle-flags:us" },
+        { id: "ecuador", name: "Ecuador (Pichincha)", icon: "circle-flags:ec" },
+        { id: "espana", name: "España (Bizum)", icon: "circle-flags:es" },
+        { id: "brasil", name: "Brasil (Pix)", icon: "circle-flags:br" },
+        { id: "chile", name: "Chile (Banco Estado)", icon: "circle-flags:cl" },
+        { id: "peru", name: "Perú (BCP)", icon: "circle-flags:pe" },
+        { id: "mexico", name: "México (Bancomer)", icon: "circle-flags:mx" },
+        { id: "argentina", name: "Argentina (Mercado Pago)", icon: "circle-flags:ar" },
+        { id: "rd", name: "Rep. Dom. (Banreservas)", icon: "circle-flags:do" },
+        { id: "uruguay", name: "Uruguay (Prex)", icon: "circle-flags:uy" },
+        { id: "binance", name: "Binance", icon: "cryptocurrency:bnb" },
+        { id: "paypal", name: "PayPal", icon: "logos:paypal" },
+        { id: "zinli", name: "Zinli", icon: "solar:card-bold-duotone" }
+    ];
 
     const products = [
         { titulo: "SET DEL CAOS PERFECTO DOP", img: "/setcaos.jpg", descripcion: "El poder definitivo 60 media, para 215+.No pierdas la oportunidad de ser el top del servidor en PVM + GUÍA DE PVM" },
@@ -26,7 +44,7 @@
         { titulo: "EFECTOS", img: "/efectos.png", descripcion: "Lleva el estilo contigo, convierte tu personaje esteticamente a tu gusto, efectos disponibles para armas&armaduras. elige el que desees y lo haremos realidad" },
         { titulo: "MASCOTAS", img: "/mascotas.png", descripcion: "Potencia tu poder, tenemos para ti mascotas PVM & PVP" },
         { titulo: "SUBE DE NIVEL CON UN CLICK", img: "/livro.jpg", descripcion: "Con el Aprendizaje 215, sube de nivel a Lv215 con un click, con el Libro de potenciacición sube a Lv235 con un click" },
-        { titulo: "WON AL MEJOR PRECIO DEL MERCADO", img: "/won.jpg", descripcion: "Entrega inmediata en tu servidor preferido, ofrecemos won en todos los sever, Guabina, Iberia &+" }
+       
     ];
 
     let filteredProducts = $derived(
@@ -62,11 +80,20 @@
         cart.forEach(item => {
             message += `- ${item.cantidad}x *${item.titulo}* (Consultar)%0A`;
         });
+        
+        if (selectedPayment) {
+            const method = paymentMethods.find(m => m.id === selectedPayment);
+            if (method) {
+                message += `%0A*Método de pago seleccionado:* ${method.name}%0A`;
+            }
+        }
+        
         message += `%0A*Estado: Consultar precio*`;
         
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
         
         cart = [];
+        selectedPayment = "";
         isCartOpen = false;
     }
 </script>
@@ -85,9 +112,14 @@
                 <span>Equipamiento de Elite</span>
             </div>
 
-            <div class="animate-pulse-glow text-yellow-300 font-black uppercase tracking-[0.2em] italic drop-shadow-[0_0_10px_rgba(253,224,71,0.5)]">
-                ✦ Entrega Inmediata
-            </div>
+<div class="inline-block px-4 py-1 rounded bg-gradient-to-r from-amber-950/80 via-zinc-900 to-amber-950/80 border border-yellow-500/60 text-yellow-300 font-extrabold font-sans tracking-[0.2em] uppercase shadow-[0_0_25px_rgba(234,179,8,0.4)] animate-pulse">
+    <span class="flex items-center gap-2">
+        <span class="text-yellow-400 text-lg drop-shadow-[0_0_5px_rgba(250,204,21,0.8)]">⚡</span>
+        <span class="bg-gradient-to-r from-yellow-200 via-amber-400 to-yellow-100 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(253,224,71,0.7)]">
+            ENTREGA INMEDIATA
+        </span>
+    </span>
+</div>
         </div>
 
         <div class="w-full md:w-80">
@@ -151,7 +183,7 @@
   {#if isCartOpen}
       <div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end transition-opacity">
           <div class="w-full max-w-md bg-[#0a0f1d] border-l border-blue-900/50 h-full p-6 flex flex-col justify-between shadow-2xl">
-              <div>
+              <div class="overflow-y-auto pr-2 flex-1">
                   <div class="flex items-center justify-between pb-4 border-b border-blue-900/50">
                       <h3 class="text-2xl font-black uppercase text-white tracking-wider flex items-center gap-2">
                           <span class="text-yellow-500">🛒</span> Tu Carrito
@@ -161,7 +193,7 @@
                       </button>
                   </div>
 
-                  <div class="mt-6 space-y-4 max-h-[60vh] overflow-y-auto pr-2">
+                  <div class="mt-6 space-y-4">
                       {#if cart.length === 0}
                           <p class="text-blue-200/50 text-center py-12 uppercase tracking-widest text-sm">Tu carrito está vacío</p>
                       {:else}
@@ -180,6 +212,24 @@
                           {/each}
                       {/if}
                   </div>
+
+                  {#if cart.length > 0}
+                      <div class="mt-6 pt-4 border-t border-blue-900/50">
+                          <label for="payment-method-select" class="block text-blue-200/70 uppercase tracking-widest text-xs font-bold mb-2">Selecciona método de pago:</label>
+                          <div class="space-y-2 max-h-48 overflow-y-auto pr-1">
+                              {#each paymentMethods as method}
+                                  <button
+                                      type="button"
+                                      onclick={() => selectedPayment = method.id}
+                                      class={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl border text-xs font-medium transition-all text-left ${selectedPayment === method.id ? 'bg-yellow-500/10 border-yellow-500 text-yellow-400' : 'bg-[#121828] border-blue-900/50 text-white hover:border-blue-700'}`}
+                                  >
+                                      <Icon icon={method.icon} class="w-5 h-5 flex-shrink-0" />
+                                      <span class="truncate">{method.name}</span>
+                                  </button>
+                              {/each}
+                          </div>
+                      </div>
+                  {/if}
               </div>
 
               <div class="pt-6 border-t border-blue-900/50">
