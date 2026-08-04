@@ -1,54 +1,55 @@
-<section class="min-h-screen flex items-center justify-center bg-[#05070d] p-6">
-    <div class="w-full max-w-md relative group">
-        <div class="absolute -inset-0.5 bg-gradient-to-tr from-blue-900 via-yellow-700 to-black rounded-3xl opacity-20 blur-lg transition duration-700"></div>
-        
-        <div class="relative bg-[#0a0f1d] border border-blue-900/50 p-10 rounded-3xl shadow-2xl">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-black text-white uppercase tracking-tighter mb-2">
-                    Acceso de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-600">Administrador</span>
+<section class="min-h-screen flex items-center justify-center bg-[#f5f5f7] p-6 font-sans relative overflow-hidden">
+    <!-- Patrón de puntos sutil característico -->
+    <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#e60012_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+    <div class="w-full max-w-md relative">
+        <div class="relative bg-white border-4 border-neutral-900 p-8 sm:p-10 rounded-2xl shadow-[6px_6px_0px_0px_#171717]">
+            <div class="text-center mb-8">
+                <div class="inline-block px-3 py-1 mb-3 rounded-lg bg-red-50 border-2 border-neutral-900 text-red-600 font-black tracking-widest text-[10px] uppercase shadow-[2px_2px_0px_#171717]">
+                    Panel Restringido
+                </div>
+                <h2 class="text-3xl font-black text-neutral-900 uppercase tracking-tighter mb-2">
+                    Acceso de <span class="text-red-600">Admin</span>
                 </h2>
-                <p class="text-blue-200/40 text-xs font-bold uppercase tracking-[0.2em]">Bienvenido al panel de control</p>
+                <p class="text-neutral-500 text-xs font-bold uppercase tracking-[0.15em]">Control total del sistema</p>
             </div>
 
-            <form class="space-y-6" on:submit|preventDefault>
-                <div class="space-y-2">
-                    <label class="text-[10px] uppercase font-bold text-blue-200/40 tracking-widest pl-1">Usuario / ID</label>
+            <form class="space-y-5" onsubmit={(e) => e.preventDefault()}>
+                <div class="space-y-1.5">
+                    <label class="text-[10px] uppercase font-black text-neutral-700 tracking-wider pl-1">Usuario / ID</label>
                     <input 
                         type="text" 
                         placeholder="Ingresa tu ID"
-                        class="w-full bg-[#05070d] border border-blue-900/50 rounded-xl p-4 text-white placeholder-blue-900 focus:border-yellow-600/50 outline-none transition-all"
+                        class="w-full bg-neutral-50 border-2 border-neutral-900 rounded-xl p-3 text-neutral-900 placeholder-neutral-400 font-medium focus:border-red-600 focus:bg-white outline-none transition-all shadow-[2px_2px_0px_#171717] text-sm"
                     />
                 </div>
 
-                <div class="space-y-2">
-                    <label class="text-[10px] uppercase font-bold text-blue-200/40 tracking-widest pl-1">Contraseña</label>
+                <div class="space-y-1.5">
+                    <label class="text-[10px] uppercase font-black text-neutral-700 tracking-wider pl-1">Contraseña</label>
                     <input 
                         type="password" 
                         placeholder="••••••••"
-                        class="w-full bg-[#05070d] border border-blue-900/50 rounded-xl p-4 text-white placeholder-blue-900 focus:border-yellow-600/50 outline-none transition-all"
+                        class="w-full bg-neutral-50 border-2 border-neutral-900 rounded-xl p-3 text-neutral-900 placeholder-neutral-400 font-medium focus:border-red-600 focus:bg-white outline-none transition-all shadow-[2px_2px_0px_#171717] text-sm"
                     />
                 </div>
 
                 <div class="text-right">
-                    <a href="#" class="text-[10px] text-blue-200/40 hover:text-yellow-600 uppercase tracking-widest transition-colors font-bold">
+                    <a href="#" class="text-[10px] text-neutral-500 hover:text-red-600 uppercase tracking-wider transition-colors font-black">
                         ¿Olvidaste tu contraseña?
                     </a>
                 </div>
 
-                <button class="w-full py-4 bg-gradient-to-r from-blue-900 to-yellow-700 hover:from-blue-800 hover:to-yellow-600 text-white font-black uppercase tracking-widest transition-all shadow-[0_0_15px_rgba(202,138,4,0.2)] rounded-xl">
+                <button type="submit" class="w-full py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest transition-all rounded-xl border-2 border-neutral-900 shadow-[4px_4px_0px_0px_#171717] cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0px_0px_#171717] text-xs sm:text-sm">
                     Iniciar Sesión
                 </button>
             </form>
 
-            <div class="mt-8 pt-6 border-t border-blue-900/50 text-center">
-                <p class="text-[10px] text-blue-200/40 uppercase tracking-widest">
+            <div class="mt-8 pt-6 border-t-2 border-neutral-200 text-center">
+                <p class="text-[10px] text-neutral-500 uppercase tracking-widest font-bold">
                     ¿No tienes una cuenta? 
-                    <a href="#" class="text-yellow-600 hover:text-white transition-colors font-bold ml-1">Regístrate</a>
+                    <a href="#" class="text-red-600 hover:text-neutral-900 transition-colors font-black ml-1">Regístrate</a>
                 </p>
             </div>
         </div>
-        
-        <div class="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-blue-600/50"></div>
-        <div class="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-yellow-600/50"></div>
     </div>
 </section>
