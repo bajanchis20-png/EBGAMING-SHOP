@@ -43,24 +43,24 @@
     ];
 </script>
 
-<div class="bg-[#f4f4f6] text-neutral-900 py-24 border-b border-neutral-300">
+<div class="bg-[#0d0d0f] text-white py-24 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-6 mb-24 text-center">
-        <h1 class="text-5xl md:text-7xl font-black text-neutral-900 uppercase tracking-tighter leading-[0.9] mb-8">
+        <h1 class="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-8">
             <span class="block">Envíanos tu item favorito</span>
-            <span class="block text-red-600 mt-2">
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012] mt-2">
                 Lo hacemos realidad
             </span>
         </h1>
 
         <div class="max-w-2xl mx-auto">
-            <p class="text-neutral-600 font-bold text-base md:text-lg mb-8 leading-relaxed uppercase">
+            <p class="text-neutral-400 font-bold text-base md:text-lg mb-8 leading-relaxed uppercase">
                 Explora nuestra vista previa de equipamiento de élite. 
-                <strong class="text-neutral-900">No busques más: tenemos absolutamente todo lo que ocupes para dominar el servidor.</strong>
+                <strong class="text-white">No busques más: tenemos absolutamente todo lo que ocupes para dominar el servidor.</strong>
             </p>
             
             <div class="flex justify-center w-full">
                 <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noopener noreferrer" class="w-full max-w-xs">
-                    <button type="button" class="w-full relative group overflow-hidden bg-neutral-900 hover:bg-red-600 text-white font-black uppercase text-xs sm:text-sm tracking-widest py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg cursor-pointer">
+                    <button type="button" class="w-full relative group overflow-hidden bg-[#e60012] hover:bg-[#cc0010] text-white font-black uppercase text-xs sm:text-sm tracking-widest py-4 px-6 rounded-2xl transition-all duration-300 shadow-[0_0_20px_rgba(230,0,18,0.4)] cursor-pointer">
                         <span class="relative z-10 transition-colors duration-300">
                             Haz tu pedido ahora
                         </span>
@@ -74,28 +74,28 @@
         {#each secciones as seccion}
             <section class="relative px-6 py-4">
                 <img src={seccion.fondo} alt="" class="absolute inset-0 w-full h-full object-cover opacity-5" />
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#f4f4f6]/80 to-[#f4f4f6]"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0d0d0f]/80 to-[#0d0d0f]"></div>
 
                 <div class="mb-12 flex items-center gap-8 max-w-7xl mx-auto relative z-10">
-                    <h2 class="text-3xl md:text-6xl font-black uppercase tracking-tighter text-neutral-900">
+                    <h2 class="text-3xl md:text-6xl font-black uppercase tracking-tighter text-white">
                         {seccion.titulo}
                     </h2>
-                    <div class="h-px flex-grow bg-neutral-300"></div>
+                    <div class="h-px flex-grow bg-white/10"></div>
                 </div>
 
                 <div class="grid grid-cols-2 md:flex md:h-[50vh] gap-4 max-w-7xl mx-auto relative z-10">
                     {#each seccion.data as cat}
-                        <div class="relative h-48 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-3xl bg-white border border-neutral-300 transition-all duration-500 ease-out md:hover:flex-[4] hover:border-red-600 shadow-xl">
+                        <div class="relative h-48 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-3xl bg-[#121216] border border-white/10 transition-all duration-500 ease-out md:hover:flex-[4] hover:border-[#e60012] shadow-2xl">
                             
                             <div class="absolute inset-2 md:inset-4 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-500 scale-95 group-hover:scale-100"></div>
 
-                            <div class="absolute bottom-0 left-0 w-full p-2 md:p-6 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-neutral-900/90 to-transparent z-20">
+                            <div class="absolute bottom-0 left-0 w-full p-2 md:p-6 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-black/90 to-transparent z-20">
                                 <p class="text-white font-black uppercase tracking-widest text-[10px] md:text-xs opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                                     {cat.desc}
                                 </p>
                             </div>
 
-                            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
                     {/each}
                 </div>

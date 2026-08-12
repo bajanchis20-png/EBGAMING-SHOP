@@ -23,62 +23,62 @@
     ];
 </script>
 
-<div class="bg-[#f4f4f6] text-neutral-900">
+<div class="bg-[#0d0d0f] text-white">
 
     <!-- HERO: Video Fullscreen -->
-    <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden border-b border-neutral-300">
+    <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden border-b border-white/10">
         <!-- Se incrementó la visibilidad del video -->
-        <video src="video2.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-95"></video>
+        <video src="video2.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60"></video>
         <!-- Gradiente más sutil para no tapar el video -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#f4f4f6]/40 via-[#f4f4f6]/20 to-[#f4f4f6]/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0d0d0f]/60 via-[#0d0d0f]/40 to-[#0d0d0f]/80"></div>
         
         <main class="relative z-10 text-center px-6 animate-fade-in-up">
-            <h1 class="text-5xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-neutral-900">
-                Poder <span class="text-red-600">TOTAL</span><br/>
-                <span class="italic text-neutral-900">
+            <h1 class="text-5xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-white">
+                Poder <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]">TOTAL</span><br/>
+                <span class="italic text-neutral-400">
                     en tus pagos
                 </span>
             </h1>
         </main>
     </section>
 
-    <!-- MÉTODOS DE PAGO (Se quitó el mt-[-50px] y se añadió padding superior para separarlo bien) -->
+    <!-- MÉTODOS DE PAGO -->
     <section class="max-w-4xl mx-auto py-20 px-6 relative z-20">
         <div class="text-center mb-16">
-            <h3 class="text-red-600 font-black tracking-[0.5em] uppercase text-xs mb-4">Cobertura Global</h3>
-            <h2 class="text-neutral-900 font-black text-3xl md:text-4xl uppercase">Métodos de Pago</h2>
+            <h3 class="text-[#e60012] font-black tracking-[0.5em] uppercase text-xs mb-4">Cobertura Global</h3>
+            <h2 class="text-white font-black text-3xl md:text-4xl uppercase">Métodos de Pago</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {#each [{name: 'Paypal', icon: 'logos:paypal'}, {name: 'Western Union', icon: 'simple-icons:westernunion', dark: true}, {name: 'Ria', img: '/ria.webp'}, {name: 'Binance', icon: 'token-branded:binance'}] as method}
+            {#each [{name: 'Paypal', icon: 'logos:paypal'}, {name: 'Western Union', icon: 'simple-icons:westernunion', dark: false}, {name: 'Ria', img: '/ria.webp'}, {name: 'Binance', icon: 'token-branded:binance'}] as method}
                 <div class="group flex flex-col items-center gap-4 cursor-pointer">
-                    <div class="relative p-6 rounded-3xl bg-white border border-neutral-300 group-hover:border-red-600 transition-all duration-300 shadow-xl">
-                        {#if method.icon} <Icon icon={method.icon} class="w-10 h-10 {method.dark ? 'text-neutral-900' : ''}" />
-                        {:else} <img src={method.img} alt={method.name} class="w-10 h-10 object-contain" /> {/if}
+                    <div class="relative p-6 rounded-3xl bg-[#121216] border border-white/10 group-hover:border-[#e60012] transition-all duration-300 shadow-xl">
+                        {#if method.icon} <Icon icon={method.icon} class="w-10 h-10 text-white" />
+                        {:else} <img src={method.img} alt={method.name} class="w-10 h-10 object-contain filter brightness-90" /> {/if}
                     </div>
-                    <span class="text-neutral-600 font-bold text-[10px] uppercase tracking-[0.2em]">{method.name}</span>
+                    <span class="text-neutral-400 font-bold text-[10px] uppercase tracking-[0.2em]">{method.name}</span>
                 </div>
             {/each}
         </div>
     </section>
 
     <!-- SELECCIÓN PAÍS -->
-    <section class="py-24 bg-[#f4f4f6] border-t border-neutral-300">
+    <section class="py-24 bg-[#121216] border-t border-white/10">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <div class="flex flex-col items-center mb-24 text-center">
-                <h3 class="text-5xl md:text-6xl font-black text-neutral-900 uppercase tracking-tighter leading-[0.9]">
+                <h3 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9]">
                     <span class="block">Selecciona tu país</span>
-                    <span class="block text-red-600 italic">Entrega Inmediata</span>
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012] italic">Entrega Inmediata</span>
                 </h3>
-                <p class="text-neutral-600 font-bold tracking-wide text-sm md:text-lg max-w-xl mx-auto mt-8 uppercase leading-relaxed">
+                <p class="text-neutral-400 font-bold tracking-wide text-sm md:text-lg max-w-xl mx-auto mt-8 uppercase leading-relaxed">
                     Contamos con cuentas bancarias locales en tu país para agilizar tus operaciones y brindarte mayor comodidad.
                 </p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {#each paises as pais}
-                    <button on:click={() => contactarPais(pais.nombre)} class="flex items-center gap-4 p-4 bg-white border border-neutral-300 rounded-2xl hover:border-red-600 transition-all shadow-md cursor-pointer text-left">
+                    <button onclick={() => contactarPais(pais.nombre)} class="flex items-center gap-4 p-4 bg-[#17171c] border border-white/10 rounded-2xl hover:border-[#e60012] transition-all shadow-md cursor-pointer text-left group">
                         <Icon icon={pais.flag} class="w-10 h-10 flex-shrink-0" />
-                        <span class="text-neutral-900 font-black text-[12px] uppercase tracking-wider">{pais.nombre}</span>
+                        <span class="text-white font-black text-[12px] uppercase tracking-wider group-hover:text-[#e60012] transition-colors">{pais.nombre}</span>
                     </button>
                 {/each}
             </div>
