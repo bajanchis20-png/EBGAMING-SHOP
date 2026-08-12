@@ -124,15 +124,6 @@
                 <span>Equipamiento de Elite</span>
             </div>
 
-           <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-lg bg-[#121216] border border-white/10 hover:border-[#e60012]/50 text-white font-black tracking-[0.15em] uppercase shadow-sm transition-all duration-300 w-fit group cursor-default">
-    <span class="flex h-1.5 w-1.5 relative">
-      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e60012] opacity-75"></span>
-      <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#e60012]"></span>
-    </span>
-    <span class="text-[10px] sm:text-xs text-neutral-200 group-hover:text-white transition-colors">
-        Entrega <span class="text-[#e60012]">Inmediata</span>
-    </span>
-</div>
         </div>
 
         <div class="w-full md:w-72">
@@ -200,10 +191,10 @@
       {/if}
   </button>
 
-  <!-- Panel Deslizante del Carrito (Drawer) - 100% Responsive, fluido y adaptado para móviles (w-full en pantallas chicas y máx ancho controlado) -->
+  <!-- Panel Deslizante del Carrito (Drawer) - Escalado compacto móvil -->
   {#if isCartOpen}
       <div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end transition-opacity">
-          <div class="w-full sm:w-[420px] bg-[#121216] border-l border-white/10 h-full p-4 sm:p-6 flex flex-col justify-between shadow-2xl">
+          <div class="w-full sm:max-w-md bg-[#121216] border-l border-white/10 h-full p-4 sm:p-6 flex flex-col justify-between shadow-2xl">
               <div class="overflow-y-auto pr-1 flex-1">
                   <div class="flex items-center justify-between pb-3 sm:pb-4 border-b border-white/10">
                       <h3 class="text-xl sm:text-2xl font-black uppercase text-white tracking-wider flex items-center gap-2">
@@ -219,12 +210,12 @@
                           <p class="text-neutral-500 text-center py-12 uppercase tracking-widest text-xs sm:text-sm font-bold">Tu carrito está vacío</p>
                       {:else}
                           {#each cart as item, index}
-                              <div class="flex items-center justify-between bg-[#17171c] border border-white/10 p-3 sm:p-3.5 rounded-2xl gap-2 shadow-sm">
-                                  <div class="flex-1 pr-1 min-w-0">
-                                      <h4 class="text-white text-xs sm:text-sm font-black uppercase truncate">{item.titulo}</h4>
-                                      <p class="text-[#e60012] text-[10px] sm:text-xs font-bold mt-0.5 sm:mt-1 uppercase tracking-wider">Consultar</p>
+                              <div class="flex items-center justify-between bg-[#17171c] border border-white/10 p-3.5 rounded-2xl gap-2 shadow-sm">
+                                  <div class="flex-1 pr-1">
+                                      <h4 class="text-white text-xs font-black uppercase">{item.titulo}</h4>
+                                      <p class="text-[#e60012] text-[10px] sm:text-xs font-bold mt-1 uppercase tracking-wider">Consultar</p>
                                   </div>
-                                  <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+                                  <div class="flex items-center gap-1.5 sm:gap-2">
                                       <button onclick={() => updateQuantity(index, -1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs">-</button>
                                       <span class="text-xs sm:text-sm font-black text-white w-5 text-center">{item.cantidad}</span>
                                       <button onclick={() => updateQuantity(index, 1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs">+</button>

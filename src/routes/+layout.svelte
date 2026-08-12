@@ -15,12 +15,19 @@
     <div>
         <!-- Header Flotante Estilo Gaming / eShop -->
         <header class="sticky top-4 z-50 w-full px-4 sm:px-6">
-            <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8 py-3.5 bg-[#121216]/90 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl lg:rounded-3xl relative transition-all duration-300">
-                <div class="flex gap-6 lg:gap-8 text-neutral-200 font-semibold uppercase items-center text-sm lg:text-base">
-                    <a href="/" class="group">
-                        <img class="rounded-full w-12 lg:w-14 border-2 border-[#e60012]/40 group-hover:border-[#e60012] shadow-[0_0_15px_rgba(230,0,18,0.3)] transition-all" src="/logofondox.png" alt="Logo"/>
+            <nav class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3.5 bg-[#121216]/90 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl lg:rounded-3xl relative transition-all duration-300">
+                <div class="flex gap-4 lg:gap-8 text-neutral-200 font-semibold uppercase items-center text-sm lg:text-base">
+                    <a href="/" class="group flex-shrink-0 flex items-center">
+                        <div class="rounded-full w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 overflow-hidden border-2 border-[#e60012]/40 group-hover:border-[#e60012] shadow-[0_0_15px_rgba(230,0,18,0.3)] transition-all flex items-center justify-center bg-black/60">
+                            <img 
+                                class="w-full h-full object-cover transform scale-125 [image-rendering:-webkit-optimize-contrast]" 
+                                src="/logofondox.png" 
+                                alt="Logo"
+                                style="image-rendering: high-quality;"
+                            />
+                        </div>
                     </a>
-                    <div class="hidden lg:flex gap-8 text-xs tracking-wider">
+                    <div class="hidden lg:flex gap-6 xl:gap-8 text-xs tracking-wider">
                         <a href="/catalogo" class="text-neutral-400 hover:text-[#e60012] transition-colors">Catálogo</a>
                         <a href="/items" class="text-neutral-400 hover:text-[#e60012] transition-colors">Items</a>
                         <a href="/seguridad-garantia" class="text-neutral-400 hover:text-[#e60012] transition-colors">Seguridad</a>
@@ -42,24 +49,26 @@
                     </a>
                 </div>
 
-                <!-- Botón Hamburguesa (Móvil) -->
-                <div class="flex lg:hidden items-center gap-3">
+                <!-- Botón Hamburguesa (Móvil con efecto hover/active fluido estilo Apple) -->
+                <div class="flex lg:hidden items-center gap-2 sm:gap-3">
                     <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noreferrer" 
-                       class="p-2 text-white bg-[#e60012] shadow-[0_0_15px_rgba(230,0,18,0.4)] rounded-xl flex items-center justify-center">
+                       class="p-2 text-white bg-[#e60012] shadow-[0_0_15px_rgba(230,0,18,0.4)] rounded-xl flex items-center justify-center transition-transform active:scale-95">
                         <Icon height="20" icon="ic:baseline-whatsapp" width="20" />
                     </a>
                     <button 
                         onclick={() => isMenuOpen = !isMenuOpen}
-                        class="p-2 text-neutral-200 bg-white/5 border border-white/10 rounded-xl focus:outline-none"
+                        class="p-2.5 text-neutral-200 bg-white/5 border border-white/10 rounded-xl focus:outline-none transition-all duration-300 ease-out hover:bg-white/10 hover:border-white/20 active:scale-90"
                         aria-label="Abrir Menú"
                     >
-                        <Icon height="24" icon={isMenuOpen ? "ic:baseline-close" : "ic:baseline-menu"} width="24" />
+                        <div class="transition-transform duration-500 ease-out {isMenuOpen ? 'rotate-90 scale-110' : 'rotate-0 scale-100'}">
+                            <Icon height="24" icon={isMenuOpen ? "ic:baseline-close" : "ic:baseline-menu"} width="24" />
+                        </div>
                     </button>
                 </div>
 
                 <!-- Menú Desplegable Móvil Flotante -->
                 {#if isMenuOpen}
-                    <div class="absolute top-[calc(100%+0.75rem)] left-0 w-full bg-[#121216] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.8)] rounded-2xl py-6 px-8 flex flex-col gap-4 lg:hidden z-50">
+                    <div class="absolute top-[calc(100%+0.75rem)] left-0 w-full bg-[#121216] border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.8)] rounded-2xl py-6 px-6 sm:px-8 flex flex-col gap-3 lg:hidden z-50">
                         <a href="/catalogo" onclick={() => isMenuOpen = false} class="text-neutral-300 font-semibold uppercase text-xs tracking-wider hover:text-[#e60012] transition-colors py-2 border-b border-white/5">Catálogo</a>
                         <a href="/items" onclick={() => isMenuOpen = false} class="text-neutral-300 font-semibold uppercase text-xs tracking-wider hover:text-[#e60012] transition-colors py-2 border-b border-white/5">Items</a>
                         <a href="/seguridad-garantia" onclick={() => isMenuOpen = false} class="text-neutral-300 font-semibold uppercase text-xs tracking-wider hover:text-[#e60012] transition-colors py-2 border-b border-white/5">Seguridad</a>
@@ -77,7 +86,7 @@
             </nav>
         </header>
 
-        <main class="min-h-[70vh]">
+        <main class="min-h-[70vh] overflow-x-hidden">
             {@render children()}
         </main>
     </div>
@@ -90,11 +99,18 @@
 
         <!-- Franja superior de marca / contacto rápido -->
         <div class="bg-[#17171c] border-b border-white/5 py-8 px-4 sm:px-6">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center space-x-3">
-                    <img class="rounded-full border border-white/10 shadow-md w-12 h-12 object-cover" src="/logofondox.png" alt="Logo Footer" />
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div class="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
+                    <div class="rounded-full border border-white/10 shadow-md w-12 h-12 overflow-hidden flex-shrink-0 flex items-center justify-center bg-black/60">
+                        <img 
+                            class="w-full h-full object-cover transform scale-125 [image-rendering:-webkit-optimize-contrast]" 
+                            src="/logofondox.png" 
+                            alt="Logo Footer"
+                            style="image-rendering: high-quality;"
+                        />
+                    </div>
                     <div>
-                        <span class="text-base font-black tracking-wider uppercase text-white">
+                        <span class="text-base font-black tracking-wider uppercase text-white block">
                             EB<span class="text-[#e60012]">GAMING</span>
                         </span>
                         <p class="text-[11px] font-semibold uppercase tracking-widest text-neutral-500">Plataforma de comercio digital</p>
@@ -145,9 +161,8 @@
                 </div>
 
                 <!-- Columna 4 -->
-                <div class="space-y-3">
+                <div class="space-y-3 col-span-2 md:col-span-1">
                     <h5 class="text-xs font-bold uppercase tracking-wider text-white">Estado del servicio</h5>
-        
                     <p class="text-[11px] text-neutral-500 leading-relaxed pt-1">
                         Transacciones blindadas y entregas directas seguras.
                     </p>
@@ -160,7 +175,7 @@
                 <p class="text-[11px] text-neutral-500 font-medium">
                     © {new Date().getFullYear()} EBGAMING SHOP. Todos los derechos reservados. Las marcas y logotipos pertenecen a sus respectivos dueños.
                 </p>
-                <div class="flex items-center gap-6 text-[11px] font-semibold text-neutral-400">
+                <div class="flex items-center gap-6 text-[11px] font-semibold text-neutral-400 flex-wrap justify-center">
                     <a href="/seguridad-garantia" class="hover:text-[#e60012] transition-colors">Privacidad y Términos</a>
                     <a href="/metodos-de-pago" class="hover:text-[#e60012] transition-colors">Políticas de Compra</a>
                 </div>

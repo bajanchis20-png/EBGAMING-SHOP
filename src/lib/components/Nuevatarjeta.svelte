@@ -13,12 +13,11 @@
 
             <!-- Contenido compacto adaptado a móviles -->
             <div class="p-3.5 sm:p-6 relative flex flex-col">
-                <div class="flex items-center justify-between mb-2 sm:mb-4 gap-1">
-                    <div class="flex items-center gap-1.5 px-2.5 py-0.5 sm:py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full w-fit">
+                <div class="flex items-center justify-between mb-2 sm:mb-4 gap-1.5">
+                    <div class="flex items-center gap-1.5 px-2 py-0.5 sm:py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full w-fit shrink-0">
                         <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-                        <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-emerald-400">En stock</span>
+                        <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-emerald-400 whitespace-nowrap">En stock</span>
                     </div>
-                    <span class="text-[10px] sm:text-xs font-black uppercase tracking-wider text-[#e60012]">Consultar</span>
                 </div>
 
                 <div class="space-y-1.5 sm:space-y-3">

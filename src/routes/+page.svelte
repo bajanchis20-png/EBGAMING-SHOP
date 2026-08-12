@@ -39,7 +39,7 @@
 
             <!-- Botones de Acción Rápida optimizados para móviles -->
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2 sm:pt-4 w-full">
-                <a href="/catalogo" class="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#e60012] hover:bg-[#cc0010] text-white font-black uppercase text-xs tracking-widest rounded-2xl shadow-[0_0_20px_rgba(230,0,18,0.4)] transition-all text-center">
+                <a href="/catalogo" class="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#e60012] hover:bg-[#cc0010] text-white font-black uppercase text-xs tracking-widest rounded-2xl transition-all text-center">
                     Ver Catálogo
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#121216] hover:bg-white/5 text-neutral-200 border border-white/10 font-black uppercase text-xs tracking-widest rounded-2xl transition-all text-center">
@@ -87,7 +87,7 @@
                 <div class="space-y-3">
                     <div class="w-full h-24 rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative flex items-center justify-center">
                         <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-90">
-                            <source src="/calidad.mp4" type="video/mp4" />
+                            <source src="/fondovideo4.mp4" type="video/mp4" />
                         </video>
                         <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
                     </div>
@@ -133,6 +133,62 @@
     </div>
 </section>
 
+<!-- SECCIÓN TICKER / CINTILLO DINÁMICO (Con Iconos de Iconify) -->
+<div class="w-full bg-[#121216] py-4 overflow-hidden whitespace-nowrap relative border-y border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.8)]">
+    <!-- Línea de acento roja superior sutil estilo gaming -->
+    <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#e60012] to-transparent opacity-70"></div>
+
+    <div class="ticker-track inline-flex items-center text-white font-black uppercase text-xs tracking-[0.2em]">
+        <!-- Bloque 1 -->
+        <div class="inline-flex items-center space-x-10 px-5">
+            <span class="text-[#e60012] flex items-center gap-2">
+                <Icon icon="solar:bolt-bold" class="w-4 h-4 text-[#e60012]" /> Entrega Inmediata Garantizada
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-neutral-300 flex items-center gap-2">
+                <Icon icon="solar:shield-check-bold" class="w-4 h-4 text-rose-500" /> Transacciones 100% Seguras y Blindadas
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-white flex items-center gap-2">
+                <Icon icon="solar:fire-bold" class="w-4 h-4 text-orange-500" /> Stock Disponible para Metin2 Guabina, Metin2.es & Albion Online
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-rose-500 flex items-center gap-2">
+                <Icon icon="solar:tag-price-bold" class="w-4 h-4 text-rose-500" /> Los Mejores Precios del Mercado Gaming
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-neutral-300 flex items-center gap-2">
+                <Icon icon="fa6-brands:whatsapp" class="w-4 h-4 text-emerald-500" /> Soporte Directo por WhatsApp
+            </span>
+        </div>
+        <!-- Bloque 2 (Duplicado exacto para bucle continuo perfecto) -->
+        <div class="inline-flex items-center space-x-10 px-5" aria-hidden="true">
+            <span class="text-[#e60012] flex items-center gap-2">
+                <Icon icon="solar:bolt-bold" class="w-4 h-4 text-[#e60012]" /> Entrega Inmediata Garantizada
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-neutral-300 flex items-center gap-2">
+                <Icon icon="solar:shield-check-bold" class="w-4 h-4 text-rose-500" /> Transacciones 100% Seguras y Blindadas
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-white flex items-center gap-2">
+                <Icon icon="solar:fire-bold" class="w-4 h-4 text-orange-500" /> Stock Disponible para Metin2 Guabina, Metin2.es & Albion Online
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-rose-500 flex items-center gap-2">
+                <Icon icon="solar:tag-price-bold" class="w-4 h-4 text-rose-500" /> Los Mejores Precios del Mercado Gaming
+            </span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-neutral-300 flex items-center gap-2">
+                <Icon icon="fa6-brands:whatsapp" class="w-4 h-4 text-emerald-500" /> Soporte Directo por WhatsApp
+            </span>
+        </div>
+    </div>
+
+    <!-- Línea de acento inferior sutil -->
+    <div class="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+</div>
+
 <!-- Sección de Formulario de Pedido (Estilo Gaming Elegante) -->
 <section class="py-16 sm:py-24 bg-[#121216] relative overflow-hidden border-b border-white/10">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
@@ -162,15 +218,23 @@
     </div>
 </section>
 
-<!-- Sección de Comunidades / Grupos (Estilo Cuadrículas E-shop Oscuro) -->
-<section class="py-16 sm:py-20 bg-[#0d0d0f] relative">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-12 sm:mb-16">
-            <h2 class="text-[#e60012] text-xs font-black uppercase tracking-[0.4em] mb-3">Redes y Soporte</h2>
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight">Únete a la Comunidad</h3>
+<!-- Sección de Comunidades / Groups (Estilo Cuadrículas E-shop Oscuro) -->
+<section class="py-20 sm:py-28 bg-[#0a0a0c] relative overflow-hidden">
+    <!-- Resplandor de fondo ambiental para dar profundidad y sofisticación -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#e60012]/5 blur-[140px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        
+        <!-- Encabezado -->
+        <div class="text-center mb-14 sm:mb-20">
+            
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
+                Únete a la <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-500">Comunidad</span>
+            </h3>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
+        <!-- Grid de Tarjetas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {#each 
                 [
                     { title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" },
@@ -179,20 +243,51 @@
                 ] as item
             }
                 <a href={item.link} target="_blank" rel="noreferrer" 
-                   class="group relative flex flex-col items-center text-center p-6 sm:p-8 bg-[#121216] border border-white/10 hover:border-[#e60012] transition-all duration-300 rounded-3xl shadow-xl hover:-translate-y-1">
+                   class="group relative flex flex-col items-center text-center p-8 sm:p-10 bg-gradient-to-b from-[#141419] to-[#0f0f13] border border-white/5 hover:border-[#e60012]/60 transition-all duration-500 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.4)] hover:shadow-[0_20px_40px_rgba(230,0,18,0.15)] hover:-translate-y-1.5">
                     
-                    <div class="w-14 h-14 rounded-2xl bg-[#e60012]/10 border border-[#e60012]/20 flex items-center justify-center mb-4 sm:mb-6 text-[#e60012] group-hover:bg-[#e60012] group-hover:text-white transition-colors">
-                        <Icon icon="devicon:facebook" class="w-7 h-7" />
+                    <!-- Brillo interno sutil al hacer hover -->
+                    <div class="absolute inset-0 rounded-[2.5rem] bg-gradient-to-b from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+
+                    <!-- Icono Contenedor -->
+                    <div class="relative w-16 h-16 rounded-2xl bg-[#1a1a21] border border-white/10 flex items-center justify-center mb-6 text-neutral-300 group-hover:text-white group-hover:bg-[#e60012] group-hover:border-[#e60012] transition-all duration-500 shadow-inner">
+                        <Icon class="w-8 h-8 transition-transform duration-500 group-hover:scale-110" icon="devicon:facebook"/>
                     </div>
 
-                    <h4 class="text-white font-black text-base uppercase tracking-wider mb-1 group-hover:text-[#e60012] transition-colors">
+                    <!-- Textos -->
+                    <h4 class="text-white font-extrabold text-base uppercase tracking-wider mb-2 group-hover:text-[#e60012] transition-colors">
                         {item.title}
                     </h4>
-                    <p class="text-neutral-400 text-[11px] font-bold uppercase tracking-widest">
-                        {item.sub}
-                    </p>
+                    
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.03] border border-white/5 group-hover:border-[#e60012]/30 transition-colors">
+                        <p class="text-neutral-400 text-[10px] font-bold uppercase tracking-widest group-hover:text-neutral-300">
+                            {item.sub}
+                        </p>
+                    </div>
+
+                    <!-- Indicador visual sutil (flecha externa) en la esquina inferior -->
+                    <div class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-1 group-hover:translate-y-0 text-[#e60012]">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
                 </a>
             {/each}
         </div>
     </div>
 </section>
+
+<!-- Estilos CSS para el scroll continuo del ticker -->
+<style>
+  .ticker-track {
+    display: inline-flex;
+    width: max-content;
+    animation: scrollTicker 30s linear infinite;
+  }
+
+  @keyframes scrollTicker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>

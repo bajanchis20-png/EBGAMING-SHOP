@@ -54,7 +54,7 @@
 
         <div class="max-w-2xl mx-auto">
             <p class="text-neutral-400 font-bold text-base md:text-lg mb-8 leading-relaxed uppercase">
-                Explora nuestra vista previa de equipamiento de élite. 
+                Explora nossa vista previa de equipamiento de élite. 
                 <strong class="text-white">No busques más: tenemos absolutamente todo lo que ocupes para dominar el servidor.</strong>
             </p>
             
@@ -83,19 +83,22 @@
                     <div class="h-px flex-grow bg-white/10"></div>
                 </div>
 
-                <div class="grid grid-cols-2 md:flex md:h-[50vh] gap-4 max-w-7xl mx-auto relative z-10">
+                <div class="grid grid-cols-2 md:flex md:h-[55vh] gap-4 md:gap-5 max-w-7xl mx-auto relative z-10">
                     {#each seccion.data as cat}
-                        <div class="relative h-48 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-3xl bg-[#121216] border border-white/10 transition-all duration-500 ease-out md:hover:flex-[4] hover:border-[#e60012] shadow-2xl">
+                        <div class="relative h-56 md:h-full flex-1 group cursor-pointer overflow-hidden rounded-[2.5rem] bg-[#121216] border border-white/10 transition-all duration-700 ease-out md:hover:flex-[4.5] hover:border-white/20 shadow-[0_15px_40px_rgba(0,0,0,0.8)]">
                             
-                            <div class="absolute inset-2 md:inset-4 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-500 scale-95 group-hover:scale-100"></div>
+                            <!-- Fondo con zoom cinematográfico y nitidez mejorada -->
+                            <div class="absolute inset-4 md:inset-6 {cat.bg} bg-center bg-no-repeat bg-contain transition-all duration-700 ease-out scale-95 group-hover:scale-105"></div>
 
-                            <div class="absolute bottom-0 left-0 w-full p-2 md:p-6 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-black/90 to-transparent z-20">
-                                <p class="text-white font-black uppercase tracking-widest text-[10px] md:text-xs opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                            <!-- Panel de texto inferior de alto impacto (sin la línea roja) -->
+                            <div class="absolute bottom-0 left-0 w-full p-4 md:p-8 translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out bg-gradient-to-t from-black/95 via-black/80 to-transparent z-20 flex flex-col justify-end">
+                                <p class="text-white font-black uppercase tracking-wider text-[11px] md:text-xs leading-relaxed opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                                     {cat.desc}
                                 </p>
                             </div>
 
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <!-- Viñeta ambiental para darle profundidad inmersiva -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
                     {/each}
                 </div>

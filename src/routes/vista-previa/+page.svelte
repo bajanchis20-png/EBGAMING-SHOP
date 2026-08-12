@@ -88,28 +88,24 @@
     <!-- Patrón de puntos sutil característico -->
     <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#e60012_1px,transparent_1px)] [background-size:16px_16px] z-10 pointer-events-none"></div>
 
-    <video src="calidad.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen"></video>
+    <video src="fondovideo4.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen"></video>
     <div class="absolute inset-0 bg-gradient-to-t from-[#0d0d0f] via-[#0d0d0f]/60 to-transparent z-0"></div>
 
     <div class="relative z-20 max-w-3xl px-6 text-center space-y-8">
     
 
-        <h1 class="text-5xl sm:text-7xl md:text-8xl font-black text-white tracking-tighter">
-            <span class="border-b border-white/20 pb-2 inline-block">
-                METIN2
-            </span>
-            <span class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]">
-                .ES
-            </span>
-        </h1>
-
+     <h1 class="text-5xl sm:text-7xl md:text-8xl font-black text-white tracking-tighter">
+    <span class="border-b border-white/20 pb-2 inline-block">
+        METIN2<span class="inline-block px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]">.ES</span>
+    </span>
+</h1>
         <p class="text-neutral-400 text-sm sm:text-lg font-bold uppercase max-w-xl mx-auto">
             Optimiza tu progreso. Obtén <span class="text-white font-black italic">Wons</span> con entrega inmediata y asegura tu equipo legendario.
         </p>
 
         <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm mx-auto">
-            <button type="button" class="w-full relative group overflow-hidden bg-[#e60012] border border-white/10 text-white font-black uppercase tracking-[0.2em] py-4 sm:py-5 rounded-2xl transition-all duration-300 hover:bg-[#cc0010] shadow-[0_0_20px_rgba(230,0,18,0.4)] cursor-pointer">
-                <span class="relative z-10 text-white drop-shadow-md text-xs sm:text-sm">
+            <button type="button" class="w-full relative group overflow-hidden bg-[#e60012] border border-white/10 text-white font-black uppercase tracking-[0.2em] py-4 sm:py-5 rounded-2xl transition-all duration-300 hover:bg-[#cc0010] cursor-pointer">
+                <span class="relative z-10 text-white text-xs sm:text-sm">
                     Equípate como un Dios
                 </span>
             </button>
@@ -260,7 +256,7 @@
                     <button 
                         onclick={checkout}
                         disabled={cart.length === 0}
-                        class="w-full bg-[#e60012] hover:bg-[#cc0010] disabled:opacity-50 disabled:cursor-not-allowed text-white font-black uppercase tracking-widest py-4 rounded-2xl shadow-[0_0_20px_rgba(230,0,18,0.4)] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
+                        class="w-full bg-[#e60012] hover:bg-[#cc0010] disabled:opacity-50 disabled:cursor-not-allowed text-white font-black uppercase tracking-widest py-4 rounded-2xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
                     >
                         <span>💬</span> Consultar Pedido (WhatsApp)
                     </button>
