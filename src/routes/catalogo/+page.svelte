@@ -16,7 +16,7 @@
         { id: "personajes", name: "Personajes" },
         { id: "moneda", name: "Moneda (Won)" },
         { id: "guantes_cintos", name: "Guantes y Cintos +9" },
-        { id: "armas_armaduras", name: "Armas & Armaduras +10" },
+        { id: "armas_armaduras", name: "+10 Armas & Armaduras" },
         { id: "items", name: "Accesorios & Armas" },
         { id: "custom", name: "Estética & Extras" }
     ];

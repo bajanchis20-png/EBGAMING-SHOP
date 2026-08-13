@@ -73,34 +73,33 @@
     }
 </script>
 
-<!-- Hero Section (Estilo Gaming Oscuro) -->
-<section class="relative min-h-[70vh] md:min-h-[75vh] flex items-center bg-[#0d0d0f] overflow-hidden border-b border-white/10 py-12 md:py-20 font-sans">
-    <!-- Patrón de puntos sutil característico -->
+<!-- Hero Section (Mobile First Extremo) -->
+<section class="relative min-h-[65vh] xs:min-h-[70vh] flex items-center bg-[#0d0d0f] overflow-x-hidden border-b border-white/10 py-8 xs:py-12 font-sans">
     <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#e60012_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center z-10">
-        <div class="space-y-6 md:space-y-8 text-center lg:text-left">
-            <div class="inline-block bg-[#e60012] text-white font-black text-xs uppercase tracking-[0.3em] px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(230,0,18,0.5)] transform -rotate-1">
+    <div class="max-w-7xl mx-auto w-full px-3 xs:px-4 sm:px-6 grid lg:grid-cols-2 gap-6 lg:gap-16 items-center z-10">
+        <div class="space-y-4 xs:space-y-6 text-center lg:text-left">
+            <div class="inline-block bg-[#e60012] text-white font-black text-[10px] xs:text-xs uppercase tracking-[0.25em] px-3.5 py-1 rounded-full shadow-[0_0_15px_rgba(230,0,18,0.5)] transform -rotate-1">
                 Edición Coleccionista
             </div>
             
-            <h1 class="text-5xl sm:text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.03em] leading-[0.9]">
+            <h1 class="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.03em] leading-[0.9]">
                 Albion <br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012] drop-shadow-[0_0_20px_rgba(230,0,18,0.3)]">
                     Online
                 </span>
             </h1>
             
-            <p class="text-neutral-400 text-sm sm:text-base font-bold leading-relaxed max-w-md mx-auto lg:mx-0 border-l-4 border-[#e60012] pl-4 uppercase">
+            <p class="text-neutral-400 text-xs xs:text-sm font-bold leading-relaxed max-w-xs xs:max-w-sm sm:max-w-md mx-auto lg:mx-0 border-l-3 xs:border-l-4 border-[#e60012] pl-3 uppercase">
                 Abastecimiento directo, mercado de alta gama y protección total contra baneos. Tu acceso premium al reino empieza aquí.
             </p>
         </div>
 
-        <div class="relative group w-full max-w-lg mx-auto lg:max-w-none">
-            <div class="absolute -inset-2 bg-gradient-to-r from-[#e60012] to-neutral-900 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-700"></div>
+        <div class="relative group w-full max-w-xs xs:max-w-sm sm:max-w-lg mx-auto lg:max-w-none">
+            <div class="absolute -inset-2 bg-gradient-to-r from-[#e60012] to-neutral-900 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-700"></div>
             
-            <div class="relative bg-[#121216] p-3 rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl">
-                <div class="relative rounded-2xl overflow-hidden aspect-video bg-neutral-900 border border-white/10">
+            <div class="relative bg-[#121216] p-2 xs:p-3 rounded-[1.75rem] xs:rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl">
+                <div class="relative rounded-xl xs:rounded-2xl overflow-hidden aspect-video bg-neutral-900 border border-white/10">
                     <video src="video5.mp4" autoplay loop muted playsinline class="w-full h-full object-cover opacity-90"></video>
                     <div class="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent"></div>
                 </div>
@@ -109,30 +108,31 @@
     </div>
 </section>
 
-<!-- Content & Protocol Section (Estilo Gaming Oscuro) -->
-<section class="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative bg-[#0d0d0f]">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+<!-- Content & Protocol Section (Mobile First Extremo) -->
+<section class="max-w-7xl mx-auto py-10 xs:py-16 md:py-24 px-3 xs:px-4 sm:px-6 relative bg-[#0d0d0f] overflow-x-hidden">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         
-        <div class="flex justify-center items-center order-2 lg:order-1">
-            <div class="relative group w-full max-w-sm sm:max-w-md flex justify-center">
-                <div class="absolute -inset-2 bg-[#e60012]/20 rounded-[2.5rem] blur-lg group-hover:opacity-100 transition duration-700"></div>
-                <div class="relative bg-[#121216] p-3 rounded-[2rem] border border-white/10 shadow-2xl w-full flex justify-center">
+        <div class="flex justify-center items-center order-2 lg:order-1 w-full">
+            <div class="relative group w-full max-w-[280px] xs:max-w-xs sm:max-w-md flex justify-center">
+                <div class="absolute -inset-2 bg-[#e60012]/20 rounded-[2rem] blur-lg group-hover:opacity-100 transition duration-700"></div>
+                <div class="relative bg-[#121216] p-2 xs:p-3 rounded-[1.75rem] xs:rounded-[2rem] border border-white/10 shadow-2xl w-full flex justify-center">
                     <Nuevatarjeta 
                         titulo="ALBION ONLINE" 
                         img="/albion.jpeg" 
                         descripcion="Silver & Cuentas en Albion Online" 
+                        buttonText="COMPRAR AHORA"
                         onAddToCart={() => addToCart("ALBION ONLINE")}
                     />
                 </div>
             </div>
         </div>
 
-        <div class="space-y-6 md:space-y-10 order-1 lg:order-2 text-center lg:text-left">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center justify-center lg:justify-start gap-3">
-                <span class="w-3 h-8 sm:h-10 bg-[#e60012] rounded-full flex-shrink-0 shadow-[0_0_10px_rgba(230,0,18,0.5)]"></span>
+        <div class="space-y-4 xs:space-y-6 order-1 lg:order-2 text-center lg:text-left">
+            <h3 class="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center justify-center lg:justify-start gap-2.5">
+                <span class="w-2.5 xs:w-3 h-7 xs:h-8 sm:h-10 bg-[#e60012] rounded-full flex-shrink-0 shadow-[0_0_10px_rgba(230,0,18,0.5)]"></span>
                 Protocolo<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]"> de Seguridad</span>
             </h3>
-            <p class="text-neutral-400 text-sm sm:text-base leading-relaxed font-bold border-l-4 border-[#e60012] pl-4 uppercase shadow-sm">
+            <p class="text-neutral-400 text-xs xs:text-sm leading-relaxed font-bold border-l-3 xs:border-l-4 border-[#e60012] pl-3 uppercase shadow-sm">
                 Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-[#e60012] font-black">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-[#e60012] font-black">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda qué tu seguridad es la nuestra.
             </p>
         </div>
@@ -141,25 +141,25 @@
     <!-- Botón Flotante del Carrito -->
     <button 
         onclick={() => isCartOpen = !isCartOpen}
-        class="fixed bottom-5 right-5 z-50 bg-[#e60012] hover:bg-[#cc0010] text-white font-black p-4 rounded-full shadow-[0_0_20px_rgba(230,0,18,0.5)] flex items-center justify-center transition-transform active:scale-95 cursor-pointer"
+        class="fixed bottom-4 right-4 xs:bottom-5 xs:right-5 z-50 bg-[#e60012] hover:bg-[#cc0010] text-white font-black p-3.5 xs:p-4 rounded-full shadow-[0_0_20px_rgba(230,0,18,0.5)] flex items-center justify-center transition-transform active:scale-95 cursor-pointer"
         aria-label="Abrir Carrito"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 xs:h-6 xs:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
         {#if totalItems > 0}
-            <span class="absolute -top-1.5 -right-1.5 bg-[#0d0d0f] text-white text-xs w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center font-bold border-2 border-white/10 shadow-md">
+            <span class="absolute -top-1.5 -right-1.5 bg-[#0d0d0f] text-white text-[10px] xs:text-xs w-5 h-5 xs:w-6 xs:h-6 rounded-full flex items-center justify-center font-bold border-2 border-white/10 shadow-md">
                 {totalItems}
             </span>
         {/if}
     </button>
 
-    <!-- Panel Deslizante del Carrito (Drawer) -->
+    <!-- Panel Deslizante del Carrito (Drawer) - Optimizado Mobile First -->
     {#if isCartOpen}
         <div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end transition-opacity">
-            <div class="w-full sm:max-w-md bg-[#121216] border-l border-white/10 h-full p-4 sm:p-6 flex flex-col justify-between shadow-2xl">
+            <div class="w-full sm:max-w-md bg-[#121216] border-l border-white/10 h-full p-4 xs:p-6 flex flex-col justify-between shadow-2xl">
                 <div class="overflow-y-auto pr-1 flex-1">
-                    <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                    <div class="flex items-center justify-between pb-3.5 border-b border-white/10">
                         <h3 class="text-xl sm:text-2xl font-black uppercase text-white tracking-wider flex items-center gap-2">
                             <span class="text-[#e60012]">🛒</span> Tu Carrito
                         </h3>
@@ -168,20 +168,20 @@
                         </button>
                     </div>
 
-                    <div class="mt-4 sm:mt-6 space-y-3">
+                    <div class="mt-4 space-y-3">
                         {#if cart.length === 0}
                             <p class="text-neutral-500 text-center py-12 uppercase tracking-widest text-xs sm:text-sm font-bold">Tu carrito está vacío</p>
                         {:else}
                             {#each cart as item, index}
-                                <div class="flex items-center justify-between bg-[#17171c] border border-white/10 p-3.5 rounded-2xl gap-2 shadow-sm">
+                                <div class="flex items-center justify-between bg-[#17171c] border border-white/10 p-3 rounded-2xl gap-2 shadow-sm">
                                     <div class="flex-1 pr-1">
-                                        <h4 class="text-white text-xs font-black uppercase">{item.titulo}</h4>
-                                        <p class="text-[#e60012] text-[10px] sm:text-xs font-bold mt-1 uppercase tracking-wider">Consultar</p>
+                                        <h4 class="text-white text-[11px] xs:text-xs font-black uppercase">{item.titulo}</h4>
+                                        <p class="text-[#e60012] text-[10px] font-bold mt-0.5 uppercase tracking-wider">Consultar</p>
                                     </div>
-                                    <div class="flex items-center gap-1.5 sm:gap-2">
-                                        <button onclick={() => updateQuantity(index, -1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer">-</button>
+                                    <div class="flex items-center gap-1.5 xs:gap-2">
+                                        <button onclick={() => updateQuantity(index, -1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs active:scale-95">-</button>
                                         <span class="text-xs sm:text-sm font-black text-white w-5 text-center">{item.cantidad}</span>
-                                        <button onclick={() => updateQuantity(index, 1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer">+</button>
+                                        <button onclick={() => updateQuantity(index, 1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs active:scale-95">+</button>
                                     </div>
                                 </div>
                             {/each}
@@ -190,13 +190,13 @@
 
                     {#if cart.length > 0}
                         <div class="mt-6 pt-4 border-t border-white/10">
-                            <label class="block text-neutral-300 uppercase tracking-widest text-[11px] sm:text-xs font-bold mb-2">Selecciona método de pago:</label>
+                            <label class="block text-neutral-300 uppercase tracking-widest text-[11px] xs:text-xs font-bold mb-2">Selecciona método de pago:</label>
                             <div class="space-y-2 max-h-40 sm:max-h-48 overflow-y-auto pr-1">
                                 {#each paymentMethods as method}
                                     <button
                                         type="button"
                                         onclick={() => selectedPayment = method.id}
-                                        class={`w-full flex items-center gap-3 px-3.5 py-3 rounded-2xl border text-xs font-bold transition-all text-left cursor-pointer ${selectedPayment === method.id ? 'bg-[#e60012]/10 border-[#e60012] text-[#e60012] shadow-sm' : 'bg-[#17171c] border-white/10 text-neutral-300 hover:border-white/20'}`}
+                                        class={`w-full flex items-center gap-3 px-3.5 py-3 rounded-2xl border text-xs font-bold transition-all text-left cursor-pointer active:scale-95 ${selectedPayment === method.id ? 'bg-[#e60012]/10 border-[#e60012] text-[#e60012] shadow-sm' : 'bg-[#17171c] border-white/10 text-neutral-300 hover:border-white/20'}`}
                                     >
                                         <Icon icon={method.icon} class="w-5 h-5 flex-shrink-0" />
                                         <span class="truncate uppercase">{method.name}</span>
@@ -207,7 +207,7 @@
                     {/if}
                 </div>
 
-                <div class="pt-4 sm:pt-6 border-t border-white/10 mt-2">
+                <div class="pt-4 border-t border-white/10 mt-2">
                     <div class="flex justify-between items-center mb-4">
                         <span class="text-neutral-400 uppercase tracking-widest text-xs font-bold">Precio total:</span>
                         <span class="text-base sm:text-lg font-black text-[#e60012] uppercase tracking-wider">Consultar</span>
@@ -215,7 +215,7 @@
                     <button 
                         onclick={checkout}
                         disabled={cart.length === 0}
-                        class="w-full bg-[#e60012] hover:bg-[#cc0010] disabled:opacity-50 disabled:cursor-not-allowed text-white font-black uppercase tracking-widest py-4 rounded-2xl shadow-[0_0_20px_rgba(230,0,18,0.4)] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
+                        class="w-full bg-[#e60012] hover:bg-[#cc0010] disabled:opacity-50 disabled:cursor-not-allowed text-white font-black uppercase tracking-widest py-3.5 xs:py-4 rounded-2xl shadow-[0_0_20px_rgba(230,0,18,0.4)] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer active:scale-95"
                     >
                         <span>💬</span> Consultar Pedido (WhatsApp)
                     </button>

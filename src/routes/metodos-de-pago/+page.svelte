@@ -26,14 +26,14 @@
 <div class="bg-[#0d0d0f] text-white">
 
     <!-- HERO: Video Fullscreen -->
-    <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden border-b border-white/10">
+    <section class="relative min-h-[60vh] sm:min-h-screen w-full flex items-center justify-center overflow-hidden border-b border-white/10">
         <!-- Se incrementó la visibilidad del video -->
         <video src="video2.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60"></video>
         <!-- Gradiente más sutil para no tapar el video -->
         <div class="absolute inset-0 bg-gradient-to-b from-[#0d0d0f]/60 via-[#0d0d0f]/40 to-[#0d0d0f]/80"></div>
         
-        <main class="relative z-10 text-center px-6 animate-fade-in-up">
-            <h1 class="text-5xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-white">
+        <main class="relative z-10 text-center px-4 sm:px-6 animate-fade-in-up">
+            <h1 class="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-[0.95] tracking-tighter text-white">
                 Poder <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]">TOTAL</span><br/>
                 <span class="italic text-neutral-400">
                     en tus pagos
@@ -43,42 +43,44 @@
     </section>
 
     <!-- MÉTODOS DE PAGO -->
-    <section class="max-w-4xl mx-auto py-20 px-6 relative z-20">
-        <div class="text-center mb-16">
-            <h3 class="text-[#e60012] font-black tracking-[0.5em] uppercase text-xs mb-4">Cobertura Global</h3>
-            <h2 class="text-white font-black text-3xl md:text-4xl uppercase">Métodos de Pago</h2>
+    <section class="max-w-4xl mx-auto py-12 sm:py-20 px-4 sm:px-6 relative z-20">
+        <div class="text-center mb-10 sm:mb-16">
+            <h3 class="text-[#e60012] font-black tracking-[0.3em] sm:tracking-[0.5em] uppercase text-[10px] sm:text-xs mb-2 sm:mb-4">Cobertura Global</h3>
+            <h2 class="text-white font-black text-2xl sm:text-4xl uppercase">Métodos de Pago</h2>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Grid mobile first: 2 columnas adaptadas para pantallas muy pequeñas -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
             {#each [{name: 'Paypal', icon: 'logos:paypal'}, {name: 'Western Union', icon: 'simple-icons:westernunion', dark: false}, {name: 'Ria', img: '/ria.webp'}, {name: 'Binance', icon: 'token-branded:binance'}] as method}
-                <div class="group flex flex-col items-center gap-4 cursor-pointer">
-                    <div class="relative p-6 rounded-3xl bg-[#121216] border border-white/10 group-hover:border-[#e60012] transition-all duration-300 shadow-xl">
-                        {#if method.icon} <Icon icon={method.icon} class="w-10 h-10 text-white" />
-                        {:else} <img src={method.img} alt={method.name} class="w-10 h-10 object-contain filter brightness-90" /> {/if}
+                <div class="group flex flex-col items-center gap-3 sm:gap-4 cursor-pointer">
+                    <div class="relative p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-[#121216] border border-white/10 group-hover:border-[#e60012] transition-all duration-300 shadow-xl">
+                        {#if method.icon} <Icon icon={method.icon} class="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                        {:else} <img src={method.img} alt={method.name} class="w-8 h-8 sm:w-10 sm:h-10 object-contain filter brightness-90" /> {/if}
                     </div>
-                    <span class="text-neutral-400 font-bold text-[10px] uppercase tracking-[0.2em]">{method.name}</span>
+                    <span class="text-neutral-400 font-bold text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-center">{method.name}</span>
                 </div>
             {/each}
         </div>
     </section>
 
     <!-- SELECCIÓN PAÍS -->
-    <section class="py-24 bg-[#121216] border-t border-white/10">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <div class="flex flex-col items-center mb-24 text-center">
-                <h3 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9]">
+    <section class="py-16 sm:py-24 bg-[#121216] border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <div class="flex flex-col items-center mb-12 sm:mb-24 text-center">
+                <h3 class="text-3xl xs:text-4xl sm:text-6xl font-black text-white uppercase tracking-tighter leading-[0.95]">
                     <span class="block">Selecciona tu país</span>
-                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012] italic">Entrega Inmediata</span>
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012] italic mt-2">Entrega Inmediata</span>
                 </h3>
-                <p class="text-neutral-400 font-bold tracking-wide text-sm md:text-lg max-w-xl mx-auto mt-8 uppercase leading-relaxed">
+                <p class="text-neutral-400 font-bold tracking-wide text-xs sm:text-lg max-w-xl mx-auto mt-6 sm:mt-8 uppercase leading-relaxed">
                     Contamos con cuentas bancarias locales en tu país para agilizar tus operaciones y brindarte mayor comodidad.
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <!-- Grid mobile first optimizado: 2 columnas en móvil estricto para que los nombres no se corten -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
                 {#each paises as pais}
-                    <button onclick={() => contactarPais(pais.nombre)} class="flex items-center gap-4 p-4 bg-[#17171c] border border-white/10 rounded-2xl hover:border-[#e60012] transition-all shadow-md cursor-pointer text-left group">
-                        <Icon icon={pais.flag} class="w-10 h-10 flex-shrink-0" />
-                        <span class="text-white font-black text-[12px] uppercase tracking-wider group-hover:text-[#e60012] transition-colors">{pais.nombre}</span>
+                    <button onclick={() => contactarPais(pais.nombre)} class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-[#17171c] border border-white/10 rounded-xl sm:rounded-2xl hover:border-[#e60012] transition-all shadow-md cursor-pointer text-left group active:scale-95">
+                        <Icon icon={pais.flag} class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" />
+                        <span class="text-white font-black text-[11px] sm:text-[12px] uppercase tracking-wider group-hover:text-[#e60012] transition-colors truncate">{pais.nombre}</span>
                     </button>
                 {/each}
             </div>
