@@ -1,10 +1,11 @@
 <script>
     import Icon from "@iconify/svelte";
+    import { onMount } from "svelte";
 
     let nombre = $state("");
     let pedido = $state("");
 
-    // Array con las imágenes para el carrusel de fondo del Hero
+    // Array con las imágenes para el carrusel ambiental del Hero
     const imagenesHero = [
         "/fondoname1.png",
         "/fondoname2.png",
@@ -15,12 +16,10 @@
 
     let indiceActual = $state(0);
 
-    // Cambiar de imagen automáticamente cada 4 segundos
-    import { onMount } from "svelte";
     onMount(() => {
         const intervalo = setInterval(() => {
             indiceActual = (indiceActual + 1) % imagenesHero.length;
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(intervalo);
     });
@@ -32,221 +31,215 @@
     }
 </script>
 
-<!-- Hero Section adaptado de forma fluida para mobile, tablet y PC -->
-<section class="relative w-full min-h-[85vh] sm:min-h-[90vh] lg:min-h-[95vh] bg-[#050505] overflow-hidden flex flex-col justify-end pb-16 sm:pb-24 lg:pb-32">
+<!-- HERO SECTION: TEXTO IZQUIERDA + CARRUSEL AMBIENTAL DIFUMINADO -->
+<section class="relative w-full min-h-[75vh] sm:min-h-[80vh] lg:min-h-[85vh] bg-[#0a0a0c] overflow-hidden flex flex-col justify-center pt-10 pb-28 sm:pb-32 lg:py-16">
     
-    <!-- Carrusel de Imágenes de Fondo -->
-    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        {#each imagenesHero as img, i}
-            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out {i === indiceActual ? 'opacity-90 scale-105' : 'opacity-0 scale-100'}">
-                <img src={img} alt="Fondo Hero" class="w-full h-full object-cover transition-transform duration-1000" />
+    <!-- Carrusel de Fondo en la Columna Derecha (Difuminado e integrado sin parpadeos) -->
+    <div class="absolute inset-0 lg:left-[45%] z-0 pointer-events-none opacity-40 lg:opacity-50 bg-[#0a0a0c]">
+        {#each imagenesHero as img, index}
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out bg-[#0a0a0c] {index === indiceActual ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}">
+                <img src={img} alt="Fondo Hero Ambiental" class="w-full h-full object-cover object-center" />
+                <!-- Máscaras de difuminado integradas por cada slide para evitar cortes o líneas -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0c] via-[#0a0a0c]/60 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-[#0a0a0c] z-10"></div>
             </div>
         {/each}
-
-        <!-- Viñetas y degradados cinematográficos -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/40 to-black/70 z-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#050505]/95 via-[#050505]/60 to-transparent z-10"></div>
     </div>
 
-    <!-- Contenido Principal optimizado -->
-    <div class="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 flex flex-col items-start justify-end">
+    <div class="relative z-20 max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
         
-        <!-- Título Responsivo Dinámico -->
-        <h1 class="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-black text-white uppercase tracking-tighter leading-[0.95] sm:leading-[0.9] drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)] max-w-4xl mb-3 sm:mb-5">
-            Equípate como un 
-            <span class="block text-[#ff0022] font-black italic mt-1 drop-shadow-[0_5px_15px_rgba(255,0,34,0.5)]">
-                Dios del Reino
-            </span>
-        </h1>
-        
-        <!-- Descripción Clara y Adaptativa -->
-        <p class="text-neutral-300 font-bold uppercase text-[11px] xs:text-xs sm:text-sm lg:text-base tracking-wide max-w-xl lg:max-w-2xl drop-shadow-md mb-6 sm:mb-8 leading-relaxed">
-            Domina cada rincón con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion Online.
-        </p>
-
-        <!-- Botones de Acción Flexibles -->
-        <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 w-full sm:w-auto">
-            <a href="/catalogo" class="px-5 py-3.5 sm:px-7 sm:py-4 bg-[#141416]/95 hover:bg-black text-white border border-white/20 font-black uppercase text-[11px] sm:text-xs tracking-widest transition-all text-center active:scale-95 backdrop-blur-md rounded-xl flex items-center justify-center gap-2">
-                <span>Ver Catálogo</span>
-                <span class="text-sm leading-none">→</span>
-            </a>
+        <!-- Columna Izquierda: Títulos y Botones -->
+        <div class="lg:col-span-7 flex flex-col items-start justify-center relative">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white uppercase tracking-tight leading-[1.05] mb-4 drop-shadow-md">
+                Equípate como un 
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-600 to-red-900 font-black mt-1">
+                    Dios del Reino
+                </span>
+            </h1>
             
-            <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:px-7 sm:py-4 bg-[#141416]/95 hover:bg-black text-white border border-white/20 font-black uppercase text-[11px] sm:text-xs tracking-widest transition-all text-center active:scale-95 backdrop-blur-md rounded-xl">
-                Asesoría WhatsApp
-            </a>
+            <p class="text-neutral-300 font-normal text-xs sm:text-sm lg:text-base max-w-xl mb-6 sm:mb-8 leading-relaxed drop-shadow">
+                Domina cada rincón con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion Online.
+            </p>
 
-            <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:px-7 sm:py-4 bg-[#141416]/95 hover:bg-black text-white border border-white/20 font-black uppercase text-[11px] sm:text-xs tracking-widest transition-all text-center active:scale-95 backdrop-blur-md rounded-xl">
-                Referencias
-            </a>
+            <!-- Botones Responsive Adaptados a Mobile Extreme y PC -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+                <a href="/catalogo" class="px-5 py-3.5 sm:py-3 bg-white text-black hover:bg-neutral-200 font-semibold text-xs tracking-wider uppercase transition-all duration-300 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-white/5 active:scale-[0.98]">
+                    <span>Ver Catálogo</span>
+                    <Icon icon="lucide:arrow-right" class="w-4 h-4" />
+                </a>
+                
+                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:py-3 bg-black/40 hover:bg-black/60 text-white border border-white/20 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg active:scale-[0.98]">
+                    Asesoría WhatsApp
+                </a>
+
+                <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:py-3 bg-black/40 hover:bg-black/60 text-white border border-white/20 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg flex items-center justify-center gap-2 active:scale-[0.98]">
+                    <span>Referencias</span>
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Paginador / Indicadores inferiores -->
-    <div class="absolute bottom-4 right-4 z-30 hidden xs:flex items-center gap-1.5 sm:gap-2">
-        <span class="text-white text-[10px] font-bold mr-1">▶</span>
-        {#each imagenesHero as _, index}
-            <button 
-                onclick={() => indiceActual = index}
-                class="h-1.5 sm:h-2 rounded-full transition-all duration-300 {index === indiceActual ? 'w-8 sm:w-10 bg-[#ff0022]' : 'w-1.5 sm:w-2 bg-white/50 hover:bg-white'}"
-                aria-label={`Ir a imagen ${index + 1}`}>
-            </button>
-        {/each}
     </div>
 </section>
 
-<!-- TARJETAS DE UNIVERSOS (Grid Adaptado para Tablets y PC) -->
-<section class="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-16 lg:-mt-20 mb-12 sm:mb-20">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+<!-- TARJETAS DE UNIVERSOS + FORMULARIO -->
+<section class="relative z-30 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 -mt-24 sm:-mt-20 lg:-mt-24 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
         
         <!-- Tarjeta 1: Guabina -->
-        <div class="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-[#0c0c0c] border border-white/15 overflow-hidden flex flex-col justify-between group hover:border-[#ff0022] transition-all duration-300 shadow-[0_15px_30px_rgba(0,0,0,0.8)] rounded-2xl">
+        <div class="relative h-[440px] sm:h-[460px] lg:h-[490px] bg-[#121216] border border-white/10 hover:border-red-600/50 overflow-hidden flex flex-col justify-between group transition-all duration-500 rounded-2xl p-5 sm:p-6 shadow-xl">
             <div class="absolute inset-0 z-0">
-                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70 filter saturate-125">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-40">
                     <source src="/guabi.mp4" type="video/mp4" />
                 </video>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#0c0c0c]/40 to-black/70"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121216] via-[#121216]/60 to-transparent"></div>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex justify-between items-start">
-                <span class="bg-[#ff0022] text-white text-[9px] sm:text-[10px] font-black uppercase px-2.5 py-1 tracking-widest shadow-md rounded-md">
-                    GUABINA 🔥
+            <div class="relative z-10 flex justify-between items-center">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-red-500 bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full">
+                    Guabina
                 </span>
-                <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-black/80 px-2.5 py-1 border border-white/10 rounded-md">
-                    STOCK OK
-                </span>
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex flex-col justify-end space-y-3 sm:space-y-4">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+                <img src="/guabina.png" alt="Guabina Logo" class="w-40 sm:w-48 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
+                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/guabi.png</span>
+            </div>
+
+            <div class="relative z-10 space-y-3">
                 <div class="space-y-1">
-                    <h3 class="text-white font-black text-base sm:text-lg uppercase tracking-wider drop-shadow-md">PACK GUABINA</h3>
-                    <p class="text-[11px] sm:text-xs text-neutral-300 font-bold uppercase leading-relaxed">
-                        Equipamiento pesado, yang y servicios de nivel superior.
+                    <h3 class="text-white font-bold text-sm sm:text-base tracking-wide">PACK GUABINA</h3>
+                    <p class="text-[11px] text-neutral-400 leading-snug font-normal">
+                        Equipamiento pesado, yang y servicios de nivel superior garantizados.
                     </p>
                 </div>
-                <a href="/catalogo" class="w-full py-3 sm:py-3.5 bg-[#ff0022] hover:bg-[#d9001d] text-white text-[11px] sm:text-xs font-black uppercase tracking-widest transition-all shadow-lg active:scale-95 block text-center rounded-xl">
+                <a href="/catalogo" class="w-full py-2.5 bg-white/10 hover:bg-red-600 text-white text-[11px] font-semibold uppercase tracking-wider transition-all duration-300 block text-center rounded-xl border border-white/10 hover:border-red-500">
                     Comprar Ahora
                 </a>
             </div>
         </div>
 
         <!-- Tarjeta 2: Metin2.es -->
-        <div class="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-[#0c0c0c] border border-white/15 overflow-hidden flex flex-col justify-between group hover:border-white transition-all duration-300 shadow-[0_15px_30px_rgba(0,0,0,0.8)] rounded-2xl">
+        <div class="relative h-[440px] sm:h-[460px] lg:h-[490px] bg-[#121216] border border-white/10 hover:border-white/40 overflow-hidden flex flex-col justify-between group transition-all duration-500 rounded-2xl p-5 sm:p-6 shadow-xl">
             <div class="absolute inset-0 z-0">
-                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70 filter saturate-125">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-40">
                     <source src="/fondovideo4.mp4" type="video/mp4" />
                 </video>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#0c0c0c]/40 to-black/70"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121216] via-[#121216]/60 to-transparent"></div>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex justify-between items-start">
-                <span class="bg-white text-black text-[9px] sm:text-[10px] font-black uppercase px-2.5 py-1 tracking-widest shadow-md rounded-md">
-                    METIN2.ES ⚔️
+            <div class="relative z-10 flex justify-between items-center">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-300 bg-white/10 border border-white/20 px-3 py-1 rounded-full">
+                    Metin2.es
                 </span>
-                <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-neutral-300 bg-black/80 px-2.5 py-1 border border-white/10 rounded-md">
-                    OFICIAL
-                </span>
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex flex-col justify-end space-y-3 sm:space-y-4">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+                <img src="/metin2logo.png" alt="Metin2.es Logo" class="w-36 sm:w-44 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
+                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/fondovideo4.mp4</span>
+            </div>
+
+            <div class="relative z-10 space-y-3">
                 <div class="space-y-1">
-                    <h3 class="text-white font-black text-base sm:text-lg uppercase tracking-wider drop-shadow-md">PACK METIN2.ES</h3>
-                    <p class="text-[11px] sm:text-xs text-neutral-300 font-bold uppercase leading-relaxed">
-                        Yang y elementos garantizados en servidores oficiales.
+                    <h3 class="text-white font-bold text-sm sm:text-base tracking-wide">PACK METIN2.ES</h3>
+                    <p class="text-[11px] text-neutral-400 leading-snug font-normal">
+                        Yang y elementos esenciales asegurados en los servidores oficiales.
                     </p>
                 </div>
-                <a href="/vista-previa" class="w-full py-3 sm:py-3.5 bg-white text-black hover:bg-neutral-200 text-[11px] sm:text-xs font-black uppercase tracking-widest transition-all shadow-lg active:scale-95 block text-center rounded-xl">
-                    COMPRAR AHORA
+                <a href="/vista-previa" class="w-full py-2.5 bg-white/10 hover:bg-white hover:text-black text-white text-[11px] font-semibold uppercase tracking-wider transition-all duration-300 block text-center rounded-xl border border-white/10">
+                    Comprar Ahora
                 </a>
             </div>
         </div>
 
         <!-- Tarjeta 3: Albion Online -->
-        <div class="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-[#0c0c0c] border border-white/15 overflow-hidden flex flex-col justify-between group hover:border-blue-500 transition-all duration-300 shadow-[0_15px_30px_rgba(0,0,0,0.8)] rounded-2xl">
+        <div class="relative h-[440px] sm:h-[460px] lg:h-[490px] bg-[#121216] border border-white/10 hover:border-blue-500/50 overflow-hidden flex flex-col justify-between group transition-all duration-500 rounded-2xl p-5 sm:p-6 shadow-xl">
             <div class="absolute inset-0 z-0">
-                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70 filter saturate-125">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-40">
                     <source src="/video5.mp4" type="video/mp4" />
                 </video>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#0c0c0c]/40 to-black/70"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121216] via-[#121216]/60 to-transparent"></div>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex justify-between items-start">
-                <span class="bg-blue-600 text-white text-[9px] sm:text-[10px] font-black uppercase px-2.5 py-1 tracking-widest shadow-md rounded-md">
-                    ALBION 🛡️
+            <div class="relative z-10 flex justify-between items-center">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+                    Albion
                 </span>
-                <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-blue-400 bg-black/80 px-2.5 py-1 border border-white/10 rounded-md">
-                    ONLINE
-                </span>
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 p-4 sm:p-6 flex flex-col justify-end space-y-3 sm:space-y-4">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+                <img src="/albion.png" alt="Albion Online Logo" class="w-36 sm:w-44 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
+                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/video5.mp4</span>
+            </div>
+
+            <div class="relative z-10 space-y-3">
                 <div class="space-y-1">
-                    <h3 class="text-white font-black text-base sm:text-lg uppercase tracking-wider drop-shadow-md">PACK ALBION</h3>
-                    <p class="text-[11px] sm:text-xs text-neutral-300 font-bold uppercase leading-relaxed">
-                        Plata segura, sets y recursos para dominar las tierras.
+                    <h3 class="text-white font-bold text-sm sm:text-base tracking-wide">PACK ALBION</h3>
+                    <p class="text-[11px] text-neutral-400 leading-snug font-normal">
+                        Plata segura, sets optimizados y recursos para dominar las tierras.
                     </p>
                 </div>
-                <a href="/albion-online" class="w-full py-3 sm:py-3.5 bg-blue-600 hover:bg-blue-500 text-white text-[11px] sm:text-xs font-black uppercase tracking-widest transition-all shadow-lg active:scale-95 block text-center rounded-xl">
-                    COMPRAR AHORA
+                <a href="/albion-online" class="w-full py-2.5 bg-white/10 hover:bg-blue-600 text-white text-[11px] font-semibold uppercase tracking-wider transition-all duration-300 block text-center rounded-xl border border-white/10 hover:border-blue-500">
+                    Comprar Ahora
                 </a>
             </div>
         </div>
 
-    </div>
-</section>
+        <!-- Tarjeta 4: Formulario Exprés Integrado -->
+        <div class="relative h-[440px] sm:h-[460px] lg:h-[490px] bg-[#121216] border border-white/10 flex flex-col justify-between rounded-2xl p-5 sm:p-6 shadow-xl sm:col-span-2 lg:col-span-1">
+            <div class="space-y-1">
+                <h3 class="text-white font-bold text-sm sm:text-base tracking-wide flex items-center justify-between">
+                    <span>Pedido Exprés</span>
+                    <span class="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+                </h3>
+                <p class="text-neutral-400 text-xs font-normal">
+                    Cotización directa y prioritaria por WhatsApp.
+                </p>
+            </div>
 
-<!-- FORMULARIO DE PEDIDO EXPRÉS -->
-<section class="py-12 sm:py-16 md:py-20 bg-[#080808] relative overflow-hidden border-y border-white/10">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
-        <div class="text-center mb-8 sm:mb-10 space-y-2.5">
-            <h3 class="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
-                Haz tu pedido <span class="text-[#ff0022] italic">Exprés</span>
-            </h3>
-            <p class="text-neutral-400 text-[11px] xs:text-xs sm:text-sm font-bold uppercase tracking-wider max-w-lg mx-auto leading-relaxed">
-                Completa los datos de tu personaje y recibe atención prioritaria inmediata vía WhatsApp.
-            </p>
+            <form onsubmit={enviarPedido} class="space-y-2.5">
+                <div class="space-y-1">
+                    <label class="text-neutral-300 text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
+                        Personaje
+                    </label>
+                    <input bind:value={nombre} placeholder="Ej: Carlos Silva" required 
+                           class="w-full bg-[#0a0a0c] border border-white/10 focus:border-red-600 px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 outline-none transition-all rounded-xl" />
+                </div>
+
+                <div class="space-y-1">
+                    <label class="text-neutral-300 text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
+                        Items / Paquete
+                    </label>
+                    <textarea bind:value={pedido} placeholder="¿Qué necesitas cotizar?" required 
+                              class="w-full bg-[#0a0a0c] border border-white/10 focus:border-red-600 px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 h-14 sm:h-16 outline-none transition-all resize-none rounded-xl"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full py-3 bg-red-600 hover:bg-red-500 text-white font-semibold uppercase text-xs tracking-wider flex items-center justify-center gap-2 transition-all duration-300 rounded-xl shadow-lg shadow-red-600/20 active:scale-[0.98]">
+                    <Icon icon="ic:baseline-whatsapp" class="w-4 h-4" />
+                    <span>Enviar a WhatsApp</span>
+                </button>
+            </form>
+
+            <div class="text-center text-neutral-500 text-[10px] uppercase tracking-widest font-medium">
+                <span>Transacción 100% Segura</span>
+            </div>
         </div>
 
-        <form onsubmit={enviarPedido} class="bg-[#101012] p-5 sm:p-8 lg:p-10 border-t-4 border-[#ff0022] border-x border-b border-white/10 shadow-2xl space-y-4 sm:space-y-6 rounded-2xl">
-            <div class="space-y-1.5">
-                <label class="flex items-center gap-2 text-neutral-200 text-[11px] sm:text-xs font-black uppercase tracking-widest">
-                    <span class="w-2 h-2 bg-[#ff0022] rounded-full"></span>
-                    Tu Nombre / Personaje
-                </label>
-                <input bind:value={nombre} placeholder="Ej: Carlos Silva (Guabina / Albion)" required 
-                       class="w-full bg-[#050505] border border-white/25 focus:border-[#ff0022] px-4 py-3 text-sm text-white placeholder:text-neutral-600 outline-none transition-all font-bold rounded-xl" />
-            </div>
-
-            <div class="space-y-1.5">
-                <label class="flex items-center gap-2 text-neutral-200 text-[11px] sm:text-xs font-black uppercase tracking-widest">
-                    <span class="w-2 h-2 bg-[#ff0022] rounded-full"></span>
-                    Detalles del Pedido / Items
-                </label>
-                <textarea bind:value={pedido} placeholder="Describe los items, cantidad o paquete que necesitas cotizar..." required 
-                          class="w-full bg-[#050505] border border-white/25 focus:border-[#ff0022] px-4 py-3 text-sm text-white placeholder:text-neutral-600 h-28 sm:h-32 outline-none transition-all font-bold resize-none rounded-xl"></textarea>
-            </div>
-            
-            <button type="submit" class="w-full px-5 py-3.5 sm:py-4 bg-[#ff0022] hover:bg-[#d9001d] text-white font-black uppercase text-[11px] sm:text-sm tracking-widest flex items-center justify-center gap-2.5 transition-colors shadow-lg cursor-pointer rounded-xl active:scale-95">
-                <Icon icon="ic:baseline-whatsapp" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                <span>Realizar Pedido por WhatsApp</span>
-            </button>
-
-            <div class="flex items-center justify-center gap-2 pt-1 text-neutral-400 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest">
-                <span>Transacción 100% Segura y Verificada</span>
-            </div>
-        </form>
     </div>
 </section>
 
 <!-- Sección de Comunidades -->
-<section class="py-16 sm:py-24 bg-[#050505] relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        <div class="text-center mb-10 sm:mb-14">
-            <h3 class="text-2xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
+<section class="py-16 sm:py-20 bg-[#0a0a0c] relative">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+        <div class="text-center mb-10 sm:mb-12">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white uppercase tracking-tight">
                 Únete a la <span class="text-neutral-500">Comunidad</span>
             </h3>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
             {#each 
                 [
                     { title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" },
@@ -255,27 +248,21 @@
                 ] as item
             }
                 <a href={item.link} target="_blank" rel="noreferrer" 
-                   class="group flex flex-col items-center text-center p-4 transition-all duration-300">
+                   class="group flex flex-col items-center text-center p-6 bg-[#121216]/40 hover:bg-[#121216] transition-all duration-300 rounded-2xl">
                     
-                    <!-- Ícono sin cuadro de fondo -->
-                    <div class="mb-4 text-neutral-400 group-hover:text-white transition-colors duration-300">
-                        <Icon class="w-10 h-10 sm:w-12 sm:h-12" icon="ic:baseline-facebook"/>
+                    <div class="mb-3 sm:mb-4 text-neutral-400 group-hover:text-white transition-colors duration-300">
+                        <Icon class="w-7 h-7 sm:w-8 sm:h-8" icon="ic:baseline-facebook"/>
                     </div>
 
-                    <!-- Título -->
-                    <h4 class="text-white font-black text-sm sm:text-base uppercase tracking-wider mb-2 group-hover:text-neutral-300 transition-colors">
+                    <h4 class="text-white font-bold text-sm tracking-wide mb-1 group-hover:text-neutral-200 transition-colors">
                         {item.title}
                     </h4>
                     
-                    <!-- Badge de información -->
-                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-black/40 border border-white/10 rounded-full">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <p class="text-neutral-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest">
-                            {item.sub}
-                        </p>
-                    </div>
+                    <p class="text-neutral-500 text-xs font-medium tracking-wider">
+                        {item.sub}
+                    </p>
                 </a>
             {/each}
         </div>
-    </div>
+    </div> 
 </section>
