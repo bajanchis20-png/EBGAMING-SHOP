@@ -103,8 +103,8 @@
             {/if}
         </header>
 
-        <!-- CORRECCIÓN APLICADA: Se añadió pt-24 sm:pt-28 para dar respiro al contenido debajo del header flotante -->
-        <main class="min-h-[70vh] overflow-x-hidden pt-24 sm:pt-28 px-4 sm:px-6">
+        <!-- ESPACIADO REDUCIDO: Cambiado a pt-14 sm:pt-16 para que pegue el contenido arriba de forma adecuada -->
+        <main class="min-h-[70vh] overflow-x-hidden pt-14 sm:pt-16 px-0">
             {@render children()}
         </main>
     </div>
