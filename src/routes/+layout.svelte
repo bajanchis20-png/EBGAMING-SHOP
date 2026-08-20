@@ -103,8 +103,8 @@
             {/if}
         </header>
 
-        <!-- Main sin padding superior excesivo para que el hero comience desde el borde superior de la pantalla -->
-        <main class="min-h-[70vh] overflow-x-hidden pt-0">
+        <!-- CORRECCIÓN APLICADA: Se añadió pt-24 sm:pt-28 para dar respiro al contenido debajo del header flotante -->
+        <main class="min-h-[70vh] overflow-x-hidden pt-24 sm:pt-28 px-4 sm:px-6">
             {@render children()}
         </main>
     </div>
