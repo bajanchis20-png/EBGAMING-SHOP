@@ -101,9 +101,8 @@
                 <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none">
                 <img src="/guabina.png" alt="Guabina Logo" class="w-40 sm:w-48 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
-                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/guabi.png</span>
             </div>
 
             <div class="relative z-10 space-y-3">
@@ -135,9 +134,8 @@
                 <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none">
                 <img src="/metin2logo.png" alt="Metin2.es Logo" class="w-36 sm:w-44 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
-                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/fondovideo4.mp4</span>
             </div>
 
             <div class="relative z-10 space-y-3">
@@ -169,9 +167,8 @@
                 <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             </div>
 
-            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none space-y-2">
+            <div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none">
                 <img src="/albion.png" alt="Albion Online Logo" class="w-36 sm:w-44 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
-                <span class="text-[10px] font-mono text-neutral-400 bg-black/60 px-2 py-0.5 rounded border border-white/5">/video5.mp4</span>
             </div>
 
             <div class="relative z-10 space-y-3">
