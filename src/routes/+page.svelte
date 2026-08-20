@@ -238,15 +238,15 @@
 </section>
 
 <!-- Sección de Comunidades -->
-<section class="py-12 sm:py-16 md:py-20 bg-[#050505] relative overflow-hidden">
+<section class="py-16 sm:py-24 bg-[#050505] relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        <div class="text-center mb-8 sm:mb-12">
-            <h3 class="text-xl xs:text-2xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
-                Únete a la <span class="text-neutral-400">Comunidad</span>
+        <div class="text-center mb-10 sm:mb-14">
+            <h3 class="text-2xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
+                Únete a la <span class="text-neutral-500">Comunidad</span>
             </h3>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {#each 
                 [
                     { title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" },
@@ -255,18 +255,22 @@
                 ] as item
             }
                 <a href={item.link} target="_blank" rel="noreferrer" 
-                   class="group flex flex-col items-center text-center p-6 sm:p-8 bg-[#101012] border border-white/10 hover:border-[#ff0022] transition-all duration-300 shadow-xl rounded-2xl">
+                   class="group flex flex-col items-center text-center p-4 transition-all duration-300">
                     
-                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-[#050505] border border-white/20 flex items-center justify-center mb-4 sm:mb-6 text-neutral-300 group-hover:text-white group-hover:bg-[#ff0022] transition-all duration-300 rounded-xl">
-                        <Icon class="w-7 h-7 sm:w-8 sm:h-8" icon="devicon:facebook"/>
+                    <!-- Ícono sin cuadro de fondo -->
+                    <div class="mb-4 text-neutral-400 group-hover:text-white transition-colors duration-300">
+                        <Icon class="w-10 h-10 sm:w-12 sm:h-12" icon="ic:baseline-facebook"/>
                     </div>
 
-                    <h4 class="text-white font-extrabold text-sm sm:text-base uppercase tracking-wider mb-2 group-hover:text-[#ff0022] transition-colors">
+                    <!-- Título -->
+                    <h4 class="text-white font-black text-sm sm:text-base uppercase tracking-wider mb-2 group-hover:text-neutral-300 transition-colors">
                         {item.title}
                     </h4>
                     
-                    <div class="inline-flex items-center px-2.5 py-1 bg-black border border-white/10 rounded-md">
-                        <p class="text-neutral-400 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest">
+                    <!-- Badge de información -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-black/40 border border-white/10 rounded-full">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <p class="text-neutral-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest">
                             {item.sub}
                         </p>
                     </div>
