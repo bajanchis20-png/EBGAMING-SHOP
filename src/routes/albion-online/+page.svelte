@@ -73,37 +73,29 @@
     }
 </script>
 
-<!-- Hero Section (Mobile First Extremo) -->
-<section class="relative min-h-[65vh] xs:min-h-[70vh] flex items-center bg-[#0d0d0f] overflow-x-hidden border-b border-white/10 py-8 xs:py-12 font-sans">
-    <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#e60012_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] sm:min-h-[70vh] flex items-center bg-[#0d0d0f] overflow-hidden border-b border-white/10 py-10 sm:py-16 font-sans">
+    <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-    <div class="max-w-7xl mx-auto w-full px-3 xs:px-4 sm:px-6 grid lg:grid-cols-2 gap-6 lg:gap-16 items-center z-10">
-        <div class="space-y-4 xs:space-y-6 text-center lg:text-left">
-            <div class="inline-block bg-[#e60012] text-white font-black text-[10px] xs:text-xs uppercase tracking-[0.25em] px-3.5 py-1 rounded-full shadow-[0_0_15px_rgba(230,0,18,0.5)] transform -rotate-1">
-                Edición Coleccionista
-            </div>
-            
-            <h1 class="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-black text-white uppercase tracking-[-0.03em] leading-[0.9]">
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center z-10">
+        <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
+            <h1 class="text-3xl sm:text-6xl md:text-8xl font-black text-white uppercase tracking-tight leading-[0.95]">
                 Albion <br/>
-                <span class="font-fantasy font-black uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-red-950 via-red-600 to-rose-400 blood-pulse-flicker relative pb-3 cursor-default inline-block mx-2">
+                <span class="font-gaming font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-[#ff4500] to-[#ffcc00] drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] relative inline-block mt-1 sm:mt-3">
                     Online
-                    <span class="blood-drop drop-1"></span>
-                    <span class="blood-drop drop-2"></span>
-                    <span class="blood-drop drop-3"></span>
-                    <span class="blood-drop drop-4"></span>
                 </span>
             </h1>
             
-            <p class="text-neutral-400 text-xs xs:text-sm font-bold leading-relaxed max-w-xs xs:max-w-sm sm:max-w-md mx-auto lg:mx-0 border-l-3 xs:border-l-4 border-[#e60012] pl-3 uppercase">
+            <p class="text-neutral-400 text-xs sm:text-sm font-bold leading-relaxed max-w-md mx-auto lg:mx-0 border-l-[3px] border-white/30 pl-3 uppercase">
                 Abastecimiento directo, mercado de alta gama y protección total contra baneos. Tu acceso premium al reino empieza aquí.
             </p>
         </div>
 
-        <div class="relative group w-full max-w-xs xs:max-w-sm sm:max-w-lg mx-auto lg:max-w-none">
-            <div class="absolute -inset-2 bg-gradient-to-r from-[#e60012] to-neutral-900 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-700"></div>
+        <div class="relative group w-full max-w-md sm:max-w-lg mx-auto lg:max-w-none">
+            <div class="absolute -inset-2 bg-gradient-to-r from-white/20 to-neutral-900 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-700"></div>
             
-            <div class="relative bg-[#121216] p-2 xs:p-3 rounded-[1.75rem] xs:rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl">
-                <div class="relative rounded-xl xs:rounded-2xl overflow-hidden aspect-video bg-neutral-900 border border-white/10">
+            <div class="relative bg-[#121216] p-2.5 sm:p-3 rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl">
+                <div class="relative rounded-xl sm:rounded-2xl overflow-hidden aspect-video bg-neutral-900 border border-white/10">
                     <video src="video5.mp4" autoplay loop muted playsinline class="w-full h-full object-cover opacity-90"></video>
                     <div class="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent"></div>
                 </div>
@@ -112,14 +104,14 @@
     </div>
 </section>
 
-<!-- Content & Protocol Section (Mobile First Extremo) -->
-<section class="max-w-7xl mx-auto py-10 xs:py-16 md:py-24 px-3 xs:px-4 sm:px-6 relative bg-[#0d0d0f] overflow-x-hidden">
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+<!-- Content & Protocol Section -->
+<section class="max-w-7xl mx-auto py-12 sm:py-20 md:py-24 px-4 sm:px-6 relative bg-[#0d0d0f] overflow-hidden">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         
         <div class="flex justify-center items-center order-2 lg:order-1 w-full">
-            <div class="relative group w-full max-w-[280px] xs:max-w-xs sm:max-w-md flex justify-center">
-                <div class="absolute -inset-2 bg-[#e60012]/20 rounded-[2rem] blur-lg group-hover:opacity-100 transition duration-700"></div>
-                <div class="relative bg-[#121216] p-2 xs:p-3 rounded-[1.75rem] xs:rounded-[2rem] border border-white/10 shadow-2xl w-full flex justify-center">
+            <div class="relative group w-full max-w-sm sm:max-w-md flex justify-center">
+                <div class="absolute -inset-2 bg-white/5 rounded-[2rem] blur-lg group-hover:opacity-100 transition duration-700"></div>
+                <div class="relative bg-[#121216] p-3 sm:p-4 rounded-[1.75rem] sm:rounded-[2rem] border border-white/10 shadow-2xl w-full flex justify-center">
                     <Nuevatarjeta 
                         titulo="ALBION ONLINE" 
                         img="/albion.jpeg" 
@@ -131,13 +123,13 @@
             </div>
         </div>
 
-        <div class="space-y-4 xs:space-y-6 order-1 lg:order-2 text-center lg:text-left">
-            <h3 class="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center justify-center lg:justify-start gap-2.5">
-                <span class="w-2.5 xs:w-3 h-7 xs:h-8 sm:h-10 bg-[#e60012] rounded-full flex-shrink-0 shadow-[0_0_10px_rgba(230,0,18,0.5)]"></span>
-                Protocolo<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e60012] via-rose-500 to-[#e60012]"> de Seguridad</span>
+        <div class="space-y-4 sm:space-y-6 order-1 lg:order-2 text-center lg:text-left">
+            <h3 class="text-xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight flex items-center justify-center lg:justify-start gap-2.5">
+                <span class="w-2.5 h-7 sm:h-10 bg-white/80 rounded-full flex-shrink-0 shadow-[0_0_10px_rgba(255,255,255,0.2)]"></span>
+                Protocolo<span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 via-white to-neutral-400"> de Seguridad</span>
             </h3>
-            <p class="text-neutral-400 text-xs xs:text-sm leading-relaxed font-bold border-l-3 xs:border-l-4 border-[#e60012] pl-3 uppercase shadow-sm">
-                Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-[#e60012] font-black">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-[#e60012] font-black">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda qué tu seguridad es la nuestra.
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed font-bold border-l-[3px] border-white/30 pl-3 uppercase shadow-sm">
+                Tu cuenta principal nunca entra en contacto con trade sospechoso. Implementamos una <span class="text-white font-black">capa de transferencia aislada</span> para camuflar el origen de los recursos. Para garantizar tu seguridad, implementamos un sistema de transferencia única, te proporcionamos acceso total a una <span class="text-white font-black">cuenta con la que podrás hacer una única transferencia</span> a través del gremio. Este procedimiento asegura total discreción, y recuerda que tu seguridad es la nuestra.
             </p>
         </div>
     </div>
@@ -145,47 +137,47 @@
     <!-- Botón Flotante del Carrito -->
     <button 
         onclick={() => isCartOpen = !isCartOpen}
-        class="fixed bottom-4 right-4 xs:bottom-5 xs:right-5 z-50 bg-[#e60012] hover:bg-[#cc0010] text-white font-black p-3.5 xs:p-4 rounded-full shadow-[0_0_20px_rgba(230,0,18,0.5)] flex items-center justify-center transition-transform active:scale-95 cursor-pointer"
+        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white/10 hover:bg-white/20 text-white font-black p-3.5 sm:p-4 rounded-full border border-white/20 hover:border-white/40 backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] flex items-center justify-center transition-transform active:scale-95 cursor-pointer"
         aria-label="Abrir Carrito"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 xs:h-6 xs:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
         {#if totalItems > 0}
-            <span class="absolute -top-1.5 -right-1.5 bg-[#0d0d0f] text-white text-[10px] xs:text-xs w-5 h-5 xs:w-6 xs:h-6 rounded-full flex items-center justify-center font-bold border-2 border-white/10 shadow-md">
+            <span class="absolute -top-1.5 -right-1.5 bg-[#0d0d0f] text-white text-[10px] sm:text-xs w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center font-bold border-2 border-white/20 shadow-md">
                 {totalItems}
             </span>
         {/if}
     </button>
 
-    <!-- Panel Deslizante del Carrito (Drawer) - Optimizado Mobile First -->
+    <!-- Panel Deslizante del Carrito (Drawer) -->
     {#if isCartOpen}
         <div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end transition-opacity">
-            <div class="w-full sm:max-w-md bg-[#121216] border-l border-white/10 h-full p-4 xs:p-6 flex flex-col justify-between shadow-2xl">
-                <div class="overflow-y-auto pr-1 flex-1">
-                    <div class="flex items-center justify-between pb-3.5 border-b border-white/10">
-                        <h3 class="text-xl sm:text-2xl font-black uppercase text-white tracking-wider flex items-center gap-2">
-                            <span class="text-[#e60012]">🛒</span> Tu Carrito
+            <div class="w-full sm:max-w-md bg-[#121216] border-l border-white/10 h-full max-h-screen p-4 sm:p-6 flex flex-col justify-between shadow-2xl overflow-hidden">
+                <div class="flex-1 overflow-y-auto pr-1">
+                    <div class="flex items-center justify-between pb-3.5 border-b border-white/10 sticky top-0 bg-[#121216] z-10">
+                        <h3 class="text-lg sm:text-2xl font-black uppercase text-white tracking-wider flex items-center gap-2">
+                            <span class="text-white/80">🛒</span> Tu Carrito
                         </h3>
-                        <button onclick={() => isCartOpen = false} class="text-neutral-400 hover:text-white text-xl font-bold p-2 cursor-pointer">
+                        <button onclick={() => isCartOpen = false} class="bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white border border-white/10 hover:border-white/30 backdrop-blur-sm rounded-xl text-lg font-bold p-1.5 cursor-pointer transition-all">
                             ✕
                         </button>
                     </div>
 
                     <div class="mt-4 space-y-3">
                         {#if cart.length === 0}
-                            <p class="text-neutral-500 text-center py-12 uppercase tracking-widest text-xs sm:text-sm font-bold">Tu carrito está vacío</p>
+                            <p class="text-neutral-500 text-center py-12 uppercase tracking-widest text-xs font-bold">Tu carrito está vacío</p>
                         {:else}
                             {#each cart as item, index}
                                 <div class="flex items-center justify-between bg-[#17171c] border border-white/10 p-3 rounded-2xl gap-2 shadow-sm">
-                                    <div class="flex-1 pr-1">
-                                        <h4 class="text-white text-[11px] xs:text-xs font-black uppercase">{item.titulo}</h4>
-                                        <p class="text-[#e60012] text-[10px] font-bold mt-0.5 uppercase tracking-wider">Consultar</p>
+                                    <div class="flex-1 min-w-0 pr-1">
+                                        <h4 class="text-white text-xs font-black uppercase truncate">{item.titulo}</h4>
+                                        <p class="text-neutral-400 text-[10px] font-bold mt-0.5 uppercase tracking-wider">Consultar</p>
                                     </div>
-                                    <div class="flex items-center gap-1.5 xs:gap-2">
-                                        <button onclick={() => updateQuantity(index, -1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs active:scale-95">-</button>
+                                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                                        <button onclick={() => updateQuantity(index, -1)} class="w-7 h-7 bg-white/5 border border-white/10 text-white rounded-xl font-bold hover:bg-white/10 flex items-center justify-center cursor-pointer text-xs active:scale-95">-</button>
                                         <span class="text-xs sm:text-sm font-black text-white w-5 text-center">{item.cantidad}</span>
-                                        <button onclick={() => updateQuantity(index, 1)} class="w-7 h-7 bg-[#121216] border border-white/10 text-white rounded-xl font-bold hover:bg-white/5 flex items-center justify-center cursor-pointer text-xs active:scale-95">+</button>
+                                        <button onclick={() => updateQuantity(index, 1)} class="w-7 h-7 bg-white/5 border border-white/10 text-white rounded-xl font-bold hover:bg-white/10 flex items-center justify-center cursor-pointer text-xs active:scale-95">+</button>
                                     </div>
                                 </div>
                             {/each}
@@ -194,13 +186,13 @@
 
                     {#if cart.length > 0}
                         <div class="mt-6 pt-4 border-t border-white/10">
-                            <label class="block text-neutral-300 uppercase tracking-widest text-[11px] xs:text-xs font-bold mb-2">Selecciona método de pago:</label>
-                            <div class="space-y-2 max-h-40 sm:max-h-48 overflow-y-auto pr-1">
+                            <label class="block text-neutral-300 uppercase tracking-widest text-xs font-bold mb-2">Selecciona método de pago:</label>
+                            <div class="space-y-2 max-h-36 sm:max-h-48 overflow-y-auto pr-1">
                                 {#each paymentMethods as method}
                                     <button
                                         type="button"
                                         onclick={() => selectedPayment = method.id}
-                                        class={`w-full flex items-center gap-3 px-3.5 py-3 rounded-2xl border text-xs font-bold transition-all text-left cursor-pointer active:scale-95 ${selectedPayment === method.id ? 'bg-[#e60012]/10 border-[#e60012] text-[#e60012] shadow-sm' : 'bg-[#17171c] border-white/10 text-neutral-300 hover:border-white/20'}`}
+                                        class={`w-full flex items-center gap-3 px-3 py-2.5 rounded-2xl border text-xs font-bold transition-all text-left cursor-pointer active:scale-95 backdrop-blur-sm ${selectedPayment === method.id ? 'bg-white/10 border-white/30 text-white shadow-sm' : 'bg-white/5 border-white/10 text-neutral-300 hover:border-white/30 hover:bg-white/10'}`}
                                     >
                                         <Icon icon={method.icon} class="w-5 h-5 flex-shrink-0" />
                                         <span class="truncate uppercase">{method.name}</span>
@@ -211,15 +203,15 @@
                     {/if}
                 </div>
 
-                <div class="pt-4 border-t border-white/10 mt-2">
-                    <div class="flex justify-between items-center mb-4">
+                <div class="pt-4 border-t border-white/10 mt-2 bg-[#121216]">
+                    <div class="flex justify-between items-center mb-3">
                         <span class="text-neutral-400 uppercase tracking-widest text-xs font-bold">Precio total:</span>
-                        <span class="text-base sm:text-lg font-black text-[#e60012] uppercase tracking-wider">Consultar</span>
+                        <span class="text-base sm:text-lg font-black text-white uppercase tracking-wider">Consultar</span>
                     </div>
                     <button 
                         onclick={checkout}
                         disabled={cart.length === 0}
-                        class="w-full bg-[#e60012] hover:bg-[#cc0010] disabled:opacity-50 disabled:cursor-not-allowed text-white font-black uppercase tracking-widest py-3.5 xs:py-4 rounded-2xl shadow-[0_0_20px_rgba(230,0,18,0.4)] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer active:scale-95"
+                        class="w-full bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30 disabled:opacity-50 disabled:cursor-not-allowed font-black uppercase tracking-widest py-3.5 sm:py-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer active:scale-[0.98]"
                     >
                         <span>💬</span> Consultar Pedido (WhatsApp)
                     </button>
@@ -230,108 +222,9 @@
 </section>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&display=swap');
 
-    .font-fantasy {
-        font-family: 'Cinzel Decorative', serif;
-    }
-
-    /* Animación de titileo y pulso en rojo sangre gamer */
-    @keyframes bloodFlicker {
-        0%, 100% {
-            filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6)) drop-shadow(0 0 20px rgba(153, 27, 27, 0.4));
-            opacity: 1;
-        }
-        50% {
-            filter: drop-shadow(0 0 18px rgba(255, 75, 75, 0.95)) drop-shadow(0 0 35px rgba(220, 38, 38, 0.7));
-            opacity: 0.88;
-        }
-        70% {
-            filter: drop-shadow(0 0 5px rgba(185, 28, 28, 0.5));
-            opacity: 1;
-        }
-    }
-
-    .blood-pulse-flicker {
-        background-size: 200% auto;
-        animation: bloodFlicker 2.5s infinite ease-in-out;
-        transition: 0.4s ease-in-out;
-    }
-
-    .blood-pulse-flicker:hover {
-        background-position: right center;
-        filter: drop-shadow(0 0 25px rgba(255, 50, 50, 1)) drop-shadow(0 0 50px rgba(220, 38, 38, 0.9));
-        opacity: 1;
-    }
-
-    /* Gotas de sangre con origen pegado al ras de las letras */
-    .blood-drop {
-        position: absolute;
-        bottom: 2px;
-        width: 4px;
-        height: 20px;
-        background: linear-gradient(
-            to bottom, 
-            rgba(255, 100, 100, 0.95) 0%, 
-            rgba(190, 15, 15, 0.95) 30%, 
-            rgba(90, 5, 5, 1) 75%, 
-            rgba(35, 0, 0, 1) 100%
-        );
-        border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
-        opacity: 0;
-        pointer-events: none;
-        box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.65), 0 0 8px rgba(239, 68, 68, 0.85);
-        transform-origin: top center;
-        z-index: 25 !important;
-    }
-
-    @keyframes realFluidDripFlush {
-        0% {
-            transform: translateY(0) scaleY(0.02) scaleX(0.6);
-            opacity: 0;
-        }
-        12% {
-            opacity: 1;
-            transform: translateY(2px) scaleY(0.4) scaleX(1.1);
-        }
-        30% {
-            transform: translateY(11px) scaleY(2.3) scaleX(0.4);
-        }
-        50% {
-            transform: translateY(24px) scaleY(1.2) scaleX(0.9);
-            opacity: 0.98;
-        }
-        80% {
-            transform: translateY(46px) scaleY(0.9) scaleX(1);
-            opacity: 0.8;
-        }
-        100% {
-            transform: translateY(58px) scaleY(0.15) scaleX(0.4);
-            opacity: 0;
-        }
-    }
-
-    .drop-1 {
-        left: 18%;
-        animation: realFluidDripFlush 3.2s infinite cubic-bezier(0.25, 1, 0.5, 1);
-        animation-delay: 0.2s;
-    }
-
-    .drop-2 {
-        left: 42%;
-        animation: realFluidDripFlush 2.6s infinite cubic-bezier(0.25, 1, 0.5, 1);
-        animation-delay: 1.1s;
-    }
-
-    .drop-3 {
-        left: 65%;
-        animation: realFluidDripFlush 3.8s infinite cubic-bezier(0.25, 1, 0.5, 1);
-        animation-delay: 0.6s;
-    }
-
-    .drop-4 {
-        left: 85%;
-        animation: realFluidDripFlush 2.9s infinite cubic-bezier(0.25, 1, 0.5, 1);
-        animation-delay: 1.8s;
+    .font-gaming {
+        font-family: 'Orbitron', sans-serif;
     }
 </style>

@@ -10,23 +10,21 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <!-- Contenedor raíz unificado -->
-<div class="min-h-screen bg-[#0a0a0c] text-white flex flex-col justify-between selection:bg-red-500 selection:text-white font-sans">
+<div class="min-h-screen bg-[#0a0a0c] text-white flex flex-col justify-between selection:bg-orange-600 selection:text-white font-sans">
 
     <div>
         <!-- Navbar Flotante Glassmorphism Limpio -->
         <header class="fixed top-3 left-3 right-3 sm:top-5 sm:left-8 sm:right-8 z-50">
-            <nav class="max-w-7xl mx-auto bg-[#121216]/80 backdrop-blur-xl border border-white/10 shadow-2xl px-4 sm:px-6 py-3 flex justify-between items-center rounded-2xl transition-all duration-300">
+            <nav class="max-w-7xl mx-auto bg-[#121216]/85 backdrop-blur-xl border border-white/10 shadow-2xl px-4 sm:px-6 py-3 flex justify-between items-center rounded-2xl transition-all duration-300">
                 
                 <!-- Logo y enlaces de escritorio -->
                 <div class="flex items-center gap-6 lg:gap-10">
                     <a href="/" class="group flex items-center gap-2.5">
-                        <div class="w-10 h-10 overflow-hidden border border-white/10 group-hover:border-white/30 transition-all flex items-center justify-center bg-[#0a0a0c] rounded-xl shadow-inner">
-                            <img 
-                                class="w-full h-full object-cover transform scale-125 [image-rendering:-webkit-optimize-contrast]" 
-                                src="/logofondox.png" 
-                                alt="Logo"
-                            />
-                        </div>
+                        <img 
+                            class="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-105" 
+                            src="/eblogo.png" 
+                            alt="EB Logo"
+                        />
                     </a>
                     
                     <!-- Navegación Desktop Sutil y Limpia -->
@@ -40,13 +38,13 @@
                     </div>
                 </div>
 
-                <!-- Botones de Escritorio Derecha -->
+                <!-- Botones de Escritorio Derecha (Todos con estilo Login) -->
                 <div class="hidden lg:flex items-center gap-3">
                     <a href="/login" class="px-5 py-2.5 text-xs font-semibold text-white border border-white/10 hover:border-white/30 uppercase tracking-wider transition-all bg-white/5 backdrop-blur-sm rounded-xl">
                         Login
                     </a>
                     <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noreferrer" 
-                       class="flex items-center gap-2 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-red-600 hover:bg-red-500 shadow-lg shadow-red-600/20 transition-all rounded-xl">
+                       class="flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white border border-white/10 hover:border-white/30 uppercase tracking-wider transition-all bg-white/5 backdrop-blur-sm rounded-xl">
                         <span>WhatsApp</span>
                         <Icon height="16" icon="ic:baseline-whatsapp" width="16" />
                     </a>
@@ -55,7 +53,7 @@
                 <!-- Botones Móviles -->
                 <div class="flex lg:hidden items-center gap-2.5">
                     <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noreferrer" 
-                       class="w-10 h-10 text-white bg-red-600 flex items-center justify-center transition-transform active:scale-95 shadow-md rounded-xl"
+                       class="w-10 h-10 text-white bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:bg-white/10 active:scale-95 backdrop-blur-sm rounded-xl"
                        aria-label="Soporte WhatsApp">
                         <Icon height="18" icon="ic:baseline-whatsapp" width="18" />
                     </a>
@@ -93,7 +91,7 @@
                         Metin2.es
                     </a>
                     
-                    <div class="pt-3 mt-2 border-t border-white/10">
+                    <div class="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
                         <a href="/login" onclick={() => isMenuOpen = false} class="w-full text-center block py-3 text-xs font-semibold text-white border border-white/10 hover:border-white/30 uppercase tracking-wider transition-all bg-white/5 rounded-xl active:scale-95">
                             Mi Cuenta / Login
                         </a>
@@ -115,24 +113,19 @@
         <div class="bg-[#121216]/50 border-b border-white/5 py-8 px-6">
             <div class="max-w-7xl mx-auto flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
                 <div class="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
-                    <div class="border border-white/10 w-12 h-12 overflow-hidden flex-shrink-0 flex items-center justify-center bg-[#0a0a0c] rounded-xl shadow-inner">
-                        <img 
-                            class="w-full h-full object-cover transform scale-125 [image-rendering:-webkit-optimize-contrast]" 
-                            src="/logofondox.png" 
-                            alt="Logo Footer"
-                        />
-                    </div>
+                    <img 
+                        class="h-9 w-auto object-contain" 
+                        src="/eblogo.png" 
+                        alt="EB Logo Footer"
+                    />
                     <div>
-                        <span class="text-sm font-bold tracking-wider uppercase text-white block">
-                            EB<span class="text-red-500">GAMING</span>
-                        </span>
                         <p class="text-[11px] font-medium tracking-wider text-neutral-400">Plataforma de comercio digital</p>
                     </div>
                 </div>
 
                 <div class="w-full sm:w-auto flex justify-center">
                     <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,estoy interesado en un articulo de tu tienda" target="_blank" rel="noreferrer" 
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-red-600 hover:bg-red-500 transition-all active:scale-95 shadow-lg shadow-red-600/20 rounded-xl">
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold text-white border border-white/10 hover:border-white/30 uppercase tracking-wider transition-all bg-white/5 backdrop-blur-sm rounded-xl">
                         <Icon height="16" icon="ic:baseline-whatsapp" width="16" />
                         <span>Soporte por WhatsApp</span>
                     </a>
