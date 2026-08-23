@@ -48,31 +48,46 @@
 
     <div class="relative z-20 max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
         
-        <!-- Columna Izquierda: Títulos y Botones -->
-        <div class="lg:col-span-7 flex flex-col items-start justify-center relative">
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white uppercase tracking-tight leading-[1.05] mb-4 drop-shadow-md">
-                Equípate como un 
-                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-600 to-red-900 font-black mt-1">
-                    Dios del Reino
-                </span>
-            </h1>
+        <!-- Columna Izquierda: Títulos y Botones (Centrados globalmente en responsive) -->
+        <div class="lg:col-span-7 flex flex-col items-center lg:items-start justify-center relative text-center lg:text-left">
             
-            <p class="text-neutral-300 font-normal text-xs sm:text-sm lg:text-base max-w-xl mb-6 sm:mb-8 leading-relaxed drop-shadow">
+            <!-- Contenedor del Título Ordenado -->
+            <div class="flex flex-col mb-6 relative w-full items-center lg:items-start">
+                
+                <!-- Línea 1 -->
+                <h1 class="font-sans text-2xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider text-white drop-shadow-md mb-2 w-full text-center lg:text-left">
+                    Equípate como un 
+                </h1>
+                
+                <!-- Línea 2 -->
+                <h1 class="font-fantasy text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-wide leading-[1.15] text-transparent bg-clip-text bg-gradient-to-r from-red-950 via-red-600 to-rose-400 blood-pulse-flicker relative pb-3 cursor-default inline-block w-full text-center lg:text-left">
+                    Dios del reino
+                    
+                    <!-- Gotas de Sangre acopladas al ras de las letras -->
+                    <span class="blood-drop drop-1"></span>
+                    <span class="blood-drop drop-2"></span>
+                    <span class="blood-drop drop-3"></span>
+                    <span class="blood-drop drop-4"></span>
+                </h1>
+            </div>
+            
+            <!-- Párrafo descriptivo -->
+            <p class="text-neutral-300 font-normal text-xs sm:text-sm lg:text-base max-w-xl mb-6 sm:mb-8 leading-relaxed drop-shadow w-full text-center lg:text-left">
                 Domina cada rincón con items de élite. Seguridad absoluta, transacciones blindadas y entrega inmediata en Metin2 Guabina, Metin2.es & Albion Online.
             </p>
 
-            <!-- Botones Responsive Adaptados a Mobile Extreme y PC -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-                <a href="/catalogo" class="px-5 py-3.5 sm:py-3 bg-white text-black hover:bg-neutral-200 font-semibold text-xs tracking-wider uppercase transition-all duration-300 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-white/5 active:scale-[0.98]">
+            <!-- Botones Alargados en Mobile y Auto en PC -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5 w-full sm:w-auto">
+                <a href="/catalogo" class="w-full sm:w-auto px-6 py-4 sm:py-3 bg-white text-black hover:bg-neutral-200 font-bold text-xs tracking-wider uppercase transition-all duration-300 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-white/10 active:scale-[0.98]">
                     <span>Ver Catálogo</span>
                     <Icon icon="lucide:arrow-right" class="w-4 h-4" />
                 </a>
                 
-                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:py-3 bg-black/40 hover:bg-black/60 text-white border border-white/20 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg active:scale-[0.98]">
+                <a href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos" target="_blank" rel="noreferrer" class="w-full sm:w-auto px-6 py-4 sm:py-3 bg-black/50 hover:bg-black/70 text-white border border-white/20 font-bold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg active:scale-[0.98]">
                     Asesoría WhatsApp
                 </a>
 
-                <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" rel="noreferrer" class="px-5 py-3.5 sm:py-3 bg-black/40 hover:bg-black/60 text-white border border-white/20 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg flex items-center justify-center gap-2 active:scale-[0.98]">
+                <a href="https://www.facebook.com/share/p/1BJFKDdHai/" target="_blank" rel="noreferrer" class="w-full sm:w-auto px-6 py-4 sm:py-3 bg-black/50 hover:bg-black/70 text-white border border-white/20 font-bold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-md rounded-xl text-center shadow-lg flex items-center justify-center gap-2 active:scale-[0.98]">
                     <span>Referencias</span>
                 </a>
             </div>
@@ -81,6 +96,113 @@
     </div>
 </section>
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+  .font-fantasy {
+    font-family: 'Cinzel Decorative', serif;
+  }
+
+  /* Animación de titileo y pulso en rojo sangre gamer */
+  @keyframes bloodFlicker {
+    0%, 100% {
+      filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6)) drop-shadow(0 0 20px rgba(153, 27, 27, 0.4));
+      opacity: 1;
+    }
+    50% {
+      filter: drop-shadow(0 0 18px rgba(255, 75, 75, 0.95)) drop-shadow(0 0 35px rgba(220, 38, 38, 0.7));
+      opacity: 0.88;
+    }
+    70% {
+      filter: drop-shadow(0 0 5px rgba(185, 28, 28, 0.5));
+      opacity: 1;
+    }
+  }
+
+  .blood-pulse-flicker {
+    background-size: 200% auto;
+    animation: bloodFlicker 2.5s infinite ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+
+  .blood-pulse-flicker:hover {
+    background-position: right center;
+    filter: drop-shadow(0 0 25px rgba(255, 50, 50, 1)) drop-shadow(0 0 50px rgba(220, 38, 38, 0.9));
+    opacity: 1;
+  }
+
+  /* Gotas de sangre con origen pegado al ras de las letras */
+  .blood-drop {
+    position: absolute;
+    bottom: 2px; /* Pegado por completo al límite inferior del texto */
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(
+      to bottom, 
+      rgba(255, 100, 100, 0.95) 0%, 
+      rgba(190, 15, 15, 0.95) 30%, 
+      rgba(90, 5, 5, 1) 75%, 
+      rgba(35, 0, 0, 1) 100%
+    );
+    border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.65), 0 0 8px rgba(239, 68, 68, 0.85);
+    transform-origin: top center;
+    z-index: 25 !important;
+  }
+
+  /* Animación ajustada desde el nacimiento directo */
+  @keyframes realFluidDripFlush {
+    0% {
+      transform: translateY(0) scaleY(0.02) scaleX(0.6);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      transform: translateY(2px) scaleY(0.4) scaleX(1.1);
+    }
+    30% {
+      transform: translateY(11px) scaleY(2.3) scaleX(0.4);
+    }
+    50% {
+      transform: translateY(24px) scaleY(1.2) scaleX(0.9);
+      opacity: 0.98;
+    }
+    80% {
+      transform: translateY(46px) scaleY(0.9) scaleX(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(58px) scaleY(0.15) scaleX(0.4);
+      opacity: 0;
+    }
+  }
+
+  .drop-1 {
+    left: 18%;
+    animation: realFluidDripFlush 3.2s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    animation-delay: 0.2s;
+  }
+
+  .drop-2 {
+    left: 42%;
+    animation: realFluidDripFlush 2.6s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    animation-delay: 1.1s;
+  }
+
+  .drop-3 {
+    left: 65%;
+    animation: realFluidDripFlush 3.8s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    animation-delay: 0.6s;
+  }
+
+  .drop-4 {
+    left: 85%;
+    animation: realFluidDripFlush 2.9s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    animation-delay: 1.8s;
+  }
+</style>
 <!-- TARJETAS DE UNIVERSOS + FORMULARIO -->
 <section class="relative z-30 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 -mt-24 sm:-mt-20 lg:-mt-24 mb-20">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
