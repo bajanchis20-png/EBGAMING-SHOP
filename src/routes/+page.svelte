@@ -5,20 +5,21 @@
     let nombre = $state("");
     let pedido = $state("");
 
-    // Array con las imágenes para el carrusel ambiental del Hero
-    const imagenesHero = [
-        "/fondoname1.png",
-        "/fondoname2.png",
-        "/fondoname3.png",
-        "/fondoname4.png",
-        "/fondoname5.png"
+    // Array con elementos multimedia: el video colocado de primero y luego las imágenes
+    const mediaHero = [
+        { tipo: "video", src: "/videohome.mp4" }, // <--- Video colocado de primero
+        { tipo: "imagen", src: "/fondoname1.png" },
+        { tipo: "imagen", src: "/fondoname2.png" },
+        { tipo: "imagen", src: "/fondoname3.png" },
+        { tipo: "imagen", src: "/fondoname4.png" },
+        { tipo: "imagen", src: "/fondoname5.png" }
     ];
 
     let indiceActual = $state(0);
 
     onMount(() => {
         const intervalo = setInterval(() => {
-            indiceActual = (indiceActual + 1) % imagenesHero.length;
+            indiceActual = (indiceActual + 1) % mediaHero.length;
         }, 5000);
 
         return () => clearInterval(intervalo);
@@ -34,11 +35,17 @@
 <!-- HERO SECTION: TEXTO IZQUIERDA + CARRUSEL AMBIENTAL DIFUMINADO -->
 <section class="relative w-full min-h-[75vh] sm:min-h-[80vh] lg:min-h-[85vh] bg-[#0a0a0c] overflow-hidden flex flex-col justify-center pt-10 pb-28 sm:pb-32 lg:py-16">
     
-    <!-- Carrusel de Fondo en la Columna Derecha (Difuminado e integrado sin parpadeos) -->
+    <!-- Carrusel Multimedia de Fondo en la Columna Derecha (Videos e Imágenes integrados sin parpadeos) -->
     <div class="absolute inset-0 lg:left-[45%] z-0 pointer-events-none opacity-40 lg:opacity-50 bg-[#0a0a0c]">
-        {#each imagenesHero as img, index}
+        {#each mediaHero as item, index}
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out bg-[#0a0a0c] {index === indiceActual ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}">
-                <img src={img} alt="Fondo Hero Ambiental" class="w-full h-full object-cover object-center" />
+                
+                {#if item.tipo === "video"}
+                    <video src={item.src} autoplay muted loop playsinline class="w-full h-full object-cover object-center"></video>
+                {:else}
+                    <img src={item.src} alt="Fondo Hero Ambiental" class="w-full h-full object-cover object-center" />
+                {/if}
+
                 <!-- Máscaras de difuminado integradas por cada slide para evitar cortes o líneas -->
                 <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0c] via-[#0a0a0c]/60 to-transparent z-10"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-[#0a0a0c] z-10"></div>
@@ -134,7 +141,7 @@
   /* Gotas de sangre con origen pegado al ras de las letras */
   .blood-drop {
     position: absolute;
-    bottom: 2px; /* Pegado por completo al límite inferior del texto */
+    bottom: 2px;
     width: 4px;
     height: 20px;
     background: linear-gradient(
@@ -152,7 +159,6 @@
     z-index: 25 !important;
   }
 
-  /* Animación ajustada desde el nacimiento directo */
   @keyframes realFluidDripFlush {
     0% {
       transform: translateY(0) scaleY(0.02) scaleX(0.6);
@@ -203,6 +209,7 @@
     animation-delay: 1.8s;
   }
 </style>
+
 <!-- TARJETAS DE UNIVERSOS + FORMULARIO -->
 <section class="relative z-30 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 -mt-24 sm:-mt-20 lg:-mt-24 mb-20">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
