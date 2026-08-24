@@ -83,16 +83,17 @@
         <div
             class="lg:col-span-7 flex flex-col items-center lg:items-start justify-center relative text-center lg:text-left w-full"
         >
+            <!-- CONTENEDOR DESPLAZADO MÁS A LA DERECHA -->
             <div
                 class="flex flex-col mb-4 sm:mb-6 relative w-full items-center lg:items-start"
             >
                 <div
-                    class="mb-2 sm:mb-3 w-full flex justify-center lg:justify-start"
+                    class="mb-2 sm:mb-3 w-full flex justify-center lg:justify-start translate-x-4 sm:translate-x-8 lg:translate-x-0"
                 >
                     <img
                         src="/gamin2.png"
                         alt="Gamin"
-                        class="w-64 xs:w-72 sm:w-96 max-w-full object-contain mx-auto lg:mx-0"
+                        class="w-64 xs:w-72 sm:w-96 max-w-full object-contain mx-auto lg:mx-0 block"
                     />
                 </div>
             </div>
@@ -328,7 +329,7 @@
             </div>
         </div>
 
-        <!-- Tarjeta 4: Formulario Exprés Integrado (Armonizado con el nuevo look) -->
+        <!-- Tarjeta 4: Formulario Exprés Integrado -->
         <div
             class="relative h-[440px] sm:h-[470px] lg:h-[500px] bg-[#121216]/90 border border-white/10 flex flex-col justify-between rounded-3xl p-5 sm:p-6 shadow-2xl sm:col-span-2 lg:col-span-1 backdrop-blur-xl"
         >
