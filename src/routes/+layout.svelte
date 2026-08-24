@@ -22,7 +22,7 @@
                     <a href="/" class="group flex items-center gap-2.5">
                         <img 
                             class="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-105" 
-                            src="/eblogo.png" 
+                            src="/eblogo3.png" 
                             alt="EB Logo"
                         />
                     </a>
@@ -115,7 +115,7 @@
                 <div class="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
                     <img 
                         class="h-9 w-auto object-contain" 
-                        src="/eblogo.png" 
+                        src="/eblogo3.png" 
                         alt="EB Logo Footer"
                     />
                     <div>

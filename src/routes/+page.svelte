@@ -5,9 +5,8 @@
     let nombre = $state("");
     let pedido = $state("");
 
-    // Array con elementos multimedia: el video colocado de primero y luego las imágenes
+    // Array con elementos multimedia: solo las 5 imágenes (video eliminado)
     const mediaHero = [
-        { tipo: "video", src: "/videohome.mp4" },
         { tipo: "imagen", src: "/fondoname1.png" },
         { tipo: "imagen", src: "/fondoname2.png" },
         { tipo: "imagen", src: "/fondoname3.png" },
@@ -50,22 +49,11 @@
                     ? 'opacity-100 scale-100'
                     : 'opacity-0 scale-105'}"
             >
-                {#if item.tipo === "video"}
-                    <video
-                        src={item.src}
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        class="w-full h-full object-cover object-center"
-                    ></video>
-                {:else}
-                    <img
-                        src={item.src}
-                        alt="Fondo Hero Ambiental"
-                        class="w-full h-full object-cover object-center"
-                    />
-                {/if}
+                <img
+                    src={item.src}
+                    alt="Fondo Hero Ambiental"
+                    class="w-full h-full object-cover object-center"
+                />
 
                 <div
                     class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-[#0a0a0c] via-[#0a0a0c]/85 sm:via-[#0a0a0c]/60 to-[#0a0a0c]/90 sm:to-transparent z-10"
@@ -83,17 +71,18 @@
         <div
             class="lg:col-span-7 flex flex-col items-center lg:items-start justify-center relative text-center lg:text-left w-full"
         >
-            <!-- CONTENEDOR DESPLAZADO MÁS A LA DERECHA -->
+            <!-- CONTENEDOR CENTRADO Y AMPLIADO -->
             <div
                 class="flex flex-col mb-4 sm:mb-6 relative w-full items-center lg:items-start"
             >
+                <!-- Modificado: mx-auto agregado para centrar en pantallas pequeñas -->
                 <div
-                    class="mb-2 sm:mb-3 w-full flex justify-center lg:justify-start translate-x-4 sm:translate-x-8 lg:translate-x-0"
+                    class="mb-2 sm:mb-3 w-full flex justify-center lg:justify-start pr-0"
                 >
                     <img
-                        src="/gamin2.png"
+                        src="/engamin4.png"
                         alt="Gamin"
-                        class="w-64 xs:w-72 sm:w-96 max-w-full object-contain mx-auto lg:mx-0 block"
+                        class="w-72 xs:w-80 sm:w-[30rem] max-w-full object-contain mx-auto lg:mx-0 block"
                     />
                 </div>
             </div>
@@ -118,7 +107,7 @@
                 </a>
 
                 <a
-                    href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesoría%20sobre%20tus%20artículos"
+                    href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesor%C3%ADa%20sobre%20tus%20art%C3%ADculos"
                     target="_blank"
                     rel="noreferrer"
                     class="w-full sm:w-auto px-5 py-2.5 bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-sm rounded-xl text-center shadow-lg active:scale-[0.98]"
