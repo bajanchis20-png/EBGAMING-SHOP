@@ -7,11 +7,11 @@
 
     // Array con elementos multimedia: solo las 5 imágenes (video eliminado)
     const mediaHero = [
-        { tipo: "imagen", src: "/fondoname1.png" },
-        { tipo: "imagen", src: "/fondoname2.png" },
-        { tipo: "imagen", src: "/fondoname3.png" },
-        { tipo: "imagen", src: "/fondoname4.png" },
-        { tipo: "imagen", src: "/fondoname5.png" },
+        { tipo: "imagen", src: "/namefondo5.png" },
+        { tipo: "imagen", src: "/namefondo4.png" },
+        { tipo: "imagen", src: "/namefondo3.png" },
+        { tipo: "imagen", src: "/namefondo2.png" },
+        { tipo: "imagen", src: "/namefondo1.png" },
     ];
 
     let indiceActual = $state(0);
