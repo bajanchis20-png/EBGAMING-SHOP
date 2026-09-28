@@ -102,9 +102,10 @@
                     href="/catalogo"
                     class="w-full sm:w-auto px-5 py-2.5 bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30 font-semibold text-xs tracking-wider uppercase transition-all duration-300 backdrop-blur-sm rounded-xl flex items-center justify-center gap-2 shadow-lg active:scale-[0.98]"
                 >
-                    <span>Ver Catálogo</span>
+                    <span>Catálogo Guabina</span>
                     <Icon icon="lucide:arrow-right" class="w-4 h-4 shrink-0" />
                 </a>
+                
 
                 <a
                     href="https://api.whatsapp.com/send/?phone=584149430559&text=Hola,%20estoy%20interesado%20en%20recibir%20asesor%C3%ADa%20sobre%20tus%20art%C3%ADculos"
@@ -388,14 +389,11 @@
 
 <!-- Sección de Comunidades -->
 <section class="py-12 sm:py-20 bg-[#0a0a0c] relative">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-        <div class="text-center mb-8 sm:mb-12">
-            <h3
-                class="text-xl sm:text-2xl md:text-3xl font-extrabold text-white uppercase tracking-tight"
-            >
-                Únete a la <span class="text-neutral-500">Comunidad</span>
-            </h3>
-        </div>
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+    <div class="text-center mb-8 sm:mb-12 flex justify-center items-center">
+        <img src="unete2.png" alt="Únete a la Comunidad" class="max-h-15 sm:h-20 md:h-20 w-auto object-contain">
+    </div>
+
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
             {#each [{ title: "Metin2 Guabina", sub: "7.000 Usuarios", link: "https://www.facebook.com/groups/126085554213066" }, { title: "Albion Online", sub: "22.000 Usuarios", link: "https://www.facebook.com/groups/ALBI0NONLINE" }, { title: "EBGAMING SHOP", sub: "Página Oficial", link: "https://www.facebook.com/Metin2Guabinaventaseb" }] as item}
@@ -406,11 +404,12 @@
                     class="group flex flex-col items-center text-center p-5 sm:p-6 transition-all duration-300 active:scale-[0.98]"
                 >
                     <div
-                        class="mb-3 sm:mb-4 text-neutral-400 group-hover:text-white transition-colors duration-300"
+                        class="mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                     >
-                        <Icon
-                            class="w-7 h-7 sm:w-8 sm:h-8"
-                            icon="ic:baseline-facebook"
+                        <img
+                            src="facebook.png"
+                            alt="Facebook"
+                            class="w-20 h-20 sm:w-24 sm:h-24 object-contain"
                         />
                     </div>
                     <h4
